@@ -873,8 +873,9 @@ function render() {
     lsSet('progress', state.progress);
   }
   document.getElementById('root').innerHTML = layout(content, r);
-  const titles = { book: 'Contents', search: 'Search', account: 'Account', shadowing: 'Shadowing', review: 'Review' };
-  document.title = (titles[r.name] || (r.unit ? `Unit ${r.unit}` : 'Home')) + ' · ' + SITE_TITLE;
+  const titles = { book: 'Contents', search: 'Search', account: 'Account', shadowing: 'Shadowing', review: 'Review', leadin: 'Lead-in', page: 'Local book', bank: 'Reference bank' };
+  const pageTitle = r.name === 'bank' && r.bank ? `${r.bank.charAt(0).toUpperCase()}${r.bank.slice(1)} Bank` : titles[r.name];
+  document.title = (pageTitle || (r.unit ? `Unit ${r.unit}` : 'Home')) + ' · ' + SITE_TITLE;
   document.documentElement.classList.toggle('dark', state.theme === 'dark');
   document.documentElement.classList.toggle('reading', state.theme === 'reading');
   document.body.classList.remove('drawer-open');
