@@ -148,3 +148,64 @@ body.drawer-open .meb-drawer { transform:none; }
 .meb-footer { border-top:1px solid var(--line); color:var(--ink-faint); font-size:.78rem; text-align:center; padding:2rem 1rem 1rem; }
 .meb-footer a { color:var(--color-brand-600); text-decoration:none; }
 :root.dark .meb-footer a { color:var(--color-brand-300); }
+
+/* ---- Reference-alignment additions (header, home banners, extra routes) ---- */
+.meb-search-inline {
+  width:100%; border:1px solid var(--line); background:var(--surface); color:var(--ink);
+  border-radius:.6rem; padding:.38rem .7rem; font-size:.8rem; outline:none;
+  transition:border-color .18s,box-shadow .18s;
+}
+.meb-search-inline:focus { border-color:var(--color-brand-500); box-shadow:0 0 0 3px color-mix(in srgb,var(--color-brand-500) 18%,transparent); }
+.meb-account-btn {
+  display:inline-flex; align-items:center; gap:.4rem; min-height:2.25rem; padding:.2rem .5rem;
+  border:1px solid var(--color-brand-600); border-radius:.6rem; background:var(--color-brand-600);
+  color:#fff; font-size:.72rem; font-weight:600; text-decoration:none; white-space:nowrap;
+  transition:background .18s,transform .18s;
+}
+.meb-account-btn:hover { background:var(--color-brand-500); transform:translateY(-1px); }
+.meb-account-btn.signed { background:transparent; color:var(--ink); border-color:var(--line-strong); }
+.meb-avatar { display:grid; place-items:center; width:1.7rem; height:1.7rem; border-radius:999px; background:var(--color-accent-500); color:#fff; font-size:.75rem; font-weight:700; }
+
+/* Sequential banners used on the reference home page. */
+.meb-banner {
+  display:flex; align-items:center; gap:1rem; padding:1.15rem 1.25rem; margin:1rem 0;
+  border:1px solid var(--line); border-radius:1rem; background:var(--surface);
+  text-decoration:none; color:var(--ink); transition:transform .2s,box-shadow .2s,border-color .2s;
+}
+.meb-banner:hover { transform:translateY(-3px); border-color:var(--color-brand-500); box-shadow:0 18px 40px -32px #000b; }
+.meb-banner .banner-ic { width:2.9rem; height:2.9rem; flex:none; display:grid; place-items:center; border-radius:.8rem; background:var(--color-brand-600); color:#fff; }
+.meb-banner.warm .banner-ic { background:var(--color-warm-500); }
+.meb-banner.accent .banner-ic { background:var(--color-accent-600); }
+.meb-banner .banner-body { min-width:0; flex:1; }
+.meb-banner .banner-body strong { display:block; font-size:1rem; line-height:1.3; }
+.meb-banner .banner-body small { display:block; color:var(--ink-soft); font-size:.8rem; line-height:1.55; }
+.meb-banner .banner-go { flex:none; color:var(--color-brand-600); }
+:root.dark .meb-banner .banner-go { color:var(--color-brand-300); }
+
+/* Progress card + stats. */
+.meb-progress-card { padding:1.25rem; }
+.meb-progress-top { display:flex; flex-wrap:wrap; gap:1rem; align-items:center; justify-content:space-between; }
+.meb-stats { display:flex; flex-wrap:wrap; gap:1.4rem; }
+.meb-stat { display:flex; flex-direction:column; line-height:1.15; }
+.meb-stat span { font-size:.62rem; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-faint); }
+.meb-stat b { font-family:var(--font-display); font-size:1.35rem; }
+.meb-bar-track { height:.45rem; border-radius:999px; background:var(--line); overflow:hidden; margin-top:.9rem; }
+.meb-bar-fill { height:100%; border-radius:999px; background:linear-gradient(90deg,var(--color-brand-500),var(--color-accent-500)); transition:width .7s cubic-bezier(.22,1,.36,1); }
+
+/* Printed-contents block + achievements. */
+.meb-printed { padding:1.6rem 1.4rem; }
+.meb-printed .running-head { margin-bottom:1.1rem; }
+.meb-printed .toc-row { padding:.42rem 0; font-size:.88rem; text-decoration:none; color:var(--ink); }
+.meb-printed .toc-row:hover { color:var(--color-brand-600); }
+.meb-badges { display:flex; flex-wrap:wrap; gap:.6rem; margin-top:.7rem; }
+.meb-badge-item { border:1px solid var(--line); border-radius:.7rem; padding:.55rem .7rem; font-size:.78rem; background:var(--surface); opacity:.5; }
+.meb-badge-item.earned { opacity:1; border-color:var(--color-brand-500); }
+.meb-writing-area { width:100%; min-height:9rem; border:1px solid var(--line-strong); background:var(--surface); color:var(--ink); border-radius:.7rem; padding:.75rem; font-family:var(--font-sans); line-height:1.8; resize:vertical; }
+.meb-pdf-frame { width:100%; height:min(75vh,48rem); border:1px solid var(--line); border-radius:.8rem; background:var(--surface); }
+.meb-search-result { padding:.8rem 0; border-bottom:1px solid var(--line); }
+.meb-search-result:last-child { border-bottom:0; }
+@media (max-width:640px){
+  .meb-header-inner { gap:.5rem; padding:.5rem .75rem; }
+  .meb-printed { padding:1.15rem 1rem; }
+  .meb-banner { padding:1rem; }
+}

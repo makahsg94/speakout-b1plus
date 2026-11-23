@@ -1,708 +1,711 @@
 {
-    "generated":  "2026-11-23T02:20:06.0526709+02:00",
-    "counts":  {
-                   "audio":  81,
-                   "video":  16,
-                   "pdf":  3
-               },
-    "audio":  [
-                  {
-                      "unit":  "1",
-                      "lesson":  "A",
-                      "file":  "SO3_B1+_SB_1A_Audio_1_01.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_1_Audio\\SO3_B1+_SB_1A_Audio_1_01.mp3",
-                      "mb":  2.4
-                  },
-                  {
-                      "unit":  "1",
-                      "lesson":  "A",
-                      "file":  "SO3_B1+_SB_1A_Audio_1_02.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_1_Audio\\SO3_B1+_SB_1A_Audio_1_02.mp3",
-                      "mb":  0.69
-                  },
-                  {
-                      "unit":  "1",
-                      "lesson":  "A",
-                      "file":  "SO3_B1+_SB_1A_Audio_VB1_01.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_1_Audio\\SO3_B1+_SB_1A_Audio_VB1_01.mp3",
-                      "mb":  0.76
-                  },
-                  {
-                      "unit":  "1",
-                      "lesson":  "B",
-                      "file":  "SO3_B1+_SB_1B_Audio_1_03.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_1_Audio\\SO3_B1+_SB_1B_Audio_1_03.mp3",
-                      "mb":  0.47
-                  },
-                  {
-                      "unit":  "1",
-                      "lesson":  "C",
-                      "file":  "SO3_B1+_SB_1C_Audio_1_04.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_1_Audio\\SO3_B1+_SB_1C_Audio_1_04.mp3",
-                      "mb":  2.45
-                  },
-                  {
-                      "unit":  "1",
-                      "lesson":  "C",
-                      "file":  "SO3_B1+_SB_1C_Audio_1_05.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_1_Audio\\SO3_B1+_SB_1C_Audio_1_05.mp3",
-                      "mb":  0.8
-                  },
-                  {
-                      "unit":  "1",
-                      "lesson":  "C",
-                      "file":  "SO3_B1+_SB_1C_Audio_1_06.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_1_Audio\\SO3_B1+_SB_1C_Audio_1_06.mp3",
-                      "mb":  0.43
-                  },
-                  {
-                      "unit":  "1",
-                      "lesson":  "C",
-                      "file":  "SO3_B1+_SB_1C_Audio_1_07.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_1_Audio\\SO3_B1+_SB_1C_Audio_1_07.mp3",
-                      "mb":  0.32
-                  },
-                  {
-                      "unit":  "1",
-                      "lesson":  "C",
-                      "file":  "SO3_B1+_SB_1C_Audio_MB1_01.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_1_Audio\\SO3_B1+_SB_1C_Audio_MB1_01.mp3",
-                      "mb":  0.64
-                  },
-                  {
-                      "unit":  "1",
-                      "lesson":  "C",
-                      "file":  "SO3_B1+_SB_1C_Audio_MB1_02.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_1_Audio\\SO3_B1+_SB_1C_Audio_MB1_02.mp3",
-                      "mb":  0.7
-                  },
-                  {
-                      "unit":  "1",
-                      "lesson":  "R",
-                      "file":  "SO3_B1+_SB_1R_Audio_R1_01.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_1_Audio\\SO3_B1+_SB_1R_Audio_R1_01.mp3",
-                      "mb":  1.06
-                  },
-                  {
-                      "unit":  "2",
-                      "lesson":  "A",
-                      "file":  "SO3_B1+_SB_2A_Audio_2_01.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_2_Audio\\SO3_B1+_SB_2A_Audio_2_01.mp3",
-                      "mb":  0.33
-                  },
-                  {
-                      "unit":  "2",
-                      "lesson":  "A",
-                      "file":  "SO3_B1+_SB_2A_Audio_2_02.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_2_Audio\\SO3_B1+_SB_2A_Audio_2_02.mp3",
-                      "mb":  0.46
-                  },
-                  {
-                      "unit":  "2",
-                      "lesson":  "B",
-                      "file":  "SO3_B1+_SB_2B_Audio_2_03.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_2_Audio\\SO3_B1+_SB_2B_Audio_2_03.mp3",
-                      "mb":  1.39
-                  },
-                  {
-                      "unit":  "2",
-                      "lesson":  "B",
-                      "file":  "SO3_B1+_SB_2B_Audio_2_04.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_2_Audio\\SO3_B1+_SB_2B_Audio_2_04.mp3",
-                      "mb":  1.81
-                  },
-                  {
-                      "unit":  "2",
-                      "lesson":  "B",
-                      "file":  "SO3_B1+_SB_2B_Audio_2_05.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_2_Audio\\SO3_B1+_SB_2B_Audio_2_05.mp3",
-                      "mb":  0.19
-                  },
-                  {
-                      "unit":  "2",
-                      "lesson":  "B",
-                      "file":  "SO3_B1+_SB_2B_Audio_2_06.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_2_Audio\\SO3_B1+_SB_2B_Audio_2_06.mp3",
-                      "mb":  0.6
-                  },
-                  {
-                      "unit":  "2",
-                      "lesson":  "C",
-                      "file":  "SO3_B1+_SB_2C_Audio_2_07.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_2_Audio\\SO3_B1+_SB_2C_Audio_2_07.mp3",
-                      "mb":  2.18
-                  },
-                  {
-                      "unit":  "2",
-                      "lesson":  "C",
-                      "file":  "SO3_B1+_SB_2C_Audio_2_08.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_2_Audio\\SO3_B1+_SB_2C_Audio_2_08.mp3",
-                      "mb":  0.77
-                  },
-                  {
-                      "unit":  "2",
-                      "lesson":  "C",
-                      "file":  "SO3_B1+_SB_2C_Audio_2_09.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_2_Audio\\SO3_B1+_SB_2C_Audio_2_09.mp3",
-                      "mb":  0.53
-                  },
-                  {
-                      "unit":  "2",
-                      "lesson":  "D",
-                      "file":  "SO3_B1+_SB_2D_Audio_2_10.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_2_Audio\\SO3_B1+_SB_2D_Audio_2_10.mp3",
-                      "mb":  1.34
-                  },
-                  {
-                      "unit":  "2",
-                      "lesson":  "R",
-                      "file":  "SO3_B1+_SB_2R_Audio_R2_01.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_2_Audio\\SO3_B1+_SB_2R_Audio_R2_01.mp3",
-                      "mb":  1.03
-                  },
-                  {
-                      "unit":  "3",
-                      "lesson":  "A",
-                      "file":  "SO3_B1+_SB_3A_Audio_3_01.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_3_Audio\\SO3_B1+_SB_3A_Audio_3_01.mp3",
-                      "mb":  1.19
-                  },
-                  {
-                      "unit":  "3",
-                      "lesson":  "A",
-                      "file":  "SO3_B1+_SB_3A_Audio_3_02.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_3_Audio\\SO3_B1+_SB_3A_Audio_3_02.mp3",
-                      "mb":  0.68
-                  },
-                  {
-                      "unit":  "3",
-                      "lesson":  "B",
-                      "file":  "SO3_B1+_SB_3B_Audio_3_03.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_3_Audio\\SO3_B1+_SB_3B_Audio_3_03.mp3",
-                      "mb":  3.52
-                  },
-                  {
-                      "unit":  "3",
-                      "lesson":  "B",
-                      "file":  "SO3_B1+_SB_3B_Audio_3_04.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_3_Audio\\SO3_B1+_SB_3B_Audio_3_04.mp3",
-                      "mb":  0.6
-                  },
-                  {
-                      "unit":  "3",
-                      "lesson":  "B",
-                      "file":  "SO3_B1+_SB_3B_Audio_3_05.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_3_Audio\\SO3_B1+_SB_3B_Audio_3_05.mp3",
-                      "mb":  0.3
-                  },
-                  {
-                      "unit":  "3",
-                      "lesson":  "C",
-                      "file":  "SO3_B1+_SB_3C_Audio_3_06.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_3_Audio\\SO3_B1+_SB_3C_Audio_3_06.mp3",
-                      "mb":  0.47
-                  },
-                  {
-                      "unit":  "3",
-                      "lesson":  "C",
-                      "file":  "SO3_B1+_SB_3C_Audio_3_07.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_3_Audio\\SO3_B1+_SB_3C_Audio_3_07.mp3",
-                      "mb":  2.41
-                  },
-                  {
-                      "unit":  "3",
-                      "lesson":  "C",
-                      "file":  "SO3_B1+_SB_3C_Audio_3_08.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_3_Audio\\SO3_B1+_SB_3C_Audio_3_08.mp3",
-                      "mb":  0.76
-                  },
-                  {
-                      "unit":  "3",
-                      "lesson":  "C",
-                      "file":  "SO3_B1+_SB_3C_Audio_MB3_01.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_3_Audio\\SO3_B1+_SB_3C_Audio_MB3_01.mp3",
-                      "mb":  0.97
-                  },
-                  {
-                      "unit":  "3",
-                      "lesson":  "C",
-                      "file":  "SO3_B1+_SB_3C_Audio_VB3_01.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_3_Audio\\SO3_B1+_SB_3C_Audio_VB3_01.mp3",
-                      "mb":  1.16
-                  },
-                  {
-                      "unit":  "3",
-                      "lesson":  "R",
-                      "file":  "SO3_B1+_SB_3R_Audio_R3_01.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_3_Audio\\SO3_B1+_SB_3R_Audio_R3_01.mp3",
-                      "mb":  0.86
-                  },
-                  {
-                      "unit":  "4",
-                      "lesson":  "A",
-                      "file":  "SO3_B1+_SB_4A_Audio_4_01.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_4_Audio\\SO3_B1+_SB_4A_Audio_4_01.mp3",
-                      "mb":  0.36
-                  },
-                  {
-                      "unit":  "4",
-                      "lesson":  "B",
-                      "file":  "SO3_B1+_SB_4B_Audio_4_02.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_4_Audio\\SO3_B1+_SB_4B_Audio_4_02.mp3",
-                      "mb":  0.38
-                  },
-                  {
-                      "unit":  "4",
-                      "lesson":  "B",
-                      "file":  "SO3_B1+_SB_4B_Audio_4_03.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_4_Audio\\SO3_B1+_SB_4B_Audio_4_03.mp3",
-                      "mb":  3.29
-                  },
-                  {
-                      "unit":  "4",
-                      "lesson":  "C",
-                      "file":  "SO3_B1+_SB_4C_Audio_4_04.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_4_Audio\\SO3_B1+_SB_4C_Audio_4_04.mp3",
-                      "mb":  2.11
-                  },
-                  {
-                      "unit":  "4",
-                      "lesson":  "C",
-                      "file":  "SO3_B1+_SB_4C_Audio_4_05.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_4_Audio\\SO3_B1+_SB_4C_Audio_4_05.mp3",
-                      "mb":  0.37
-                  },
-                  {
-                      "unit":  "4",
-                      "lesson":  "D",
-                      "file":  "SO3_B1+_SB_4D_Audio_4_06.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_4_Audio\\SO3_B1+_SB_4D_Audio_4_06.mp3",
-                      "mb":  2.22
-                  },
-                  {
-                      "unit":  "4",
-                      "lesson":  "R",
-                      "file":  "SO3_B1+_SB_4R_Audio_R4_01.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_4_Audio\\SO3_B1+_SB_4R_Audio_R4_01.mp3",
-                      "mb":  1.2
-                  },
-                  {
-                      "unit":  "5",
-                      "lesson":  "A",
-                      "file":  "SO3_B1+_SB_5A_Audio_5_01.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_5_Audio\\SO3_B1+_SB_5A_Audio_5_01.mp3",
-                      "mb":  0.36
-                  },
-                  {
-                      "unit":  "5",
-                      "lesson":  "A",
-                      "file":  "SO3_B1+_SB_5A_Audio_5_02.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_5_Audio\\SO3_B1+_SB_5A_Audio_5_02.mp3",
-                      "mb":  3
-                  },
-                  {
-                      "unit":  "5",
-                      "lesson":  "A",
-                      "file":  "SO3_B1+_SB_5A_Audio_5_03.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_5_Audio\\SO3_B1+_SB_5A_Audio_5_03.mp3",
-                      "mb":  0.79
-                  },
-                  {
-                      "unit":  "5",
-                      "lesson":  "B",
-                      "file":  "SO3_B1+_SB_5B_Audio_5_04.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_5_Audio\\SO3_B1+_SB_5B_Audio_5_04.mp3",
-                      "mb":  0.38
-                  },
-                  {
-                      "unit":  "5",
-                      "lesson":  "B",
-                      "file":  "SO3_B1+_SB_5B_Audio_VB5_01.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_5_Audio\\SO3_B1+_SB_5B_Audio_VB5_01.mp3",
-                      "mb":  0.38
-                  },
-                  {
-                      "unit":  "5",
-                      "lesson":  "C",
-                      "file":  "SO3_B1+_SB_5C_Audio_5_05.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_5_Audio\\SO3_B1+_SB_5C_Audio_5_05.mp3",
-                      "mb":  1.98
-                  },
-                  {
-                      "unit":  "5",
-                      "lesson":  "C",
-                      "file":  "SO3_B1+_SB_5C_Audio_5_06.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_5_Audio\\SO3_B1+_SB_5C_Audio_5_06.mp3",
-                      "mb":  0.97
-                  },
-                  {
-                      "unit":  "5",
-                      "lesson":  "C",
-                      "file":  "SO3_B1+_SB_5C_Audio_5_07.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_5_Audio\\SO3_B1+_SB_5C_Audio_5_07.mp3",
-                      "mb":  0.74
-                  },
-                  {
-                      "unit":  "5",
-                      "lesson":  "C",
-                      "file":  "SO3_B1+_SB_5C_Audio_MB5_01.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_5_Audio\\SO3_B1+_SB_5C_Audio_MB5_01.mp3",
-                      "mb":  0.71
-                  },
-                  {
-                      "unit":  "5",
-                      "lesson":  "R",
-                      "file":  "SO3_B1+_SB_5R_Audio_R5_01.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_5_Audio\\SO3_B1+_SB_5R_Audio_R5_01.mp3",
-                      "mb":  0.76
-                  },
-                  {
-                      "unit":  "6",
-                      "lesson":  "A",
-                      "file":  "SO3_B1+_SB_6A_Audio_6_01.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_6_Audio\\SO3_B1+_SB_6A_Audio_6_01.mp3",
-                      "mb":  2.53
-                  },
-                  {
-                      "unit":  "6",
-                      "lesson":  "A",
-                      "file":  "SO3_B1+_SB_6A_Audio_6_02.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_6_Audio\\SO3_B1+_SB_6A_Audio_6_02.mp3",
-                      "mb":  0.39
-                  },
-                  {
-                      "unit":  "6",
-                      "lesson":  "B",
-                      "file":  "SO3_B1+_SB_6B_Audio_6_03.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_6_Audio\\SO3_B1+_SB_6B_Audio_6_03.mp3",
-                      "mb":  0.3
-                  },
-                  {
-                      "unit":  "6",
-                      "lesson":  "C",
-                      "file":  "SO3_B1+_SB_6C_Audio_6_04.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_6_Audio\\SO3_B1+_SB_6C_Audio_6_04.mp3",
-                      "mb":  2.39
-                  },
-                  {
-                      "unit":  "6",
-                      "lesson":  "C",
-                      "file":  "SO3_B1+_SB_6C_Audio_6_05.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_6_Audio\\SO3_B1+_SB_6C_Audio_6_05.mp3",
-                      "mb":  0.51
-                  },
-                  {
-                      "unit":  "6",
-                      "lesson":  "C",
-                      "file":  "SO3_B1+_SB_6C_Audio_6_06.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_6_Audio\\SO3_B1+_SB_6C_Audio_6_06.mp3",
-                      "mb":  0.27
-                  },
-                  {
-                      "unit":  "6",
-                      "lesson":  "C",
-                      "file":  "SO3_B1+_SB_6C_Audio_MB6_01.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_6_Audio\\SO3_B1+_SB_6C_Audio_MB6_01.mp3",
-                      "mb":  1.37
-                  },
-                  {
-                      "unit":  "6",
-                      "lesson":  "D",
-                      "file":  "SO3_B1+_SB_6D_Audio_6_07.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_6_Audio\\SO3_B1+_SB_6D_Audio_6_07.mp3",
-                      "mb":  1.38
-                  },
-                  {
-                      "unit":  "6",
-                      "lesson":  "R",
-                      "file":  "SO3_B1+_SB_6R_Audio_R6_01.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_6_Audio\\SO3_B1+_SB_6R_Audio_R6_01.mp3",
-                      "mb":  1.35
-                  },
-                  {
-                      "unit":  "7",
-                      "lesson":  "A",
-                      "file":  "SO3_B1+_SB_7A_Audio_7_01.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_7_Audio\\SO3_B1+_SB_7A_Audio_7_01.mp3",
-                      "mb":  3.99
-                  },
-                  {
-                      "unit":  "7",
-                      "lesson":  "A",
-                      "file":  "SO3_B1+_SB_7A_Audio_7_02.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_7_Audio\\SO3_B1+_SB_7A_Audio_7_02.mp3",
-                      "mb":  0.65
-                  },
-                  {
-                      "unit":  "7",
-                      "lesson":  "A",
-                      "file":  "SO3_B1+_SB_7A_Audio_7_03.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_7_Audio\\SO3_B1+_SB_7A_Audio_7_03.mp3",
-                      "mb":  0.6
-                  },
-                  {
-                      "unit":  "7",
-                      "lesson":  "A",
-                      "file":  "SO3_B1+_SB_7A_Audio_7_04.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_7_Audio\\SO3_B1+_SB_7A_Audio_7_04.mp3",
-                      "mb":  0.4
-                  },
-                  {
-                      "unit":  "7",
-                      "lesson":  "B",
-                      "file":  "SO3_B1+_SB_7B_Audio_7_05.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_7_Audio\\SO3_B1+_SB_7B_Audio_7_05.mp3",
-                      "mb":  0.4
-                  },
-                  {
-                      "unit":  "7",
-                      "lesson":  "B",
-                      "file":  "SO3_B1+_SB_7B_Audio_VB7_01.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_7_Audio\\SO3_B1+_SB_7B_Audio_VB7_01.mp3",
-                      "mb":  0.59
-                  },
-                  {
-                      "unit":  "7",
-                      "lesson":  "C",
-                      "file":  "SO3_B1+_SB_7C_Audio_7_06.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_7_Audio\\SO3_B1+_SB_7C_Audio_7_06.mp3",
-                      "mb":  0.9
-                  },
-                  {
-                      "unit":  "7",
-                      "lesson":  "C",
-                      "file":  "SO3_B1+_SB_7C_Audio_7_07.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_7_Audio\\SO3_B1+_SB_7C_Audio_7_07.mp3",
-                      "mb":  2.2
-                  },
-                  {
-                      "unit":  "7",
-                      "lesson":  "C",
-                      "file":  "SO3_B1+_SB_7C_Audio_7_08.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_7_Audio\\SO3_B1+_SB_7C_Audio_7_08.mp3",
-                      "mb":  0.71
-                  },
-                  {
-                      "unit":  "7",
-                      "lesson":  "C",
-                      "file":  "SO3_B1+_SB_7C_Audio_7_09.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_7_Audio\\SO3_B1+_SB_7C_Audio_7_09.mp3",
-                      "mb":  0.25
-                  },
-                  {
-                      "unit":  "7",
-                      "lesson":  "C",
-                      "file":  "SO3_B1+_SB_7C_Audio_7_10.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_7_Audio\\SO3_B1+_SB_7C_Audio_7_10.mp3",
-                      "mb":  0.26
-                  },
-                  {
-                      "unit":  "7",
-                      "lesson":  "R",
-                      "file":  "SO3_B1+_SB_7R_Audio_R7_01.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_7_Audio\\SO3_B1+_SB_7R_Audio_R7_01.mp3",
-                      "mb":  0.95
-                  },
-                  {
-                      "unit":  "8",
-                      "lesson":  "A",
-                      "file":  "SO3_B1+_SB_8A_Audio_8_01.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_8_Audio\\SO3_B1+_SB_8A_Audio_8_01.mp3",
-                      "mb":  0.33
-                  },
-                  {
-                      "unit":  "8",
-                      "lesson":  "B",
-                      "file":  "SO3_B1+_SB_8B_Audio_8_02.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_8_Audio\\SO3_B1+_SB_8B_Audio_8_02.mp3",
-                      "mb":  1.16
-                  },
-                  {
-                      "unit":  "8",
-                      "lesson":  "B",
-                      "file":  "SO3_B1+_SB_8B_Audio_8_03.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_8_Audio\\SO3_B1+_SB_8B_Audio_8_03.mp3",
-                      "mb":  0.57
-                  },
-                  {
-                      "unit":  "8",
-                      "lesson":  "B",
-                      "file":  "SO3_B1+_SB_8B_Audio_8_04.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_8_Audio\\SO3_B1+_SB_8B_Audio_8_04.mp3",
-                      "mb":  0.32
-                  },
-                  {
-                      "unit":  "8",
-                      "lesson":  "B",
-                      "file":  "SO3_B1+_SB_8B_Audio_VB8_01.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_8_Audio\\SO3_B1+_SB_8B_Audio_VB8_01.mp3",
-                      "mb":  0.84
-                  },
-                  {
-                      "unit":  "8",
-                      "lesson":  "C",
-                      "file":  "SO3_B1+_SB_8C_Audio_8_05.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_8_Audio\\SO3_B1+_SB_8C_Audio_8_05.mp3",
-                      "mb":  3.41
-                  },
-                  {
-                      "unit":  "8",
-                      "lesson":  "C",
-                      "file":  "SO3_B1+_SB_8C_Audio_8_06.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_8_Audio\\SO3_B1+_SB_8C_Audio_8_06.mp3",
-                      "mb":  0.4
-                  },
-                  {
-                      "unit":  "8",
-                      "lesson":  "C",
-                      "file":  "SO3_B1+_SB_8C_Audio_8_07.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_8_Audio\\SO3_B1+_SB_8C_Audio_8_07.mp3",
-                      "mb":  2.17
-                  },
-                  {
-                      "unit":  "8",
-                      "lesson":  "C",
-                      "file":  "SO3_B1+_SB_8C_Audio_MB8_01.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_8_Audio\\SO3_B1+_SB_8C_Audio_MB8_01.mp3",
-                      "mb":  0.77
-                  },
-                  {
-                      "unit":  "8",
-                      "lesson":  "R",
-                      "file":  "SO3_B1+_SB_8R_Audio_R8_01.mp3",
-                      "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_8_Audio\\SO3_B1+_SB_8R_Audio_R8_01.mp3",
-                      "mb":  1.36
-                  }
-              ],
-    "video":  [
-                  {
-                      "unit":  "1",
-                      "type":  "street",
-                      "file":  "SO3 B1+ U1 BBC StreetInt.mp4",
-                      "src":  "688_4- Speakout 3rd B1+ Video\\688_4- Speakout 3rd B1+ Video\\SO3 B1+ U1 BBC StreetInt.mp4",
-                      "mb":  16.88
-                  },
-                  {
-                      "unit":  "1",
-                      "type":  "vlogs",
-                      "file":  "SO3 B1+ U1 BBC Vlogs.mp4",
-                      "src":  "688_4- Speakout 3rd B1+ Video\\688_4- Speakout 3rd B1+ Video\\SO3 B1+ U1 BBC Vlogs.mp4",
-                      "mb":  10.13
-                  },
-                  {
-                      "unit":  "2",
-                      "type":  "programmes",
-                      "file":  "SO3 B1+ U2 BBC Programmes.mp4",
-                      "src":  "688_4- Speakout 3rd B1+ Video\\688_4- Speakout 3rd B1+ Video\\SO3 B1+ U2 BBC Programmes.mp4",
-                      "mb":  17.49
-                  },
-                  {
-                      "unit":  "2",
-                      "type":  "vlogs",
-                      "file":  "SO3 B1+ U2 BBC Vlogs.mp4",
-                      "src":  "688_4- Speakout 3rd B1+ Video\\688_4- Speakout 3rd B1+ Video\\SO3 B1+ U2 BBC Vlogs.mp4",
-                      "mb":  10.68
-                  },
-                  {
-                      "unit":  "3",
-                      "type":  "street",
-                      "file":  "SO3 B1+ U3 BBC StreetInt.mp4",
-                      "src":  "688_4- Speakout 3rd B1+ Video\\688_4- Speakout 3rd B1+ Video\\SO3 B1+ U3 BBC StreetInt.mp4",
-                      "mb":  15.78
-                  },
-                  {
-                      "unit":  "3",
-                      "type":  "vlogs",
-                      "file":  "SO3 B1+ U3 BBC Vlogs.mp4",
-                      "src":  "688_4- Speakout 3rd B1+ Video\\688_4- Speakout 3rd B1+ Video\\SO3 B1+ U3 BBC Vlogs.mp4",
-                      "mb":  10.94
-                  },
-                  {
-                      "unit":  "4",
-                      "type":  "programmes",
-                      "file":  "SO3 B1+ U4 BBC Programmes.mp4",
-                      "src":  "688_4- Speakout 3rd B1+ Video\\688_4- Speakout 3rd B1+ Video\\SO3 B1+ U4 BBC Programmes.mp4",
-                      "mb":  30.19
-                  },
-                  {
-                      "unit":  "4",
-                      "type":  "vlogs",
-                      "file":  "SO3 B1+ U4 BBC Vlogs.mp4",
-                      "src":  "688_4- Speakout 3rd B1+ Video\\688_4- Speakout 3rd B1+ Video\\SO3 B1+ U4 BBC Vlogs.mp4",
-                      "mb":  10.13
-                  },
-                  {
-                      "unit":  "5",
-                      "type":  "vlogs",
-                      "file":  "SO3 B1+ U5 BBC Vlogs.mp4",
-                      "src":  "688_4- Speakout 3rd B1+ Video\\688_4- Speakout 3rd B1+ Video\\SO3 B1+ U5 BBC Vlogs.mp4",
-                      "mb":  10.31
-                  },
-                  {
-                      "unit":  "6",
-                      "type":  "programmes",
-                      "file":  "SO3 B1+ U6 BBC Programmes.mp4",
-                      "src":  "688_4- Speakout 3rd B1+ Video\\688_4- Speakout 3rd B1+ Video\\SO3 B1+ U6 BBC Programmes.mp4",
-                      "mb":  20.67
-                  },
-                  {
-                      "unit":  "6",
-                      "type":  "vlogs",
-                      "file":  "SO3 B1+ U6 BBC Vlogs.mp4",
-                      "src":  "688_4- Speakout 3rd B1+ Video\\688_4- Speakout 3rd B1+ Video\\SO3 B1+ U6 BBC Vlogs.mp4",
-                      "mb":  10.79
-                  },
-                  {
-                      "unit":  "7",
-                      "type":  "street",
-                      "file":  "SO3 B1+ U7 BBC StreetInt.mp4",
-                      "src":  "688_4- Speakout 3rd B1+ Video\\688_4- Speakout 3rd B1+ Video\\SO3 B1+ U7 BBC StreetInt.mp4",
-                      "mb":  15.8
-                  },
-                  {
-                      "unit":  "7",
-                      "type":  "vlogs",
-                      "file":  "SO3 B1+ U7 BBC Vlogs.mp4",
-                      "src":  "688_4- Speakout 3rd B1+ Video\\688_4- Speakout 3rd B1+ Video\\SO3 B1+ U7 BBC Vlogs.mp4",
-                      "mb":  11.06
-                  },
-                  {
-                      "unit":  "8",
-                      "type":  "programmes",
-                      "file":  "SO3 B1+ U8 BBC Programmes.mp4",
-                      "src":  "688_4- Speakout 3rd B1+ Video\\688_4- Speakout 3rd B1+ Video\\SO3 B1+ U8 BBC Programmes.mp4",
-                      "mb":  30.12
-                  },
-                  {
-                      "unit":  "8",
-                      "type":  "vlogs",
-                      "file":  "SO3 B1+ U8 BBC Vlogs.mp4",
-                      "src":  "688_4- Speakout 3rd B1+ Video\\688_4- Speakout 3rd B1+ Video\\SO3 B1+ U8 BBC Vlogs.mp4",
-                      "mb":  10.14
-                  },
-                  {
-                      "unit":  "5",
-                      "type":  "street",
-                      "file":  "SO3_B1+_U5_BBC_Street_Interviews_Video.mp4",
-                      "src":  "688_4- Speakout 3rd B1+ Video\\688_4- Speakout 3rd B1+ Video\\SO3_B1+_U5_BBC_Street_Interviews_Video.mp4",
-                      "mb":  14.52
-                  }
-              ],
-    "pdfs":  [
-                 {
-                     "file":  "688_1- Speakout 3rd B1+ Student\u0027s Book_2022.pdf",
-                     "src":  "688_1- Speakout 3rd B1+ Student\u0027s Book_2022.pdf",
-                     "mb":  37.57
-                 },
-                 {
-                     "file":  "SO_B1P_SB_Audioscripts.pdf",
-                     "src":  "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\SO_B1P_SB_Audioscripts.pdf",
-                     "mb":  0.79
-                 },
-                 {
-                     "file":  "SO_B1P_SB_Videoscripts.pdf",
-                     "src":  "688_4- Speakout 3rd B1+ Video\\688_4- Speakout 3rd B1+ Video\\SO_B1P_SB_Videoscripts.pdf",
-                     "mb":  0.62
-                 }
-             ]
+  "generated": "2026-11-23T02:20:06.0526709+02:00",
+  "counts": {
+    "audio": 81,
+    "video": 16,
+    "pdf": 3
+  },
+  "audio": [
+    {
+      "unit": "1",
+      "lesson": "A",
+      "file": "SO3_B1+_SB_1A_Audio_1_01.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_1_Audio\\SO3_B1+_SB_1A_Audio_1_01.mp3",
+      "mb": 2.4
+    },
+    {
+      "unit": "1",
+      "lesson": "A",
+      "file": "SO3_B1+_SB_1A_Audio_1_02.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_1_Audio\\SO3_B1+_SB_1A_Audio_1_02.mp3",
+      "mb": 0.69
+    },
+    {
+      "unit": "1",
+      "lesson": "A",
+      "file": "SO3_B1+_SB_1A_Audio_VB1_01.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_1_Audio\\SO3_B1+_SB_1A_Audio_VB1_01.mp3",
+      "mb": 0.76
+    },
+    {
+      "unit": "1",
+      "lesson": "B",
+      "file": "SO3_B1+_SB_1B_Audio_1_03.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_1_Audio\\SO3_B1+_SB_1B_Audio_1_03.mp3",
+      "mb": 0.47
+    },
+    {
+      "unit": "1",
+      "lesson": "C",
+      "file": "SO3_B1+_SB_1C_Audio_1_04.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_1_Audio\\SO3_B1+_SB_1C_Audio_1_04.mp3",
+      "mb": 2.45
+    },
+    {
+      "unit": "1",
+      "lesson": "C",
+      "file": "SO3_B1+_SB_1C_Audio_1_05.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_1_Audio\\SO3_B1+_SB_1C_Audio_1_05.mp3",
+      "mb": 0.8
+    },
+    {
+      "unit": "1",
+      "lesson": "C",
+      "file": "SO3_B1+_SB_1C_Audio_1_06.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_1_Audio\\SO3_B1+_SB_1C_Audio_1_06.mp3",
+      "mb": 0.43
+    },
+    {
+      "unit": "1",
+      "lesson": "C",
+      "file": "SO3_B1+_SB_1C_Audio_1_07.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_1_Audio\\SO3_B1+_SB_1C_Audio_1_07.mp3",
+      "mb": 0.32
+    },
+    {
+      "unit": "1",
+      "lesson": "C",
+      "file": "SO3_B1+_SB_1C_Audio_MB1_01.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_1_Audio\\SO3_B1+_SB_1C_Audio_MB1_01.mp3",
+      "mb": 0.64
+    },
+    {
+      "unit": "1",
+      "lesson": "C",
+      "file": "SO3_B1+_SB_1C_Audio_MB1_02.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_1_Audio\\SO3_B1+_SB_1C_Audio_MB1_02.mp3",
+      "mb": 0.7
+    },
+    {
+      "unit": "1",
+      "lesson": "R",
+      "file": "SO3_B1+_SB_1R_Audio_R1_01.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_1_Audio\\SO3_B1+_SB_1R_Audio_R1_01.mp3",
+      "mb": 1.06
+    },
+    {
+      "unit": "2",
+      "lesson": "A",
+      "file": "SO3_B1+_SB_2A_Audio_2_01.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_2_Audio\\SO3_B1+_SB_2A_Audio_2_01.mp3",
+      "mb": 0.33
+    },
+    {
+      "unit": "2",
+      "lesson": "A",
+      "file": "SO3_B1+_SB_2A_Audio_2_02.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_2_Audio\\SO3_B1+_SB_2A_Audio_2_02.mp3",
+      "mb": 0.46
+    },
+    {
+      "unit": "2",
+      "lesson": "B",
+      "file": "SO3_B1+_SB_2B_Audio_2_03.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_2_Audio\\SO3_B1+_SB_2B_Audio_2_03.mp3",
+      "mb": 1.39
+    },
+    {
+      "unit": "2",
+      "lesson": "B",
+      "file": "SO3_B1+_SB_2B_Audio_2_04.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_2_Audio\\SO3_B1+_SB_2B_Audio_2_04.mp3",
+      "mb": 1.81
+    },
+    {
+      "unit": "2",
+      "lesson": "B",
+      "file": "SO3_B1+_SB_2B_Audio_2_05.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_2_Audio\\SO3_B1+_SB_2B_Audio_2_05.mp3",
+      "mb": 0.19
+    },
+    {
+      "unit": "2",
+      "lesson": "B",
+      "file": "SO3_B1+_SB_2B_Audio_2_06.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_2_Audio\\SO3_B1+_SB_2B_Audio_2_06.mp3",
+      "mb": 0.6
+    },
+    {
+      "unit": "2",
+      "lesson": "C",
+      "file": "SO3_B1+_SB_2C_Audio_2_07.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_2_Audio\\SO3_B1+_SB_2C_Audio_2_07.mp3",
+      "mb": 2.18
+    },
+    {
+      "unit": "2",
+      "lesson": "C",
+      "file": "SO3_B1+_SB_2C_Audio_2_08.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_2_Audio\\SO3_B1+_SB_2C_Audio_2_08.mp3",
+      "mb": 0.77
+    },
+    {
+      "unit": "2",
+      "lesson": "C",
+      "file": "SO3_B1+_SB_2C_Audio_2_09.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_2_Audio\\SO3_B1+_SB_2C_Audio_2_09.mp3",
+      "mb": 0.53
+    },
+    {
+      "unit": "2",
+      "lesson": "D",
+      "file": "SO3_B1+_SB_2D_Audio_2_10.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_2_Audio\\SO3_B1+_SB_2D_Audio_2_10.mp3",
+      "mb": 1.34
+    },
+    {
+      "unit": "2",
+      "lesson": "R",
+      "file": "SO3_B1+_SB_2R_Audio_R2_01.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_2_Audio\\SO3_B1+_SB_2R_Audio_R2_01.mp3",
+      "mb": 1.03
+    },
+    {
+      "unit": "3",
+      "lesson": "A",
+      "file": "SO3_B1+_SB_3A_Audio_3_01.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_3_Audio\\SO3_B1+_SB_3A_Audio_3_01.mp3",
+      "mb": 1.19
+    },
+    {
+      "unit": "3",
+      "lesson": "A",
+      "file": "SO3_B1+_SB_3A_Audio_3_02.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_3_Audio\\SO3_B1+_SB_3A_Audio_3_02.mp3",
+      "mb": 0.68
+    },
+    {
+      "unit": "3",
+      "lesson": "B",
+      "file": "SO3_B1+_SB_3B_Audio_3_03.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_3_Audio\\SO3_B1+_SB_3B_Audio_3_03.mp3",
+      "mb": 3.52
+    },
+    {
+      "unit": "3",
+      "lesson": "B",
+      "file": "SO3_B1+_SB_3B_Audio_3_04.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_3_Audio\\SO3_B1+_SB_3B_Audio_3_04.mp3",
+      "mb": 0.6
+    },
+    {
+      "unit": "3",
+      "lesson": "B",
+      "file": "SO3_B1+_SB_3B_Audio_3_05.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_3_Audio\\SO3_B1+_SB_3B_Audio_3_05.mp3",
+      "mb": 0.3
+    },
+    {
+      "unit": "3",
+      "lesson": "C",
+      "file": "SO3_B1+_SB_3C_Audio_3_06.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_3_Audio\\SO3_B1+_SB_3C_Audio_3_06.mp3",
+      "mb": 0.47
+    },
+    {
+      "unit": "3",
+      "lesson": "C",
+      "file": "SO3_B1+_SB_3C_Audio_3_07.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_3_Audio\\SO3_B1+_SB_3C_Audio_3_07.mp3",
+      "mb": 2.41
+    },
+    {
+      "unit": "3",
+      "lesson": "C",
+      "file": "SO3_B1+_SB_3C_Audio_3_08.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_3_Audio\\SO3_B1+_SB_3C_Audio_3_08.mp3",
+      "mb": 0.76
+    },
+    {
+      "unit": "3",
+      "lesson": "C",
+      "file": "SO3_B1+_SB_3C_Audio_MB3_01.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_3_Audio\\SO3_B1+_SB_3C_Audio_MB3_01.mp3",
+      "mb": 0.97
+    },
+    {
+      "unit": "3",
+      "lesson": "C",
+      "file": "SO3_B1+_SB_3C_Audio_VB3_01.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_3_Audio\\SO3_B1+_SB_3C_Audio_VB3_01.mp3",
+      "mb": 1.16
+    },
+    {
+      "unit": "3",
+      "lesson": "R",
+      "file": "SO3_B1+_SB_3R_Audio_R3_01.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_3_Audio\\SO3_B1+_SB_3R_Audio_R3_01.mp3",
+      "mb": 0.86
+    },
+    {
+      "unit": "4",
+      "lesson": "A",
+      "file": "SO3_B1+_SB_4A_Audio_4_01.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_4_Audio\\SO3_B1+_SB_4A_Audio_4_01.mp3",
+      "mb": 0.36
+    },
+    {
+      "unit": "4",
+      "lesson": "B",
+      "file": "SO3_B1+_SB_4B_Audio_4_02.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_4_Audio\\SO3_B1+_SB_4B_Audio_4_02.mp3",
+      "mb": 0.38
+    },
+    {
+      "unit": "4",
+      "lesson": "B",
+      "file": "SO3_B1+_SB_4B_Audio_4_03.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_4_Audio\\SO3_B1+_SB_4B_Audio_4_03.mp3",
+      "mb": 3.29
+    },
+    {
+      "unit": "4",
+      "lesson": "C",
+      "file": "SO3_B1+_SB_4C_Audio_4_04.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_4_Audio\\SO3_B1+_SB_4C_Audio_4_04.mp3",
+      "mb": 2.11
+    },
+    {
+      "unit": "4",
+      "lesson": "C",
+      "file": "SO3_B1+_SB_4C_Audio_4_05.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_4_Audio\\SO3_B1+_SB_4C_Audio_4_05.mp3",
+      "mb": 0.37
+    },
+    {
+      "unit": "4",
+      "lesson": "D",
+      "file": "SO3_B1+_SB_4D_Audio_4_06.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_4_Audio\\SO3_B1+_SB_4D_Audio_4_06.mp3",
+      "mb": 2.22
+    },
+    {
+      "unit": "4",
+      "lesson": "R",
+      "file": "SO3_B1+_SB_4R_Audio_R4_01.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_4_Audio\\SO3_B1+_SB_4R_Audio_R4_01.mp3",
+      "mb": 1.2
+    },
+    {
+      "unit": "5",
+      "lesson": "A",
+      "file": "SO3_B1+_SB_5A_Audio_5_01.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_5_Audio\\SO3_B1+_SB_5A_Audio_5_01.mp3",
+      "mb": 0.36
+    },
+    {
+      "unit": "5",
+      "lesson": "A",
+      "file": "SO3_B1+_SB_5A_Audio_5_02.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_5_Audio\\SO3_B1+_SB_5A_Audio_5_02.mp3",
+      "mb": 3
+    },
+    {
+      "unit": "5",
+      "lesson": "A",
+      "file": "SO3_B1+_SB_5A_Audio_5_03.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_5_Audio\\SO3_B1+_SB_5A_Audio_5_03.mp3",
+      "mb": 0.79
+    },
+    {
+      "unit": "5",
+      "lesson": "B",
+      "file": "SO3_B1+_SB_5B_Audio_5_04.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_5_Audio\\SO3_B1+_SB_5B_Audio_5_04.mp3",
+      "mb": 0.38
+    },
+    {
+      "unit": "5",
+      "lesson": "B",
+      "file": "SO3_B1+_SB_5B_Audio_VB5_01.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_5_Audio\\SO3_B1+_SB_5B_Audio_VB5_01.mp3",
+      "mb": 0.38
+    },
+    {
+      "unit": "5",
+      "lesson": "C",
+      "file": "SO3_B1+_SB_5C_Audio_5_05.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_5_Audio\\SO3_B1+_SB_5C_Audio_5_05.mp3",
+      "mb": 1.98
+    },
+    {
+      "unit": "5",
+      "lesson": "C",
+      "file": "SO3_B1+_SB_5C_Audio_5_06.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_5_Audio\\SO3_B1+_SB_5C_Audio_5_06.mp3",
+      "mb": 0.97
+    },
+    {
+      "unit": "5",
+      "lesson": "C",
+      "file": "SO3_B1+_SB_5C_Audio_5_07.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_5_Audio\\SO3_B1+_SB_5C_Audio_5_07.mp3",
+      "mb": 0.74
+    },
+    {
+      "unit": "5",
+      "lesson": "C",
+      "file": "SO3_B1+_SB_5C_Audio_MB5_01.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_5_Audio\\SO3_B1+_SB_5C_Audio_MB5_01.mp3",
+      "mb": 0.71
+    },
+    {
+      "unit": "5",
+      "lesson": "R",
+      "file": "SO3_B1+_SB_5R_Audio_R5_01.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_5_Audio\\SO3_B1+_SB_5R_Audio_R5_01.mp3",
+      "mb": 0.76
+    },
+    {
+      "unit": "6",
+      "lesson": "A",
+      "file": "SO3_B1+_SB_6A_Audio_6_01.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_6_Audio\\SO3_B1+_SB_6A_Audio_6_01.mp3",
+      "mb": 2.53
+    },
+    {
+      "unit": "6",
+      "lesson": "A",
+      "file": "SO3_B1+_SB_6A_Audio_6_02.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_6_Audio\\SO3_B1+_SB_6A_Audio_6_02.mp3",
+      "mb": 0.39
+    },
+    {
+      "unit": "6",
+      "lesson": "B",
+      "file": "SO3_B1+_SB_6B_Audio_6_03.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_6_Audio\\SO3_B1+_SB_6B_Audio_6_03.mp3",
+      "mb": 0.3
+    },
+    {
+      "unit": "6",
+      "lesson": "C",
+      "file": "SO3_B1+_SB_6C_Audio_6_04.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_6_Audio\\SO3_B1+_SB_6C_Audio_6_04.mp3",
+      "mb": 2.39
+    },
+    {
+      "unit": "6",
+      "lesson": "C",
+      "file": "SO3_B1+_SB_6C_Audio_6_05.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_6_Audio\\SO3_B1+_SB_6C_Audio_6_05.mp3",
+      "mb": 0.51
+    },
+    {
+      "unit": "6",
+      "lesson": "C",
+      "file": "SO3_B1+_SB_6C_Audio_6_06.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_6_Audio\\SO3_B1+_SB_6C_Audio_6_06.mp3",
+      "mb": 0.27
+    },
+    {
+      "unit": "6",
+      "lesson": "C",
+      "file": "SO3_B1+_SB_6C_Audio_MB6_01.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_6_Audio\\SO3_B1+_SB_6C_Audio_MB6_01.mp3",
+      "mb": 1.37
+    },
+    {
+      "unit": "6",
+      "lesson": "D",
+      "file": "SO3_B1+_SB_6D_Audio_6_07.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_6_Audio\\SO3_B1+_SB_6D_Audio_6_07.mp3",
+      "mb": 1.38
+    },
+    {
+      "unit": "6",
+      "lesson": "R",
+      "file": "SO3_B1+_SB_6R_Audio_R6_01.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_6_Audio\\SO3_B1+_SB_6R_Audio_R6_01.mp3",
+      "mb": 1.35
+    },
+    {
+      "unit": "7",
+      "lesson": "A",
+      "file": "SO3_B1+_SB_7A_Audio_7_01.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_7_Audio\\SO3_B1+_SB_7A_Audio_7_01.mp3",
+      "mb": 3.99
+    },
+    {
+      "unit": "7",
+      "lesson": "A",
+      "file": "SO3_B1+_SB_7A_Audio_7_02.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_7_Audio\\SO3_B1+_SB_7A_Audio_7_02.mp3",
+      "mb": 0.65
+    },
+    {
+      "unit": "7",
+      "lesson": "A",
+      "file": "SO3_B1+_SB_7A_Audio_7_03.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_7_Audio\\SO3_B1+_SB_7A_Audio_7_03.mp3",
+      "mb": 0.6
+    },
+    {
+      "unit": "7",
+      "lesson": "A",
+      "file": "SO3_B1+_SB_7A_Audio_7_04.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_7_Audio\\SO3_B1+_SB_7A_Audio_7_04.mp3",
+      "mb": 0.4
+    },
+    {
+      "unit": "7",
+      "lesson": "B",
+      "file": "SO3_B1+_SB_7B_Audio_7_05.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_7_Audio\\SO3_B1+_SB_7B_Audio_7_05.mp3",
+      "mb": 0.4
+    },
+    {
+      "unit": "7",
+      "lesson": "B",
+      "file": "SO3_B1+_SB_7B_Audio_VB7_01.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_7_Audio\\SO3_B1+_SB_7B_Audio_VB7_01.mp3",
+      "mb": 0.59
+    },
+    {
+      "unit": "7",
+      "lesson": "C",
+      "file": "SO3_B1+_SB_7C_Audio_7_06.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_7_Audio\\SO3_B1+_SB_7C_Audio_7_06.mp3",
+      "mb": 0.9
+    },
+    {
+      "unit": "7",
+      "lesson": "C",
+      "file": "SO3_B1+_SB_7C_Audio_7_07.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_7_Audio\\SO3_B1+_SB_7C_Audio_7_07.mp3",
+      "mb": 2.2
+    },
+    {
+      "unit": "7",
+      "lesson": "C",
+      "file": "SO3_B1+_SB_7C_Audio_7_08.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_7_Audio\\SO3_B1+_SB_7C_Audio_7_08.mp3",
+      "mb": 0.71
+    },
+    {
+      "unit": "7",
+      "lesson": "C",
+      "file": "SO3_B1+_SB_7C_Audio_7_09.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_7_Audio\\SO3_B1+_SB_7C_Audio_7_09.mp3",
+      "mb": 0.25
+    },
+    {
+      "unit": "7",
+      "lesson": "C",
+      "file": "SO3_B1+_SB_7C_Audio_7_10.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_7_Audio\\SO3_B1+_SB_7C_Audio_7_10.mp3",
+      "mb": 0.26
+    },
+    {
+      "unit": "7",
+      "lesson": "R",
+      "file": "SO3_B1+_SB_7R_Audio_R7_01.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_7_Audio\\SO3_B1+_SB_7R_Audio_R7_01.mp3",
+      "mb": 0.95
+    },
+    {
+      "unit": "8",
+      "lesson": "A",
+      "file": "SO3_B1+_SB_8A_Audio_8_01.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_8_Audio\\SO3_B1+_SB_8A_Audio_8_01.mp3",
+      "mb": 0.33
+    },
+    {
+      "unit": "8",
+      "lesson": "B",
+      "file": "SO3_B1+_SB_8B_Audio_8_02.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_8_Audio\\SO3_B1+_SB_8B_Audio_8_02.mp3",
+      "mb": 1.16
+    },
+    {
+      "unit": "8",
+      "lesson": "B",
+      "file": "SO3_B1+_SB_8B_Audio_8_03.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_8_Audio\\SO3_B1+_SB_8B_Audio_8_03.mp3",
+      "mb": 0.57
+    },
+    {
+      "unit": "8",
+      "lesson": "B",
+      "file": "SO3_B1+_SB_8B_Audio_8_04.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_8_Audio\\SO3_B1+_SB_8B_Audio_8_04.mp3",
+      "mb": 0.32
+    },
+    {
+      "unit": "8",
+      "lesson": "B",
+      "file": "SO3_B1+_SB_8B_Audio_VB8_01.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_8_Audio\\SO3_B1+_SB_8B_Audio_VB8_01.mp3",
+      "mb": 0.84
+    },
+    {
+      "unit": "8",
+      "lesson": "C",
+      "file": "SO3_B1+_SB_8C_Audio_8_05.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_8_Audio\\SO3_B1+_SB_8C_Audio_8_05.mp3",
+      "mb": 3.41
+    },
+    {
+      "unit": "8",
+      "lesson": "C",
+      "file": "SO3_B1+_SB_8C_Audio_8_06.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_8_Audio\\SO3_B1+_SB_8C_Audio_8_06.mp3",
+      "mb": 0.4
+    },
+    {
+      "unit": "8",
+      "lesson": "C",
+      "file": "SO3_B1+_SB_8C_Audio_8_07.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_8_Audio\\SO3_B1+_SB_8C_Audio_8_07.mp3",
+      "mb": 2.17
+    },
+    {
+      "unit": "8",
+      "lesson": "C",
+      "file": "SO3_B1+_SB_8C_Audio_MB8_01.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_8_Audio\\SO3_B1+_SB_8C_Audio_MB8_01.mp3",
+      "mb": 0.77
+    },
+    {
+      "unit": "8",
+      "lesson": "R",
+      "file": "SO3_B1+_SB_8R_Audio_R8_01.mp3",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\Speakout_B1P_SB_Unit_8_Audio\\SO3_B1+_SB_8R_Audio_R8_01.mp3",
+      "mb": 1.36
+    }
+  ],
+  "video": [
+    {
+      "unit": "1",
+      "type": "street",
+      "file": "SO3 B1+ U1 BBC StreetInt.mp4",
+      "src": "688_4- Speakout 3rd B1+ Video\\688_4- Speakout 3rd B1+ Video\\SO3 B1+ U1 BBC StreetInt.mp4",
+      "mb": 16.88
+    },
+    {
+      "unit": "1",
+      "type": "vlogs",
+      "file": "SO3 B1+ U1 BBC Vlogs.mp4",
+      "src": "688_4- Speakout 3rd B1+ Video\\688_4- Speakout 3rd B1+ Video\\SO3 B1+ U1 BBC Vlogs.mp4",
+      "mb": 10.13
+    },
+    {
+      "unit": "2",
+      "type": "programmes",
+      "file": "SO3 B1+ U2 BBC Programmes.mp4",
+      "src": "688_4- Speakout 3rd B1+ Video\\688_4- Speakout 3rd B1+ Video\\SO3 B1+ U2 BBC Programmes.mp4",
+      "mb": 17.49
+    },
+    {
+      "unit": "2",
+      "type": "vlogs",
+      "file": "SO3 B1+ U2 BBC Vlogs.mp4",
+      "src": "688_4- Speakout 3rd B1+ Video\\688_4- Speakout 3rd B1+ Video\\SO3 B1+ U2 BBC Vlogs.mp4",
+      "mb": 10.68
+    },
+    {
+      "unit": "3",
+      "type": "street",
+      "file": "SO3 B1+ U3 BBC StreetInt.mp4",
+      "src": "688_4- Speakout 3rd B1+ Video\\688_4- Speakout 3rd B1+ Video\\SO3 B1+ U3 BBC StreetInt.mp4",
+      "mb": 15.78
+    },
+    {
+      "unit": "3",
+      "type": "vlogs",
+      "file": "SO3 B1+ U3 BBC Vlogs.mp4",
+      "src": "688_4- Speakout 3rd B1+ Video\\688_4- Speakout 3rd B1+ Video\\SO3 B1+ U3 BBC Vlogs.mp4",
+      "mb": 10.94
+    },
+    {
+      "unit": "4",
+      "type": "programmes",
+      "file": "SO3 B1+ U4 BBC Programmes.mp4",
+      "src": "688_4- Speakout 3rd B1+ Video\\688_4- Speakout 3rd B1+ Video\\SO3 B1+ U4 BBC Programmes.mp4",
+      "mb": 30.19
+    },
+    {
+      "unit": "4",
+      "type": "vlogs",
+      "file": "SO3 B1+ U4 BBC Vlogs.mp4",
+      "src": "688_4- Speakout 3rd B1+ Video\\688_4- Speakout 3rd B1+ Video\\SO3 B1+ U4 BBC Vlogs.mp4",
+      "mb": 10.13
+    },
+    {
+      "unit": "5",
+      "type": "vlogs",
+      "file": "SO3 B1+ U5 BBC Vlogs.mp4",
+      "src": "688_4- Speakout 3rd B1+ Video\\688_4- Speakout 3rd B1+ Video\\SO3 B1+ U5 BBC Vlogs.mp4",
+      "mb": 10.31
+    },
+    {
+      "unit": "6",
+      "type": "programmes",
+      "file": "SO3 B1+ U6 BBC Programmes.mp4",
+      "src": "688_4- Speakout 3rd B1+ Video\\688_4- Speakout 3rd B1+ Video\\SO3 B1+ U6 BBC Programmes.mp4",
+      "mb": 20.67
+    },
+    {
+      "unit": "6",
+      "type": "vlogs",
+      "file": "SO3 B1+ U6 BBC Vlogs.mp4",
+      "src": "688_4- Speakout 3rd B1+ Video\\688_4- Speakout 3rd B1+ Video\\SO3 B1+ U6 BBC Vlogs.mp4",
+      "mb": 10.79
+    },
+    {
+      "unit": "7",
+      "type": "street",
+      "file": "SO3 B1+ U7 BBC StreetInt.mp4",
+      "src": "688_4- Speakout 3rd B1+ Video\\688_4- Speakout 3rd B1+ Video\\SO3 B1+ U7 BBC StreetInt.mp4",
+      "mb": 15.8
+    },
+    {
+      "unit": "7",
+      "type": "vlogs",
+      "file": "SO3 B1+ U7 BBC Vlogs.mp4",
+      "src": "688_4- Speakout 3rd B1+ Video\\688_4- Speakout 3rd B1+ Video\\SO3 B1+ U7 BBC Vlogs.mp4",
+      "mb": 11.06
+    },
+    {
+      "unit": "8",
+      "type": "programmes",
+      "file": "SO3 B1+ U8 BBC Programmes.mp4",
+      "src": "688_4- Speakout 3rd B1+ Video\\688_4- Speakout 3rd B1+ Video\\SO3 B1+ U8 BBC Programmes.mp4",
+      "mb": 30.12
+    },
+    {
+      "unit": "8",
+      "type": "vlogs",
+      "file": "SO3 B1+ U8 BBC Vlogs.mp4",
+      "src": "688_4- Speakout 3rd B1+ Video\\688_4- Speakout 3rd B1+ Video\\SO3 B1+ U8 BBC Vlogs.mp4",
+      "mb": 10.14
+    },
+    {
+      "unit": "5",
+      "type": "street",
+      "file": "SO3_B1+_U5_BBC_Street_Interviews_Video.mp4",
+      "src": "688_4- Speakout 3rd B1+ Video\\688_4- Speakout 3rd B1+ Video\\SO3_B1+_U5_BBC_Street_Interviews_Video.mp4",
+      "mb": 14.52
+    }
+  ],
+  "pdfs": [
+    {
+      "file": "688_1- Speakout 3rd B1+ Student's Book_2022.pdf",
+      "src": "688_1- Speakout 3rd B1+ Student's Book_2022.pdf",
+      "mb": 37.57,
+      "siteFile": "Speakout-B1plus-Students-Book.pdf"
+    },
+    {
+      "file": "SO_B1P_SB_Audioscripts.pdf",
+      "src": "688_3- Speakout 3rd B1+ Class Audio\\688_3- Speakout 3rd B1+ Class Audio\\SO_B1P_SB_Audioscripts.pdf",
+      "mb": 0.79,
+      "siteFile": "Audioscripts.pdf"
+    },
+    {
+      "file": "SO_B1P_SB_Videoscripts.pdf",
+      "src": "688_4- Speakout 3rd B1+ Video\\688_4- Speakout 3rd B1+ Video\\SO_B1P_SB_Videoscripts.pdf",
+      "mb": 0.62,
+      "siteFile": "Videoscripts.pdf"
+    }
+  ]
 }
