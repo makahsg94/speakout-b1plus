@@ -24,7 +24,13 @@ const ICON_PATHS = {
   volumeOff: ['M4 9v6h4l5 4V5L8 9H4Z', 'm17 9 5 6m0-6-5 6'],
   chevronRight: ['m9 18 6-6-6-6'],
   chevronLeft: ['m15 18-6-6 6-6'],
-  spark: ['M12 3v4m0 10v4m9-9h-4M7 12H3m13.5-5.5-2.8 2.8m-3.4 3.4-2.8 2.8m8.6-8.6 2.8-2.8M7.3 16.7 4.5 19.5']
+  spark: ['M12 3v4m0 10v4m9-9h-4M7 12H3m13.5-5.5-2.8 2.8m-3.4 3.4-2.8 2.8m8.6-8.6 2.8-2.8M7.3 16.7 4.5 19.5'],
+  play: ['m8 5 11 7-11 7V5Z'],
+  pause: ['M8 5v14M16 5v14'],
+  rewind: ['M11 6 5 12l6 6', 'M19 6l-6 6 6 6'],
+  forward: ['m13 6 6 6-6 6', 'M5 6l6 6-6 6'],
+  shield: ['M12 3 5 6v5c0 4.5 3 8 7 10 4-2 7-5.5 7-10V6l-7-3Z', 'm9 12 2 2 4-4'],
+  target: ['M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Z', 'M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Z', 'M12 11a1 1 0 1 0 0 2 1 1 0 0 0 0-2Z']
 };
 function icon(name, size = 16, cls = '') {
   const paths = ICON_PATHS[name] || ICON_PATHS.spark;
@@ -39,7 +45,8 @@ const UNIT_TITLES = {
 
 const state = {
   media: null, units: {}, theme: 'dark', sound: true, user: null,
-  progress: { lessons: {}, quizzes: {} }, transcripts: '', shadowUnit: 1, shadowFile: ''
+  progress: { lessons: {}, quizzes: {}, writing: {}, lastUnit: 0, lastLesson: '' },
+  transcripts: '', shadowUnit: 1, shadowFile: '', audioStarted: false, audioRate: 1
 };
 
 const $ = (sel, root = document) => root.querySelector(sel);
@@ -105,7 +112,6 @@ function route() {
   if (p[0] === 'shadowing') return { name: 'shadowing' };
   if (p[0] === 'account') return { name: 'account' };
   if (p[0] === 'search') return { name: 'search', q: new URLSearchParams(query).get('q') || '' };
-  if (p[0] === 'trainer') return { name: 'trainer' };
   if (p[0] === 'page') return { name: 'page', pdf: decodeURIComponent(p.slice(1).join('/')) };
   return { name: 'home' };
 }
@@ -130,6 +136,158 @@ function progressStats() {
 }
 function pdfList() { return (state.media?.pdfs || []).map(p => ({ ...p, href: '#/page/' + encodeURIComponent(p.siteFile || p.file) })); }
 
+/* Reference-style achievement set (labels/emoji from the design source; progress from local data). */
+function achievementList() {
+  const s = progressStats();
+  const quizzes = Object.values(state.progress.quizzes || {});
+  const writes = Object.values(state.progress.writing || {});
+  const perfect = quizzes.some(q => q.total > 0 && q.pct === 100);
+  const starWrite = writes.some(w => w.grade === 'A' && w.score >= 85);
+  const flags = {
+    'first-lesson': s.done >= 1,
+    'five-lessons': s.done >= 5,
+    'ten-lessons': s.done >= 10,
+    'all-course': s.total > 0 && s.done >= s.total,
+    'first-quiz': quizzes.length >= 1,
+    'perfect-quiz': perfect,
+    'first-write': writes.length >= 1,
+    'star-writer': starWrite,
+    'day-streak': s.streak >= 3,
+    'week-streak': s.streak >= 7
+  };
+  return [
+    ['first-lesson', 'First steps', 'Complete your first lesson', '🎯'],
+    ['five-lessons', 'Reader', 'Complete 5 lessons', '📚'],
+    ['ten-lessons', 'Bookworm', 'Complete 10 lessons', '🧠'],
+    ['all-course', 'Full journey', 'Complete every lesson in the course', '🏁'],
+    ['first-quiz', 'Quizzer', 'Finish your first unit quiz', '🎮'],
+    ['perfect-quiz', 'Perfect score', 'Get 100% on a quiz', '💯'],
+    ['first-write', 'Writer', 'Check your first piece of writing', '✍️'],
+    ['star-writer', 'Star writer', 'Get grade A on a writing task', '⭐'],
+    ['day-streak', 'On fire', 'Study 3 days in a row', '🔥'],
+    ['week-streak', 'Unstoppable', 'Study 7 days in a row', '🚀']
+  ].map(a => ({ id: a[0], title: a[1], desc: a[2], emoji: a[3], earned: !!flags[a[0]] }));
+}
+
+function firstPage(pages) { return String(pages || '–').split(/[–-]/)[0].trim(); }
+function lessonStatus(l) {
+  if (state.progress.lessons[l.id]?.done) return 'done';
+  if (state.progress.lessons[l.id]?.lastVisit) return 'started';
+  return 'todo';
+}
+
+/* SVG journey map from the reference layout. */
+function lineMap() {
+  const units = Array.from({ length: 8 }, (_, i) => unitData(i + 1));
+  const W = 1200, H = 380, X0 = 96, SPAN = W - X0 * 2;
+  const pts = units.map((_, i) => ({ x: X0 + i * SPAN / Math.max(1, units.length - 1), y: H / 2 + Math.sin((i / Math.max(1, units.length - 1)) * Math.PI * 1.7) * 96 }));
+  const path = (to) => {
+    let d = `M ${pts[0].x} ${pts[0].y}`;
+    for (let i = 1; i <= Math.min(to, pts.length - 1); i++) {
+      const p0 = pts[i - 1], p1 = pts[i];
+      d += ` q ${(p1.x - p0.x) / 2} 0, ${p1.x - p0.x} ${p1.y - p0.y}`;
+    }
+    return d;
+  };
+  const findIndex = units.findIndex(u => u.unit === Number(state.progress.lastUnit));
+  const currentIndex = findIndex >= 0 ? findIndex : 0;
+  const carried = path(currentIndex), full = path(units.length - 1);
+  const frac = Math.max(0, Math.min(1, currentIndex / Math.max(1, units.length - 1)));
+  const stations = units.map((u, i) => {
+    const p = pts[i];
+    const done = (u.lessons || []).length > 0 && u.lessons.every(l => state.progress.lessons[l.id]?.done);
+    const current = i === currentIndex;
+    const fill = done ? 'var(--color-brand-600)' : current ? 'var(--color-accent-500)' : 'var(--surface)';
+    const stroke = done || current ? 'none' : 'var(--line-strong)';
+    const numFill = done || current ? '#fff' : 'var(--ink-faint)';
+    const above = p.y > H * 0.62;
+    const labelY = above ? p.y - 40 : p.y + 46;
+    const check = done ? `<path d="M0 0l3.5 3.5L9-2" transform="translate(${p.x - (current ? 9 : 7)} ${p.y - (current ? 3 : 2)}) scale(${current ? 1.25 : 1})" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>` : '';
+    return `<g class="station-dot${done ? ' reached' : ''}" data-action="go-unit" data-unit="${u.unit}" role="link" tabindex="0" aria-label="Unit ${u.unit}">
+      ${current ? `<circle cx="${p.x}" cy="${p.y}" r="22" class="station-pulse" fill="var(--color-accent-500)"/>` : ''}
+      <circle class="dot" cx="${p.x}" cy="${p.y}" r="${current ? 22 : 16}" fill="${fill}" stroke="${stroke}" stroke-width="2.5"/>
+      ${done ? `<circle class="dot-ring" cx="${p.x}" cy="${p.y}" r="${current ? 28 : 21}"/>` : ''}
+      ${check || `<text class="num" x="${p.x}" y="${p.y + 6}" text-anchor="middle" font-size="${current ? 17 : 14}" fill="${numFill}">${u.unit}</text>`}
+      <text class="label" x="${p.x}" y="${labelY}" text-anchor="middle" font-size="13" font-weight="${current ? 700 : 500}">Unit ${u.unit}</text>
+    </g>`;
+  }).join('');
+  return `<div class="line-card overflow-hidden px-4 pb-3 pt-6 sm:px-6">
+    <svg viewBox="0 0 ${W} ${H}" class="h-auto w-full" role="img" aria-label="The Speakout line: ${units.length} stations">
+      <path d="${full}" class="line-track"/>
+      <path d="${full}" class="line-track-dash"/>
+      ${currentIndex > 0 ? `<path d="${carried}" class="line-traveled"/>` : ''}
+      ${stations}
+      ${currentIndex > 0 ? `<g class="train-body train-glow"><animateMotion dur="2.6s" repeatCount="1" fill="freeze" keyPoints="0;${frac}" keyTimes="0;1" calcMode="linear" path="${carried}"/><rect class="tm" x="-26" y="-15" width="48" height="30" rx="7"/><path class="tnose" d="M26-12 36 0 26 12Z"/><rect class="twin" x="-18" y="-10" width="10" height="9" rx="2"/><rect class="twin" x="-4" y="-10" width="10" height="9" rx="2"/><rect class="twin" x="10" y="-10" width="10" height="9" rx="2"/></g>` : ''}
+    </svg>
+    <div class="meb-line-caption"><span>Single track · ${units.length} stations · board at ‘Unit ${units[currentIndex].unit}’</span><span>End of the line: reference banks</span></div>
+  </div>`;
+}
+
+/* Cover deck from the reference book page, using local unit titles rather than copied page images. */
+function coverStack() {
+  const units = Array.from({ length: 8 }, (_, i) => unitData(i + 1));
+  const mid = (units.length - 1) / 2;
+  return `<div class="meb-stack-wrap fade-up"><div class="stack-deck meb-stack-deck">
+    ${units.map((u, k) => {
+      const gap = k - mid;
+      const stacked = `translateY(${k * 6}px)`;
+      const fanned = `translateX(${gap * 52}px) translateY(${-Math.abs(gap) * 3}px) rotateY(${gap * 9}deg)`;
+      const done = (u.lessons || []).length > 0 && u.lessons.every(l => state.progress.lessons[l.id]?.done);
+      return `<div class="stack-card meb-stack-card" style="--t:${stacked};--f:${fanned};z-index:${units.length - k}">
+        <a class="meb-stack-cover" href="#/unit/unit-${u.unit}" aria-label="Open Unit ${u.unit}">
+          <span class="meb-stack-top"><b>${u.unit}</b><small>B1+ · UNIT</small>${done ? `<span class="meb-stack-check">${icon('check', 11)}</span>` : ''}</span>
+          <span class="stack-caption meb-stack-caption"><span><small>Unit ${u.unit}</small><strong>${esc(u.title || '')}</strong></span>${icon('chevronRight', 13)}</span>
+        </a>
+      </div>`;
+    }).join('')}
+  </div><p class="meb-stack-hint">Hover the stack to fan the covers open · click any cover to open the unit</p></div>`;
+}
+
+function formatTime(sec) {
+  const n = Math.max(0, Math.floor(Number(sec) || 0));
+  return `${Math.floor(n / 60)}:${String(n % 60).padStart(2, '0')}`;
+}
+
+function miniPlayer() {
+  return `<div id="meb-mini" class="meb-mini" hidden>
+    <button type="button" id="meb-mini-toggle" data-action="mini-toggle" aria-label="Play" class="meb-mini-play">${icon('play', 16)}</button>
+    <span id="meb-mini-eq" class="eq text-accent-500" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+    <span class="meb-mini-copy"><strong id="meb-mini-label">Audio</strong><small id="meb-mini-file"></small></span>
+    <button type="button" data-action="mini-rate" class="meb-mini-rate" id="meb-mini-rate" title="Playback speed">1×</button>
+    <button type="button" data-action="mini-seek" data-step="-10" class="meb-mini-step" title="Back 10 seconds">${icon('rewind', 16)}<small>10</small></button>
+    <span id="meb-mini-time" class="meb-mini-time">0:00</span>
+    <input id="meb-mini-range" type="range" min="0" max="1" step="1" value="0" aria-label="Seek" data-action="mini-seek-range" />
+    <span id="meb-mini-duration" class="meb-mini-time">0:00</span>
+    <button type="button" data-action="mini-seek" data-step="10" class="meb-mini-step" title="Forward 10 seconds">${icon('forward', 16)}<small>10</small></button>
+    <button type="button" data-action="mini-stop" aria-label="Stop" class="meb-mini-stop">${icon('close', 14)}</button>
+  </div>`;
+}
+
+function backToTop() {
+  return `<button type="button" id="meb-back-top" class="meb-back-top" data-action="back-top" aria-label="Back to top">${icon('chevronRight', 18)}</button>`;
+}
+
+function syncMiniPlayer() {
+  const a = $('#meb-audio'), m = $('#meb-mini');
+  if (!a || !m) return;
+  const src = a.currentSrc || a.src || '';
+  const active = state.audioStarted && !!src;
+  m.hidden = !active;
+  const label = $('#meb-mini-label'), file = $('#meb-mini-file');
+  if (label) label.textContent = state.audioLabel || 'Audio';
+  if (file) file.textContent = decodeURIComponent(String(src).split('/').pop() || '');
+  if (!active) return;
+  const dur = Number.isFinite(a.duration) ? a.duration : 0;
+  const time = $('#meb-mini-time'), duration = $('#meb-mini-duration'), range = $('#meb-mini-range');
+  if (time) time.textContent = formatTime(a.currentTime);
+  if (duration) duration.textContent = formatTime(dur);
+  if (range) { range.max = String(Math.max(1, dur)); range.value = String(Math.min(a.currentTime, Math.max(1, dur))); }
+  const toggle = $('#meb-mini-toggle');
+  if (toggle) { toggle.innerHTML = a.paused ? icon('play', 16) : icon('pause', 16); toggle.setAttribute('aria-label', a.paused ? 'Play' : 'Pause'); }
+  const eq = $('#meb-mini-eq'); if (eq) eq.classList.toggle('eq-on', !a.paused);
+  const rate = $('#meb-mini-rate'); if (rate) rate.textContent = state.audioRate + '×';
+}
+
 /* ---------------- layout ---------------- */
 function header() {
   const themeIcon = state.theme === 'dark' ? icon('sun', 17) : state.theme === 'reading' ? icon('book', 17) : icon('moon', 17);
@@ -142,7 +300,7 @@ function header() {
         <a href="#/account" class="meb-account-btn ${state.user ? 'signed' : ''}" aria-label="Account">
           ${state.user ? `<span class="meb-avatar">${esc(state.user.name.slice(0, 1).toUpperCase())}</span><span class="hidden max-w-28 truncate sm:inline">${esc(state.user.name)}</span>` : `<span class="px-1.5">إنشاء حساب / دخول</span>`}
         </a>
-        <button class="meb-icon-btn" data-action="sound" aria-label="Sound effects ${state.sound ? 'on' : 'off'}. Toggle sound" aria-pressed="${state.sound}">${state.sound ? icon('volume', 17) : icon('volumeOff', 17)}</button>
+        <button class="meb-icon-btn ${state.sound ? '' : 'off'}" data-action="sound" aria-label="Sound effects ${state.sound ? 'on' : 'off'}. Toggle sound" aria-pressed="${state.sound}">${state.sound ? icon('volume', 17) : icon('volumeOff', 17)}</button>
         <button class="meb-icon-btn" data-action="theme" aria-label="Switch theme. Current theme: ${state.theme}">${themeIcon}</button>
       </div>
     </div>
@@ -151,40 +309,60 @@ function header() {
 
 function drawer() {
   const units = Array.from({ length: 8 }, (_, i) => unitData(i + 1));
+  const s = progressStats();
   return `<div class="meb-drawer-backdrop" data-action="drawer-close"></div>
-  <aside class="meb-drawer" aria-label="Contents">
-    <div class="meb-drawer-head"><div><div class="meb-kicker">Course companion</div><strong class="meb-title" style="font-size:1.35rem">Contents</strong></div><button class="meb-icon-btn" data-action="drawer-close" aria-label="Close">✕</button></div>
-    <input class="meb-drawer-search" id="meb-search" placeholder="ابحث عن درس / كلمة…" />
-    <div class="meb-drawer-group"><h3>Quick links</h3>
-      <a class="meb-drawer-link" href="#/book"><b>▤</b> Contents of this course</a>
-      <a class="meb-drawer-link" href="#/search"><b>⌕</b> Search the course</a>
-      <a class="meb-drawer-link" href="#/review"><b>★</b> المراجعة الشاملة</a>
-      <a class="meb-drawer-link" href="#/shadowing"><b>▶</b> استوديو الشادونج</a>
-      <a class="meb-drawer-link" href="#/trainer"><b>◎</b> خطّة التعلّم</a>
-      ${pdfList().map(p => `<a class="meb-drawer-link" href="${p.href}"><b>PDF</b> ${esc(p.file)}</a>`).join('')}
-      <a class="meb-drawer-link" href="#/bank/grammar"><b>▲</b> Grammar Bank</a>
-      <a class="meb-drawer-link" href="#/bank/vocabulary"><b>▲</b> Vocabulary Bank</a>
-      <a class="meb-drawer-link" href="#/bank/writing"><b>▲</b> Writing Bank</a>
-    </div>
-    ${units.map(u => `<div class="meb-drawer-group"><h3>${esc(u.title || UNIT_TITLES[u.unit]?.[0] || '')}</h3>
-      <a class="meb-drawer-link" href="#/unit/unit-${u.unit}"><b>${u.unit}</b> Unit overview</a>
-      ${(u.lessons || []).map(l => `<a class="meb-drawer-link" href="#/unit/unit-${u.unit}/lesson/${esc(l.id)}"><b>${esc(l.code || l.id)}</b> ${esc(l.title || '')}</a>`).join('')}
-      <a class="meb-drawer-link" href="#/unit/unit-${u.unit}/lesson/${u.unit}r"><b>★</b> Unit ${u.unit} Review</a>
-      <a class="meb-drawer-link" href="#/unit/unit-${u.unit}/quiz"><b>?</b> Unit ${u.unit} Quiz</a>
-      <a class="meb-drawer-link" href="#/unit/unit-${u.unit}/writing"><b>✎</b> Unit ${u.unit} Writing</a>
-    </div>`).join('')}
-  </aside>`;
+  <div class="meb-drawer-overlay" role="dialog" aria-modal="true" aria-label="Contents">
+    <aside class="meb-drawer" aria-label="Contents">
+      <div class="meb-drawer-head"><span class="meb-drawer-kicker">Contents</span><button class="meb-icon-btn" data-action="drawer-close" aria-label="Close contents">${icon('close', 16)}</button></div>
+      <div class="meb-drawer-scroll scrollbar-thin">
+        <p class="meb-drawer-kicker meb-drawer-lead">Contents of the book</p>
+        <div class="meb-drawer-progress">
+          <div class="meb-progress-top"><span class="meb-pill">Book progress</span><strong>${s.pct}%</strong></div>
+          <div class="meb-bar-track"><div class="meb-bar-fill" style="width:${s.pct}%"></div></div>
+          <p>${s.done} of ${s.total} lessons</p>
+        </div>
+        <a class="meb-drawer-link meb-drawer-account" href="#/account" data-action="drawer-close">
+          <span>${icon('layers', 13)} <strong dir="rtl" lang="ar">${state.user ? `حساب ${esc(state.user.name)}` : 'أنشئ حسابك / دخول'}</strong></span>
+          <small dir="rtl" lang="ar">سجّل تقدّمك وقابله على أي جهاز</small>
+        </a>
+        <div class="meb-drawer-heading">${icon('book', 13)} <span>This course</span><span class="toc-dots"></span><span class="toc-page">book map</span></div>
+        <a class="meb-drawer-link" href="#/book" data-action="drawer-close">Open the full contents of this course, unit by unit.</a>
+        <a class="meb-drawer-link meb-drawer-warm" href="#/review" data-action="drawer-close"><strong dir="rtl" lang="ar">المراجعة الشاملة</strong><small>Vocab tables · grammar · 25-question quiz</small></a>
+        <a class="meb-drawer-link meb-drawer-accent" href="#/shadowing" data-action="drawer-close"><span>${icon('mic', 13)} <strong dir="rtl" lang="ar">استوديو الشادونج</strong></span><small>Listen · loop · repeat</small></a>
+        ${units.map(u => `<div class="meb-drawer-unit">
+          <a class="meb-drawer-unit-title" href="#/unit/unit-${u.unit}" data-action="drawer-close"><strong>${u.unit}</strong><span>Unit ${u.unit} — ${esc(u.title || '')}</span><span class="toc-dots"></span><span class="toc-page">${firstPage(u.pages)}</span></a>
+          <div class="meb-drawer-unit-body">
+            ${(u.lessons || []).map(l => {
+              const st = lessonStatus(l);
+              return `<a class="meb-drawer-link meb-toc-link" href="#/unit/unit-${u.unit}/lesson/${esc(l.id)}" data-action="drawer-close"><span class="meb-status">${st === 'done' ? icon('check', 10) : st === 'started' ? '●' : '○'}</span><span>${esc(l.code || l.id)} ${esc(l.title || '')}</span><span class="toc-dots"></span><span class="toc-page">${firstPage(l.pages)}</span></a>`;
+            }).join('')}
+            <a class="meb-drawer-link meb-toc-link meb-drawer-warm" href="#/unit/unit-${u.unit}/writing" data-action="drawer-close">${icon('layers', 11)} <span>Writing task</span><span class="toc-dots"></span><span class="toc-page">94</span></a>
+            <a class="meb-drawer-link meb-toc-link" href="#/unit/unit-${u.unit}/quiz" data-action="drawer-close">${icon('target', 11)} <span>Unit ${u.unit} quiz</span><span class="toc-dots"></span><span class="toc-page">end</span></a>
+          </div>
+        </div>`).join('')}
+        <div class="meb-drawer-unit">
+          <div class="meb-drawer-unit-title"><strong>A</strong><span>Reference banks</span><span class="toc-dots"></span><span class="toc-page">back</span></div>
+          <div class="meb-drawer-unit-body">
+            ${[['grammar', 'Grammar Bank'], ['vocabulary', 'Vocabulary Bank'], ['writing', 'Writing Bank']].map(b => `<a class="meb-drawer-link meb-toc-link" href="#/bank/${b[0]}" data-action="drawer-close"><span class="meb-status">▲</span><span>${b[1]}</span><span class="toc-dots"></span><span class="toc-page">back</span></a>`).join('')}
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>`;
 }
 
 function footer() {
-  return `<footer class="meb-footer">
-    <p>Speakout 3rd Edition B1+ · course companion – condensed from the local book for studying with your class.</p>
-    <p>المصدر: كتاب Speakout B1+ المحلي · التصميم: نسخة طبق الأصل من الموقع المرجعي · <a href="#/book">الفهرس</a></p>
+  return `<footer class="meb-footer mx-auto max-w-4xl px-4 pb-8 pt-4 text-center text-xs text-[var(--ink-faint)]">
+    <p>Speakout 3rd Edition B1+ · course companion – condensed from the local book for studying with your class</p>
+    <div class="meb-footer-links" dir="rtl" lang="ar">
+      <p>المصدر: كتاب Speakout B1+ المحلي · التصميم: <a href="https://github.com/makahsg94/my-english-book" target="_blank" rel="noopener noreferrer">my-english-book</a></p>
+      <p>للدعم: استخدم <a href="#/book">فهرس الكورس</a> و<a href="#/review">المراجعة الشاملة</a></p>
+    </div>
   </footer>`;
 }
 
 function layout(content, r) {
-  return `${header()}<main class="meb-shell" id="main"><div class="meb-page">${content}</div></main>${footer()}${drawer()}`;
+  return `${header()}<main class="meb-shell page-enter" id="main"><div class="meb-page">${content}</div></main>${footer()}${miniPlayer()}${backToTop()}${drawer()}`;
 }
 
 /* ---------------- pages ---------------- */
@@ -192,116 +370,114 @@ function homePage() {
   const units = Array.from({ length: 8 }, (_, i) => unitData(i + 1));
   const s = progressStats();
   const lessons = allLessons();
-  const next = lessons.find(x => !state.progress.lessons[x.l.id]?.done) || lessons[0];
-  const continueHref = next ? `#/unit/unit-${next.u.unit}/lesson/${next.l.id}` : '#/review';
-  const badges = [
-    ['first', 'أول درس', s.done >= 1], ['eight', 'ثمانية دروس', s.done >= 8],
-    ['sixteen', 'نص الكتاب', s.done >= 16], ['all', 'كل الدروس', s.done >= s.total],
-    ['quiz', 'أول كويز', s.quizzes >= 1]
-  ];
-  return `<section class="title-page fade-up" style="margin:1rem auto 2.5rem">
-    <span class="badge">SPEAKOUT · B1+ · 3RD EDITION</span>
-    <h1 class="display" style="font-size:clamp(3.5rem,12vw,5.5rem);margin:.6rem 0 .1rem">Speakout</h1>
-    <div class="meb-kicker">THE LINE · B1+ · COURSE COMPANION</div>
-    <p class="meb-ar meb-muted" style="max-width:34rem;margin:1.1rem auto">محتوى كتاب Speakout B1+ ملخّص ومنظّم في دروس قصيرة: مفردات بالمعاني، قواعد بأمثلة، استماع وفيديو، وتمارين وكويزات بتصحيح فوري.</p>
-    <a class="page-turn" href="${continueHref}">${icon('book', 16)} ${s.done ? 'Continue reading' : 'Start reading'}</a>
-  </section>
-
-  <section class="meb-card meb-progress-card fade-up">
-    <div class="meb-progress-top">
-      <div class="meb-stats">
-        <div class="meb-stat"><span>Level</span><b>${s.level}</b></div>
-        <div class="meb-stat"><span>XP</span><b>${s.xp}</b></div>
-        <div class="meb-stat"><span>${icon('flame', 13)} Streak</span><b>${s.streak}</b></div>
-        <div class="meb-stat"><span>Lessons</span><b>${s.done}/${s.total}</b></div>
+  const first = lessons[0];
+  const hasContinue = Number(state.progress.lastUnit) > 0 && !!state.progress.lastLesson;
+  const continueHref = hasContinue ? `#/unit/unit-${state.progress.lastUnit}/lesson/${esc(state.progress.lastLesson)}` : (first ? `#/unit/unit-${first.u.unit}/lesson/${first.l.id}` : '#/book');
+  const achievements = achievementList();
+  const earnedCount = achievements.filter(a => a.earned).length;
+  const bookHref = pdfList()[0]?.href || '#/book';
+  return `<div class="fade-up space-y-16">
+    <section class="title-page mx-auto max-w-2xl pt-6">
+      <p class="meb-title-badge" dir="rtl" lang="ar">الجزء الأول</p>
+      <p class="meb-kicker">THIRD EDITION · LEVEL B1+</p>
+      <h1 class="display mt-4 text-7xl leading-none tracking-tight sm:text-8xl">Speakout</h1>
+      <p class="mt-4 text-sm font-semibold uppercase tracking-[0.18em] text-[var(--ink-soft)]">THE LINE · B1+ · COURSE COMPANION</p>
+      <p class="mx-auto mt-6 max-w-xl text-[15px] leading-relaxed text-[var(--ink-soft)]">محتوى كتاب Speakout B1+ ملخّص ومنظّم في دروس قصيرة: مفردات بالمعاني، قواعد بأمثلة، استماع وفيديو، وتمارين وكويزات بتصحيح فوري.</p>
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
+        <a class="page-turn bg-brand-600 text-white hover:text-white" href="${continueHref}">${icon('book', 16)} ${hasContinue ? 'Continue reading' : 'Start reading'}</a>
+        <a class="page-turn" href="#/book">Contents of this course</a>
       </div>
-      <button class="meb-btn ghost" data-action="share">${icon('share', 15)} Share</button>
-    </div>
-    <div class="meb-bar-track"><div class="meb-bar-fill" style="width:${Math.max(s.levelPct, s.pct)}%"></div></div>
-    <p class="meb-muted" style="font-size:.75rem;margin:.5rem 0 0">${s.pct}% من الدروس اكتمل · ${s.levelPct}% للمستوى الجاي</p>
-  </section>
+      <div class="mx-auto mt-9 max-w-md">
+        <div class="meb-progress-card rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-4 shadow-sm">
+          <div class="meb-progress-top text-xs"><span class="meb-pill">Level ${s.level}</span><span class="inline-flex items-center gap-1.5 font-semibold text-[var(--ink-soft)]">${icon('flame', 14)} ${s.streak} day${s.streak === 1 ? '' : 's'} streak</span></div>
+          <p class="meb-progress-meta"><span class="font-medium">${s.xp} XP</span><span>${s.levelPct}% to level ${s.level + 1}</span></p>
+          <div class="meb-bar-track mt-1.5"><div class="meb-bar-fill" style="width:${Math.max(s.levelPct, s.pct)}%"></div></div>
+          <p class="meb-progress-foot">${s.done} of ${s.total} lessons · ${s.pct}% of the course</p>
+          <button type="button" class="tactile meb-share-btn" data-action="share">${icon('share', 14)} Share today’s card</button>
+        </div>
+      </div>
+    </section>
 
-  ${state.user ? '' : `<a class="meb-banner accent fade-up" href="#/account">
-    <span class="banner-ic">${icon('spark', 20)}</span>
-    <span class="banner-body"><strong>احفظ تقدّمك وابدأ من حيث وقفت</strong><small>حساب محلي على جهازك — بدون خادم أو بيانات شخصية.</small></span>
-    <span class="banner-go">${icon('chevronRight', 18)}</span></a>`}
+    ${state.user ? '' : `<section class="mx-auto max-w-2xl"><a class="meb-ref-banner meb-cta-account" href="#/account">
+      <span class="meb-ref-ic bg-white/15 text-white">${icon('layers', 22)}</span>
+      <span class="meb-ref-copy"><strong dir="rtl" lang="ar">أنشئ حسابك وخلّي تقدّمك معاك على أي جهاز</strong><small dir="rtl" lang="ar">تسجيل دخول مجاني — الكويزات والدروس والإنجازات تتسجّل لك، وترجعها أول ما تدخل</small></span>
+      <span class="meb-ref-action bg-white text-brand-700">دخول / تسجيل</span></a></section>`}
 
-  <a class="meb-banner fade-up" href="#/review">
-    <span class="banner-ic">${icon('layers', 20)}</span>
-    <span class="banner-body"><strong>المراجعة الشاملة</strong><small>كلمات بالمعاني، ملخص قواعد، وكويز ${Math.min(25, s.total)} سؤال بتصحيح فوري.</small></span>
-    <span class="banner-go">${icon('chevronRight', 18)}</span></a>
+    <section class="mx-auto max-w-2xl"><a class="meb-ref-banner meb-cta-review" href="#/review">
+      <span class="meb-ref-ic meb-ic-brand">${icon('layers', 22)}</span>
+      <span class="meb-ref-copy"><strong dir="rtl" lang="ar">المراجعة الشاملة</strong><small dir="rtl" lang="ar">كلمات في جداول بالعربي وأمثلة · ملخص الجرامر · كويز 25 سؤال بتصحيح فوري</small></span>
+      <span class="meb-ref-action meb-action-brand">افتح الصفحة</span></a></section>
 
-  <a class="meb-banner warm fade-up" href="#/trainer">
-    <span class="banner-ic">${icon('mic', 20)}</span>
-    <span class="banner-body"><strong>خطّة تعلّمك</strong><small>ترتيب الدروس والمراجعة والشادونج في مسار واحد واضح.</small></span>
-    <span class="banner-go">${icon('chevronRight', 18)}</span></a>
+    <section class="mx-auto max-w-2xl"><a class="meb-ref-banner meb-cta-shadow" href="#/shadowing">
+      <span class="meb-ref-ic meb-ic-accent">${icon('mic', 22)}</span>
+      <span class="meb-ref-copy"><strong dir="rtl" lang="ar">استوديو الشادونج</strong><small dir="rtl" lang="ar">اسمع الفيديو، قفّف على الجملة، وكررها ورا الستارة لحد ما تتروس عليها</small></span>
+      <span class="meb-ref-action meb-action-accent">افتح الاستوديو</span></a></section>
 
-  <a class="meb-banner fade-up" href="#/shadowing">
-    <span class="banner-ic">${icon('volume', 20)}</span>
-    <span class="banner-body"><strong>استوديو الشادونج</strong><small>16 فيديو من الكتاب مع تكرار جملة وتحكّم في السرعة والنص.</small></span>
-    <span class="banner-go">${icon('chevronRight', 18)}</span></a>
+    <section class="mx-auto max-w-2xl"><a class="meb-ref-banner meb-cta-book" href="${bookHref}">
+      <span class="meb-ref-ic meb-ic-brand">${icon('book', 22)}</span>
+      <span class="meb-ref-copy"><strong dir="rtl" lang="ar">الجزء الأول · كتاب Speakout B1+</strong><small dir="rtl" lang="ar">النسخة الأصلية من الكتاب المحلي + نصوص الاستماع والفيديو</small></span>
+      <span class="meb-ref-action meb-action-brand">افتح الكتاب</span></a></section>
 
-  <a class="meb-banner fade-up" href="${pdfList()[0]?.href || '#/book'}">
-    <span class="banner-ic">${icon('book', 20)}</span>
-    <span class="banner-body" dir="rtl" lang="ar"><strong>الجزء الأول · كتاب Speakout B1+</strong><small>النسخة الأصلية من الكتاب المحلي + نصوص الاستماع والفيديو.</small></span>
-    <span class="banner-go">${icon('chevronRight', 18)}</span></a>
+    <section>${lineMap()}</section>
 
-  <section style="margin-top:3rem">
-    <div class="meb-kicker fade-up">The line · 8 units</div>
-    <h2 class="meb-title fade-up" style="font-size:2rem;margin:.3rem 0 1rem">مسار الكورس</h2>
-    <div class="meb-line fade-up">
-      ${units.map(u => {
-        const done = (u.lessons || []).filter(l => state.progress.lessons[l.id]?.done).length;
-        const total = (u.lessons || []).length || 4;
-        return `<a class="meb-station" href="#/unit/unit-${u.unit}"><span class="num">${u.unit}</span>
-          <span><strong>UNIT ${u.unit} · ${esc(u.title || '')}</strong><small>${esc(u.aim || '')} · ${done}/${total}</small></span>
-          <span class="meb-pill">${Math.round(done / total * 100)}%</span></a>`;
-      }).join('')}
-    </div>
-  </section>
+    <section>
+      <div class="meb-achievement-head"><h2 class="display text-2xl tracking-tight">Achievements</h2><span class="section-label">${earnedCount}/${achievements.length} unlocked</span></div>
+      <div class="meb-achievement-grid">
+        ${achievements.map(a => `<div class="meb-achievement ${a.earned ? 'earned' : 'locked'}">
+          <span class="meb-achievement-emoji ${a.earned ? 'pop' : ''}" aria-hidden="true">${a.emoji}</span>
+          <strong>${esc(a.title)}</strong><small>${esc(a.desc)}</small></div>`).join('')}
+      </div>
+    </section>
 
-  <section class="fade-up" style="margin-top:3rem">
-    <div class="meb-kicker">Achievements</div>
-    <h2 class="meb-title" style="font-size:1.5rem;margin:.3rem 0">إنجازاتك</h2>
-    <div class="meb-badges">${badges.map(b => `<span class="meb-badge-item ${b[2] ? 'earned' : ''}">${b[2] ? icon('check', 13) : '·'} ${esc(b[1])}</span>`).join('')}</div>
-  </section>
-
-  <section class="book-page meb-printed fade-up" style="margin-top:3rem">
-    <div class="running-head"><span>Contents</span><span class="rh-right">SPEAKOUT B1+ · 3RD EDITION</span></div>
-    <h2 class="meb-title" style="font-size:1.6rem;margin:.2rem 0 1rem">Printed contents</h2>
-    ${units.map(u => `<a class="toc-row" href="#/unit/unit-${u.unit}"><strong>${u.unit}</strong><span>${esc(u.title || '')}</span><span class="toc-dots"></span><span class="toc-page">${esc(u.pages || '')}</span></a>`).join('')}
-    <a class="toc-row" href="#/unit/lead-in"><strong>·</strong><span>Lead-in</span><span class="toc-dots"></span><span class="toc-page">6</span></a>
-    <a class="toc-row" href="#/bank/grammar"><strong>·</strong><span>Grammar / Vocabulary / Writing banks</span><span class="toc-dots"></span><span class="toc-page">—</span></a>
-  </section>`;
+    <section class="book-page meb-printed">
+      <div class="running-head"><span>Speakout · Level B1+</span><span class="rh-right">Contents</span></div>
+      <ol class="meb-toc-list">
+        ${units.map(u => {
+          const unitDone = (u.lessons || []).filter(l => state.progress.lessons[l.id]?.done).length;
+          const unitPct = Math.round(unitDone / Math.max(1, (u.lessons || []).length) * 100);
+          return `<li class="meb-toc-unit"><a class="meb-toc-unit-top" href="#/unit/unit-${u.unit}">
+            <span class="chapter-num font-display text-5xl leading-none">${u.unit}</span>
+            <span class="meb-toc-unit-name"><small>Unit ${u.unit}</small><strong>${esc(u.title || '')}</strong></span>
+            <span class="meb-toc-pct">${unitPct}%</span><span class="toc-page">${firstPage(u.pages)}</span></a>
+            <ul class="meb-toc-lessons">${(u.lessons || []).map(l => {
+              const done = state.progress.lessons[l.id]?.done;
+              return `<li><a class="toc-row text-[13px]" href="#/unit/unit-${u.unit}/lesson/${esc(l.id)}"><span class="meb-status">${done ? icon('check', 10) : '○'}</span><span>${esc(l.code || l.id)} ${esc(l.title || '')}</span><span class="toc-dots"></span><span class="toc-page">${firstPage(l.pages)}</span></a></li>`;
+            }).join('')}</ul></li>`;
+        }).join('')}
+      </ol>
+      <div class="meb-toc-banks"><div class="meb-drawer-heading">${icon('layers', 14)} <span class="font-display text-lg font-semibold tracking-tight">Reference banks</span><span class="toc-dots"></span><span class="toc-page">back</span></div>
+        <ul class="meb-toc-lessons">${[['grammar', 'Grammar Bank'], ['vocabulary', 'Vocabulary Bank'], ['writing', 'Writing Bank']].map(b => `<li><a class="toc-row text-[13px]" href="#/bank/${b[0]}"><span class="meb-status">▲</span><span>${b[1]}</span><span class="toc-dots"></span><span class="toc-page">back</span></a></li>`).join('')}</ul></div>
+    </section>
+  </div>`;
 }
 
 function bookPage() {
   const units = Array.from({ length: 8 }, (_, i) => unitData(i + 1));
-  return `<section class="title-page fade-up" style="margin-bottom:3rem">
-    <div class="meb-kicker">SPEAKOUT · LEVEL B1+</div>
-    <div class="meb-kicker" style="margin-top:.6rem">CONTENTS OF THE BOOK</div>
-    <h1 class="meb-title" style="font-size:3.2rem;margin:.8rem 0">Speakout</h1>
-    <p class="meb-muted" style="font-size:.85rem">Frances Eales • Steve Oakes · 3rd edition · condensed companion</p>
-  </section>
-  <div class="meb-grid cols-4 fade-up" style="grid-template-columns:repeat(auto-fill,minmax(8rem,1fr))">
-    ${units.map(u => `<a class="meb-cover" href="#/unit/unit-${u.unit}"><div class="cover-top"><b>${u.unit}</b><span style="font-size:.7rem;opacity:.85">B1+ · UNIT</span></div><div class="cover-cap"><strong>${esc(u.title || '')}</strong><br><span class="meb-muted">pages ${esc(u.pages || '')}</span></div></a>`).join('')}
-  </div>
-  <section style="margin-top:3rem">
-    <h2 class="meb-title fade-up" style="font-size:1.8rem">All lessons</h2>
-    ${units.map(u => `<div class="meb-card fade-up" style="margin:.8rem 0">
-      <div style="display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap"><strong>UNIT ${u.unit} · ${esc(u.title || '')}</strong><span class="meb-muted" style="font-size:.8rem">p. ${esc(u.pages || '')}</span></div>
-      <p class="meb-muted" style="font-size:.85rem;margin:.25rem 0 .6rem">${esc(u.aim || '')}</p>
-      <div style="display:flex;flex-wrap:wrap;gap:.5rem">
-        ${(u.lessons || []).map(l => `<a class="meb-pill" href="#/unit/unit-${u.unit}/lesson/${esc(l.id)}">${esc(l.code || l.id)} · ${esc(l.title || '')}</a>`).join('')}
-        <a class="meb-pill" href="#/unit/unit-${u.unit}/lesson/${u.unit}r">★ Review</a>
-      </div></div>`).join('')}
-    <h2 class="meb-title" style="font-size:1.8rem;margin-top:2rem">Reference banks</h2>
-    <div class="meb-grid cols-3">
-      <a class="meb-feature" href="#/bank/grammar"><div class="ic">▲</div><h3>Grammar Bank</h3><p>كل قواعد الدروس في مكان واحد.</p></a>
-      <a class="meb-feature" href="#/bank/vocabulary"><div class="ic">▲</div><h3>Vocabulary Bank</h3><p>المفردات والمعاني حسب الوحدة.</p></a>
-      <a class="meb-feature" href="#/bank/writing"><div class="ic">▲</div><h3>Writing Bank</h3><p>مهام الكتابة والمهارات.</p></a>
-    </div>
-  </section>`;
+  return `<div class="fade-up book-page meb-book-page">
+    <div class="running-head"><span>Speakout · Level B1+</span><span class="rh-right">Contents of the book</span></div>
+    <header class="title-page mx-auto max-w-xl pb-8">
+      <p class="meb-kicker">THIRD EDITION · LEVEL B1+</p>
+      <h1 class="display mt-3 text-4xl tracking-tight sm:text-5xl">Speakout</h1>
+      <p class="mt-3 text-sm leading-relaxed text-[var(--ink-soft)]">Frances Eales · Steve Oakes · One course companion for every lesson, review and bank.</p>
+    </header>
+    ${coverStack()}
+    <ol class="meb-toc-list mt-8">
+      ${units.map(u => {
+        const unitDone = (u.lessons || []).filter(l => state.progress.lessons[l.id]?.done).length;
+        const unitPct = Math.round(unitDone / Math.max(1, (u.lessons || []).length) * 100);
+        return `<li class="meb-toc-unit"><a class="meb-toc-unit-top" href="#/unit/unit-${u.unit}">
+          <span class="chapter-num font-display text-4xl leading-none">${u.unit}</span>
+          <span class="meb-toc-unit-name"><small>Unit ${u.unit}</small><strong>${esc(u.title || '')}</strong></span>
+          <span class="meb-toc-pct">${unitDone}/${(u.lessons || []).length} · ${unitPct}%</span><span class="toc-page">${firstPage(u.pages)}</span></a>
+          <ul class="meb-toc-lessons">${(u.lessons || []).map(l => {
+            const done = state.progress.lessons[l.id]?.done;
+            return `<li><a class="toc-row text-[13px]" href="#/unit/unit-${u.unit}/lesson/${esc(l.id)}"><span class="meb-status">${done ? icon('check', 10) : '○'}</span><span>${esc(l.code || l.id)} ${esc(l.title || '')}</span><span class="toc-dots"></span><span class="toc-page">${firstPage(l.pages)}</span></a></li>`;
+          }).join('')}</ul></li>`;
+      }).join('')}
+    </ol>
+    <section class="meb-toc-banks"><div class="meb-drawer-heading">${icon('layers', 14)} <h2 class="font-display text-lg font-semibold tracking-tight">Reference banks</h2><span class="toc-dots"></span><span class="toc-page">back of the book</span></div>
+      <ul class="meb-toc-lessons">${[['grammar', 'Grammar Bank'], ['vocabulary', 'Vocabulary Bank'], ['writing', 'Writing Bank']].map(b => `<li><a class="toc-row text-[13px]" href="#/bank/${b[0]}"><span class="meb-status">▲</span><span>${b[1]}</span><span class="toc-dots"></span><span class="toc-page">back</span></a></li>`).join('')}</ul></section>
+  </div>`;
 }
 
 function unitPage(n) {
@@ -310,30 +486,31 @@ function unitPage(n) {
   const total = (u.lessons || []).length || 4;
   const pct = Math.round(done / total * 100);
   const next = n < 8 ? unitData(n + 1) : null;
-  return `<div class="book-page fade-up" style="padding:1.5rem">
-    <div class="meb-kicker" style="text-align:right">STATION UNIT ${n} · ${esc(u.titleAr || '')}</div>
-    <div class="meb-muted" style="font-size:.72rem;text-align:right">PAGES ${esc(u.pages || '')}</div>
-    <div style="display:flex;gap:1.5rem;align-items:flex-start;margin-top:1rem;flex-wrap:wrap">
-      <div style="font-family:var(--font-display);font-size:4.5rem;line-height:1;color:var(--color-brand-600)">${n}</div>
-      <div style="flex:1;min-width:min(100%,20rem)">
-        <div class="meb-kicker">UNIT ${n} · ${esc(u.title || '')}</div>
-        <h1 class="meb-title" style="font-size:2.4rem;margin:.5rem 0">${esc(u.aim || UNIT_TITLES[n]?.[0] || '')}</h1>
-        <p class="meb-muted" style="font-size:.9rem;max-width:38rem">${esc((u.lessons || []).map(l => l.title).join(' · '))}</p>
+  const objectives = u.objectives || [];
+  return `<div class="fade-up book-page meb-unit-page">
+    <div class="running-head"><span>Station Unit ${n} · ${esc(u.title || '')}</span><span class="rh-right">pages ${esc(u.pages || '')}</span></div>
+    <nav class="meb-breadcrumb"><a href="#/">${icon('home', 14)} Home</a>${icon('chevronRight', 13)}<span>Unit ${n}</span></nav>
+    <header class="meb-unit-header">
+      <div>
+        <div class="meb-unit-heading"><span class="chapter-num text-6xl" aria-hidden="true">${n}</span><div><p class="meb-kicker">Unit ${n}</p><p class="page-number mt-1">${esc(u.title || '')}</p></div></div>
+        <h1 class="display mt-3 text-4xl tracking-tight lg:text-5xl">${esc(u.aim || UNIT_TITLES[n]?.[0] || '')}</h1>
+        <p class="mt-4 max-w-xl text-[15px] leading-relaxed text-[var(--ink-soft)]" dir="rtl" lang="ar">${esc(u.titleAr || '')} · ${esc((u.lessons || []).map(l => l.title).join(' · '))}</p>
+        ${objectives.length ? `<div class="meb-objectives"><p class="meb-kicker">Unit objectives</p><ol>${objectives.map((o, i) => `<li><span>${i + 1}</span><span>${esc(o)}</span></li>`).join('')}</ol></div>` : ''}
+        <div class="meb-unit-progress"><div><span>Progress</span><strong>${done}/${total} (${pct}%)</strong></div><div class="meb-bar-track"><div class="meb-bar-fill" style="width:${pct}%"></div></div></div>
       </div>
-      <div class="meb-card" style="width:13rem"><div class="meb-kicker">Progress</div><strong style="font-size:1.5rem">${done}/${total} (${pct}%)</strong>
-        <div style="height:.5rem;background:var(--line);border-radius:999px;margin-top:.5rem;overflow:hidden"><div style="height:100%;width:${pct}%;background:linear-gradient(90deg,var(--color-brand-500),var(--color-accent-500),var(--color-warm-500));transition:width .7s"></div></div>
-      </div>
-    </div>
-    <div class="meb-grid cols-2" style="margin-top:1.8rem">
-      <a class="meb-feature" href="#/unit/unit-${n}/lesson/${n}r"><div class="ic">✎</div><h3>Unit ${n} writing desk</h3><p>مراجعة الوحدة + كتابة قصيرة + تقييم.</p></a>
-      <a class="meb-feature" href="#/unit/unit-${n}/lesson/${n}r"><div class="ic">✓</div><h3>Take the Unit ${n} Quiz</h3><p>${(u.review?.quiz || []).length || 12} سؤالاً · قواعد ومفردات · تصحيح فوري.</p></a>
-    </div>
-    <h2 class="meb-title" style="font-size:1.6rem;margin:2rem 0 .8rem">IN THIS CHAPTER</h2>
-    <div class="meb-grid">
-      ${(u.lessons || []).map(l => `<a class="meb-station" href="#/unit/unit-${n}/lesson/${esc(l.id)}"><span class="num" style="font-size:.9rem">${esc(l.code || l.id)}</span><span><strong>${esc(l.title || '')}</strong><small>${esc((l.goals || []).join(' · ') || (l.grammar?.title || ''))}</small></span><span class="meb-pill">p.${esc(l.pages || '')}</span></a>`).join('')}
-      <a class="meb-station" href="#/unit/unit-${n}/lesson/${n}r"><span class="num" style="font-size:1rem">★</span><span><strong>Unit ${n} Review</strong><small>quiz + summary</small></span><span class="meb-pill">p.${esc((u.pages || '').split('–').pop() || '')}</span></a>
-    </div>
-    ${next ? `<div style="margin-top:2rem"><div class="meb-kicker">NEXT UNIT</div><a class="meb-link" href="#/unit/unit-${n + 1}">Unit ${n + 1}: ${esc(next.aim || next.title || '')} →</a></div>` : ''}
+      <aside class="meb-unit-figure" aria-hidden="true"><div class="meb-unit-figure-page"><span>B1+</span><strong>${n}</strong><small>${esc(u.title || '')}</small></div></aside>
+    </header>
+    <div class="section-divider"><span>${icon('list', 12)} In this chapter</span></div>
+    <a class="meb-ref-banner meb-inline-warm" href="#/unit/unit-${n}/writing"><span class="meb-ref-ic meb-ic-warm">${icon('spark', 22)}</span><span class="meb-ref-copy"><strong>Unit ${n} writing desk</strong><small>${esc(u.aim || '')} · check your writing and get a grade</small></span>${icon('chevronRight', 18)}</a>
+    <a class="meb-ref-banner meb-inline-brand" href="#/unit/unit-${n}/quiz"><span class="meb-ref-ic meb-ic-brand">${icon('target', 22)}</span><span class="meb-ref-copy"><strong>Take the Unit ${n} Quiz</strong><small>${(u.review?.quiz || []).length || 12} questions · grammar, vocabulary and local book tasks</small></span>${icon('chevronRight', 18)}</a>
+    <ol class="meb-unit-lessons">
+      ${(u.lessons || []).map(l => {
+        const st = lessonStatus(l);
+        const mark = st === 'done' ? icon('check', 12) : st === 'started' ? '●' : /r$/i.test(l.id) ? '★' : '○';
+        return `<li><a class="meb-unit-lesson" href="#/unit/unit-${n}/lesson/${esc(l.id)}" title="${esc((l.goals || []).join(' · ') || (l.grammar?.title || ''))}"><span class="meb-status">${mark}</span><span class="meb-unit-lesson-name"><strong>${esc(l.code || l.id)} ${esc(l.title || '')}</strong>${l.grammar?.title ? `<small>${esc(l.grammar.title)}</small>` : ''}</span><span class="toc-dots"></span><span class="toc-page">${firstPage(l.pages)}</span></a></li>`;
+      }).join('')}
+    </ol>
+    ${next ? `<a class="page-corner tactile meb-next-unit" href="#/unit/unit-${n + 1}"><span class="meb-kicker">Next unit</span><strong>Unit ${n + 1}: ${esc(next.aim || next.title || '')}</strong>${icon('chevronRight', 18)}</a>` : ''}
   </div>`;
 }
 
@@ -343,10 +520,10 @@ function audioSection(l, n) {
   return `<div class="meb-section" id="listening">
     <h2>Listening</h2>
     <div class="meb-audio-bar">
-      <button data-action="audio-play" data-src="${esc(tracks[0].audioFile)}">▶ تشغيل</button>
+      <button data-action="audio-play" data-src="${esc(tracks[0].audioFile)}" data-label="${esc(`${l.code || ''} · ${tracks[0].track || 'Audio'}`)}">▶ تشغيل</button>
       <span class="meb-muted" id="audio-label" style="font-size:.82rem">${esc(tracks[0].track || 'Audio')} · ${esc(tracks[0].summary || '')}</span>
     </div>
-    ${tracks.map(t => `<button class="meb-track" data-action="audio-play" data-src="${esc(t.audioFile)}" data-label="${esc(t.track || '')}">🎧 ${esc(t.track || t.audioFile)} — ${esc(t.summary || '')}</button>`).join('')}
+    ${tracks.map(t => `<button class="meb-track" data-action="audio-play" data-src="${esc(t.audioFile)}" data-label="${esc(`${l.code || ''} · ${t.track || t.summary || t.audioFile}`)}">🎧 ${esc(t.track || t.audioFile)} — ${esc(t.summary || '')}</button>`).join('')}
     <p class="meb-muted" style="font-size:.75rem">الملفات الصوتية من نُسخة الصف بالكتاب الأصلي.</p>
   </div>`;
 }
@@ -611,27 +788,28 @@ function unitQuizPage(n) {
 function writingPage(n) {
   const u = unitData(n);
   const saved = lsGet('writings', {});
+  const records = state.progress.writing || {};
   const tasks = (u.lessons || []).map(l => ({ l, items: [l.writing].flat(Infinity).filter(Boolean) })).filter(x => x.items.length);
-  return `<div class="fade-up"><a class="meb-link" href="#/unit/unit-${n}">← Unit ${n}</a>
-    <div class="meb-kicker" style="margin-top:1rem">UNIT ${n} · WRITING BANK</div>
-    <h1 class="meb-title" style="font-size:2.4rem;margin:.4rem 0">Unit ${n} Writing</h1>
-    <p class="meb-muted" style="font-size:.88rem">Writing prompts from the local B1+ book. Drafts are saved only on this device.</p>
+  return `<div class="fade-up book-page meb-writing-page"><a class="meb-link" href="#/unit/unit-${n}">← Unit ${n}</a>
+    <div class="running-head" style="margin-top:1rem"><span>Station Unit ${n} · writing desk</span><span class="rh-right">${esc(u.pages || '')}</span></div>
+    <h1 class="display mt-3 text-4xl tracking-tight">Unit ${n} Writing</h1>
+    <p class="meb-muted mt-2 text-[15px]">Writing prompts from the local B1+ book. Drafts and checks are saved only on this device.</p>
     ${tasks.map(({ l, items }) => `<div class="meb-card" style="margin:.9rem 0">
       <div class="meb-kicker">${esc(l.code || l.id)} · p.${esc(l.pages || '')}</div>
       ${items.map(t => `<p style="font-size:.9rem">${esc(String(t))}</p>`).join('')}
       <textarea class="meb-writing-area" data-writing="${esc(l.id)}" placeholder="Write your answer here…">${esc(saved[l.id] || '')}</textarea>
+      <div class="meb-writing-actions"><button class="meb-btn" data-action="save-writing" data-unit="${n}">Save drafts</button><button class="meb-btn ghost" data-action="check-writing" data-writing="${esc(l.id)}" data-unit="${n}">Check writing</button></div>
+      <p class="meb-writing-feedback" id="writing-${esc(l.id)}">${records[l.id] ? `Last check: grade ${esc(records[l.id].grade)} · ${esc(records[l.id].score)}% · ${esc(records[l.id].words)} words` : ''}</p>
     </div>`).join('') || '<div class="meb-card">No writing tasks for this unit.</div>'}
-    <div style="display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1rem">
-      <button class="meb-btn" data-action="save-writing" data-unit="${n}">Save drafts</button>
-      <a class="meb-btn ghost" href="#/unit/unit-${n}/quiz">Unit quiz →</a></div></div>`;
+    <p style="margin-top:1rem"><a class="meb-btn ghost" href="#/unit/unit-${n}/quiz">Unit quiz →</a></p></div>`;
 }
 
 function pdfPage(file) {
   const pdfs = pdfList();
   const chosen = pdfs.find(p => (p.siteFile || p.file) === file) || pdfs[0];
-  return `<div class="fade-up"><a class="meb-link" href="#/book">← Contents</a>
-    <div class="meb-kicker" style="margin-top:1rem">LOCAL BOOK · PDF</div>
-    <h1 class="meb-title" style="font-size:2rem;margin:.4rem 0">${esc(chosen?.file || 'PDF')}</h1>
+  return `<div class="fade-up book-page meb-pdf-page"><a class="meb-link" href="#/book">← Contents</a>
+    <div class="running-head" style="margin-top:1rem"><span>Speakout · Level B1+</span><span class="rh-right">Local book · PDF</span></div>
+    <h1 class="display mt-3 text-3xl tracking-tight">${esc(chosen?.file || 'PDF')}</h1>
     ${chosen ? `<div style="display:flex;gap:.6rem;flex-wrap:wrap;margin:.8rem 0">
       <a class="meb-btn" href="./books/${encodeURIComponent(chosen.siteFile || chosen.file)}" target="_blank" rel="noopener">Open in new tab</a>
       <a class="meb-btn ghost" href="./books/${encodeURIComponent(chosen.siteFile || chosen.file)}" download>Download</a></div>
@@ -665,21 +843,6 @@ function searchPage(q) {
         <p style="font-size:.85rem"><a class="meb-link" href="#/bank/vocabulary">Vocabulary Bank</a> · <a class="meb-link" href="#/bank/grammar">Grammar Bank</a></p></div>`}</div>`;
 }
 
-function trainerPage() {
-  const s = progressStats();
-  const steps = [
-    ['1', 'ابدأ بالدرس', 'افتح الدرس التالي واقرأ الملخص والأمثلة.', '#/' + (allLessons()[0] ? `unit/unit-${allLessons()[0].u.unit}/lesson/${allLessons()[0].l.id}` : '')],
-    ['2', 'استمع وشاهد', 'شغّل ملفات الاستماع والفيديو المرتبطة بالدرس.', '#/shadowing'],
-    ['3', 'تدرّب', 'حلّ تمارين الدرس وتأكد من الإجابات.', `#/unit/unit-${s.done ? Math.min(8, Math.ceil(s.done / 4)) : 1}/quiz`],
-    ['4', 'راجع', 'استخدم البنوك والمراجعة الشاملة قبل الكويز النهائي.', '#/review']
-  ];
-  return `<div class="fade-up"><div class="meb-kicker" style="text-align:center">SPEAKOUT B1+ · STUDY PLAN</div>
-    <h1 class="meb-title" style="font-size:2.6rem;text-align:center;margin:.4rem 0">خطّة تعلّمك</h1>
-    <p class="meb-ar meb-muted" style="max-width:36rem;margin:0 auto 1.5rem">أربع خطوات بسيطة تساعدك تنتظم بين الدروس والاستماع والمراجعة — كل المحتوى من كتابك المحلي.</p>
-    <div class="meb-grid cols-2">${steps.map(st => `<a class="meb-feature" href="${st[3]}"><div class="ic">${st[0]}</div><h3>${st[1]}</h3><p>${st[2]}</p></a>`).join('')}</div>
-    <p style="text-align:center;margin-top:1.5rem"><a class="meb-btn" href="#/">العودة للرئيسية</a></p></div>`;
-}
-
 /* ---------------- rendering ---------------- */
 function render() {
   const r = route();
@@ -692,7 +855,6 @@ function render() {
     case 'writing': content = writingPage(r.unit); break;
     case 'page': content = pdfPage(r.pdf); break;
     case 'search': content = searchPage(r.q); break;
-    case 'trainer': content = trainerPage(); break;
     case 'review': content = r.unit ? reviewPage(r.unit) : comprehensivePage(); break;
     case 'bank': content = bankPage(r.bank); break;
     case 'shadowing': content = shadowingPage(); break;
@@ -700,8 +862,18 @@ function render() {
     case 'leadin': content = leadinPage(); break;
     default: content = homePage();
   }
+  if (r.name === 'lesson' && r.unit && r.lesson) {
+    const prev = state.progress.lessons[r.lesson] || {};
+    state.progress.lessons[r.lesson] = { ...prev, lastVisit: Date.now(), done: !!prev.done };
+    state.progress.lastUnit = r.unit;
+    state.progress.lastLesson = r.lesson;
+    lsSet('progress', state.progress);
+  } else if (r.name === 'unit' && r.unit) {
+    state.progress.lastUnit = r.unit;
+    lsSet('progress', state.progress);
+  }
   document.getElementById('root').innerHTML = layout(content, r);
-  const titles = { book: 'Contents', search: 'Search', trainer: 'Study plan', account: 'Account', shadowing: 'Shadowing', review: 'Review' };
+  const titles = { book: 'Contents', search: 'Search', account: 'Account', shadowing: 'Shadowing', review: 'Review' };
   document.title = (titles[r.name] || (r.unit ? `Unit ${r.unit}` : 'Home')) + ' · ' + SITE_TITLE;
   document.documentElement.classList.toggle('dark', state.theme === 'dark');
   document.documentElement.classList.toggle('reading', state.theme === 'reading');
@@ -712,6 +884,7 @@ function render() {
     if (bar) bar.style.width = '100%';
   }
   bindVideo();
+  syncMiniPlayer();
   window.scrollTo({ top: 0, behavior: 'instant' in window ? 'instant' : 'auto' });
 }
 
@@ -720,9 +893,13 @@ function playAudio(file, label) {
   const a = $('#meb-audio');
   if (!a) return;
   a.src = enc('audio/' + file);
+  state.audioLabel = label || file;
+  state.audioStarted = true;
+  a.playbackRate = state.audioRate;
   a.play().then(() => {
     const el = $('#audio-label'); if (el && label) el.textContent = label;
     toast('▶ ' + file);
+    syncMiniPlayer();
   }).catch(() => toast('تعذّر تشغيل الملف الصوتي'));
 }
 
@@ -801,6 +978,24 @@ function bindGlobal() {
     }
     if (a === 'drawer') { document.body.classList.add('drawer-open'); beep(); }
     if (a === 'drawer-close') document.body.classList.remove('drawer-open');
+    if (a === 'go-unit') { location.hash = `#/unit/unit-${el.dataset.unit}`; return; }
+    if (a === 'back-top') { window.scrollTo({ top: 0, behavior: 'smooth' }); return; }
+    if (a === 'mini-toggle') { const au = $('#meb-audio'); if (au) au.paused ? au.play().catch(() => {}) : au.pause(); syncMiniPlayer(); return; }
+    if (a === 'mini-stop') { const au = $('#meb-audio'); if (au) { au.pause(); au.currentTime = 0; } syncMiniPlayer(); return; }
+    if (a === 'mini-seek') { const au = $('#meb-audio'); if (au) au.currentTime = Math.max(0, Math.min(au.duration || 0, au.currentTime + Number(el.dataset.step || 0))); syncMiniPlayer(); return; }
+    if (a === 'mini-rate') { const rates = [1, 1.25, 1.5, 0.75]; state.audioRate = rates[(rates.indexOf(state.audioRate) + 1) % rates.length]; const au = $('#meb-audio'); if (au) au.playbackRate = state.audioRate; syncMiniPlayer(); return; }
+    if (a === 'check-writing') {
+      const box = $(`textarea[data-writing="${el.dataset.writing}"]`);
+      const text = box ? box.value.trim() : '';
+      const words = text ? text.split(/\s+/).filter(Boolean).length : 0;
+      const score = Math.min(100, Math.round(words / 1.2));
+      const grade = score >= 85 ? 'A' : score >= 70 ? 'B' : score >= 50 ? 'C' : 'D';
+      state.progress.writing[el.dataset.writing] = { grade, score, words, at: Date.now() };
+      lsSet('progress', state.progress);
+      const out = $(`#writing-${el.dataset.writing}`);
+      if (out) out.textContent = `Last check: grade ${grade} · ${score}% · ${words} words`;
+      toast(`✎ ${grade} · ${score}% · ${words} words`); beep(); return;
+    }
     if (a === 'theme') {
       const cycle = { light: 'dark', dark: 'reading', reading: 'light' };
       state.theme = cycle[state.theme] || 'light'; lsSet('theme', state.theme); render();
@@ -876,6 +1071,11 @@ function bindGlobal() {
       const q = e.target.value.trim().toLowerCase();
       $$('.meb-drawer-link').forEach(a => { a.style.display = !q || a.textContent.toLowerCase().includes(q) ? '' : 'none'; });
     }
+    if (e.target.id === 'meb-mini-range') {
+      const au = $('#meb-audio');
+      if (au && Number.isFinite(au.duration)) au.currentTime = Number(e.target.value);
+      syncMiniPlayer();
+    }
   });
 
   document.addEventListener('submit', (e) => {
@@ -894,6 +1094,17 @@ function bindGlobal() {
     }
   });
 
+  const audio = $('#meb-audio');
+  if (audio) {
+    ['play', 'pause', 'ended', 'loadedmetadata', 'timeupdate'].forEach(evt => audio.addEventListener(evt, () => {
+      if (evt === 'play') state.audioStarted = true;
+      syncMiniPlayer();
+    }));
+  }
+  window.addEventListener('scroll', () => {
+    const btn = $('#meb-back-top');
+    if (btn) btn.classList.toggle('visible', window.scrollY > 700);
+  }, { passive: true });
   window.addEventListener('hashchange', () => { render(); beep(); });
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') document.body.classList.remove('drawer-open'); });
 }
@@ -903,7 +1114,10 @@ async function boot() {
   state.theme = lsGet('theme', 'dark');
   state.sound = lsGet('sound', true);
   state.user = lsGet('user', null);
-  state.progress = lsGet('progress', { lessons: {}, quizzes: {} });
+  state.progress = { lessons: {}, quizzes: {}, writing: {}, lastUnit: 0, lastLesson: '', ...(lsGet('progress', {}) || {}) };
+  state.progress.writing = state.progress.writing || {};
+  state.progress.quizzes = state.progress.quizzes || {};
+  state.progress.lessons = state.progress.lessons || {};
   bindGlobal();
   try { await loadData(); } catch (e) { console.error('Data load failed', e); }
   render();
