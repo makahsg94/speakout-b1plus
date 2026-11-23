@@ -1,0 +1,208 @@
+{
+  "unit": 4,
+  "title": "fact or fiction?",
+  "titleAr": "الحقيقة أم الخيال؟",
+  "aim": "Fact or fiction?: hoaxes, documentaries, the news and fake friends.",
+  "pages": "44–54",
+  "objectives": [
+    "Talk about past plans and intentions",
+    "Ask indirect and negative questions",
+    "Discuss documentaries and news"
+  ],
+  "lessons": [
+    {
+      "id": "4a",
+      "code": "4A",
+      "title": "Hoax!",
+      "pages": "44–46",
+      "goals": ["Retell a hoax", "Use was/were going to", "Learn truth and lies words"],
+      "grammar": {
+        "title": "Past plans and intentions",
+        "shortAr": "was/were going to وmeant to وplanned to لخطط سابقة لم تتحقق.",
+        "points": [
+          "was/were going to + infinitive: a plan that did not happen",
+          "planned to, hoped to, was planning to are alternatives",
+          "didn't mean to = something done by accident"
+        ],
+        "table": [
+          ["FORM / USE", "Example from the book"],
+          ["was/were going to", "They were going to visit the museum, but it was closed."],
+          ["planned to", "I planned to visit last week, but I couldn't."],
+          ["meant to", "I meant to introduce you to Xavier, but he left."],
+          ["didn't mean to", "She didn't mean to cause trouble."]
+        ],
+        "exceptions": ["intended to is more formal than meant to."]
+      },
+      "vocab": [
+        {"word": "hoax", "ar": "خدعة مدبرة", "example": "We saw a film about a hoax."},
+        {"word": "scheme", "ar": "حيلة", "example": "He deceived everyone with his scheme."},
+        {"word": "deceive", "ar": "يخدع", "example": "They tried to deceive people."},
+        {"word": "pretend", "ar": "يتظاهر", "example": "They pretended to be other people."},
+        {"word": "live a lie", "ar": "يعيش في كذبة", "example": "They lived a lie for years."},
+        {"word": "come clean", "ar": "يعترف بالحقيقة", "example": "In the end they came clean."}
+      ],
+      "reading": {"summary": "A story about a hoax: people pretended to be others, lived a lie and finally came clean."},
+      "listening": [
+        {"track": "4.01", "audioFile": "SO3_B1+_SB_4A_Audio_4_01.mp3", "summary": "Silent consonants: scheme, doubt, sign, answer, would, listen."}
+      ],
+      "video": {"file": "SO3 B1+ U4 BBC Vlogs.mp4", "summary": "People say if they prefer true stories or fiction."},
+      "speaking": ["Retell the story of a hoax."],
+      "writing": ["Write a short news report about a hoax."],
+      "practice": [
+        {"type": "choice", "q": "They ___ visit the museum, but it was closed.", "options": ["were going to", "are going to", "go to"], "answer": "were going to", "why": "unfulfilled past plan"},
+        {"type": "choice", "q": "I ___ to call you, but I was busy.", "options": ["meant", "mean", "am meaning"], "answer": "meant", "why": "meant to + infinitive"},
+        {"type": "choice", "q": "Sorry I broke it — I ___ to.", "options": ["didn't mean", "don't mean", "wasn't meaning"], "answer": "didn't mean", "why": "it was an accident"}
+      ]
+    },
+    {
+      "id": "4b",
+      "code": "4B",
+      "title": "Documentary",
+      "pages": "47–49",
+      "goals": ["Discuss documentaries", "Ask indirect and negative questions"],
+      "grammar": {
+        "title": "Indirect and negative questions",
+        "shortAr": "السؤال غير المباشر بترتيب إيجابي، والسؤال المنفي للتأكد أو الدهشة.",
+        "points": [
+          "After Could you tell me / Do you know, use affirmative word order",
+          "Negative questions check information, show surprise or persuade",
+          "Answer a negative question with a short sentence if needed"
+        ],
+        "table": [
+          ["FORM / USE", "Example from the book"],
+          ["Indirect", "Could you tell me where I have to go?"],
+          ["With Do you know", "Do you know who the film-maker is?"],
+          ["Checking", "Didn't she win an award?"],
+          ["Surprise", "Didn't you see that documentary?"]
+        ],
+        "exceptions": ["Not: 'Could you tell me where do I have to go?'."]
+      },
+      "vocab": [
+        {"word": "script", "ar": "نص الفيلم", "example": "Write a short script."},
+        {"word": "location", "ar": "موقع التصوير", "example": "Choose a location."},
+        {"word": "shoot", "ar": "يصوّر", "example": "Shoot more film than you need."},
+        {"word": "edit", "ar": "يحرّر الفيلم", "example": "You can always edit later."},
+        {"word": "footage", "ar": "لقطات مصوّرة", "example": "Look through all the footage."},
+        {"word": "soundtrack", "ar": "الموسيقى التصويرية", "example": "Do you want to add a soundtrack?"}
+      ],
+      "reading": {},
+      "listening": [
+        {"track": "4.03", "audioFile": "SO3_B1+_SB_4B_Audio_4_03.mp3", "summary": "Podcast: Amy and Dave discuss two favourite documentaries."}
+      ],
+      "video": {"file": "", "summary": ""},
+      "speaking": ["Present a pitch for a documentary."],
+      "writing": ["Write a review of a documentary."],
+      "practice": [
+        {"type": "choice", "q": "Do you know who ___?", "options": ["the film-maker is", "is the film-maker", "was the film-maker"], "answer": "the film-maker is", "why": "affirmative order"},
+        {"type": "choice", "q": "Could you tell me where ___ a taxi rank?", "options": ["I can find", "can I find", "find"], "answer": "I can find", "why": "no inversion"},
+        {"type": "choice", "q": "___ you think we should take a taxi?", "options": ["Don't", "Aren't", "Isn't"], "answer": "Don't", "why": "negative question to persuade"}
+      ]
+    },
+    {
+      "id": "4c",
+      "code": "4C",
+      "title": "News",
+      "pages": "50–51",
+      "goals": ["Talk about news stories", "Summarise and react to news"],
+      "grammar": {
+        "title": "How to … talk about the news",
+        "shortAr": "عبارات لبدء الخبر وتلخيصه بـ basically/apparently والتعليق عليه.",
+        "points": [
+          "Start: Have you heard about...? / Did you hear the news about...?",
+          "Summarise: So, basically,... / Apparently,... / It seems that...",
+          "React: Really? / That's a relief. / That sounds scary."
+        ],
+        "table": [
+          ["FORM / USE", "Example from the book"],
+          ["Starting", "Did you hear the news about the taxi driver?"],
+          ["Summarising", "So, basically, what happened was she was in a taxi."],
+          ["Uncertainty", "Apparently, he drove into the canal."],
+          ["Reacting", "Oh no! That sounds scary."]
+        ],
+        "exceptions": []
+      },
+      "vocab": [
+        {"word": "breaking news", "ar": "خبر عاجل", "example": "We report breaking news."},
+        {"word": "trending", "ar": "متداول", "example": "The story is trending online."},
+        {"word": "biased", "ar": "متحيز", "example": "Some journalists are biased."},
+        {"word": "announcement", "ar": "إعلان رسمي", "example": "The government made an announcement."},
+        {"word": "go viral", "ar": "ينتشر بسرعة", "example": "Which stories will go viral?"},
+        {"word": "subscribe", "ar": "يشترك", "example": "Subscribe to our channel."}
+      ],
+      "reading": {},
+      "listening": [
+        {"track": "4.04", "audioFile": "SO3_B1+_SB_4C_Audio_4_04.mp3", "summary": "Five short conversations about news stories."}
+      ],
+      "video": {"file": "", "summary": ""},
+      "speaking": ["Discuss a news story."],
+      "writing": ["Write a short news report."],
+      "practice": [
+        {"type": "choice", "q": "Have you heard ___ the fire?", "options": ["about", "of", "for"], "answer": "about", "why": "hear about a story"},
+        {"type": "choice", "q": "___, what happened was the driver got lost.", "options": ["So, basically", "Basically of", "So basically of"], "answer": "So, basically", "why": "book phrase"},
+        {"type": "choice", "q": "It's received a lot of ___.", "options": ["coverage", "cover", "covering"], "answer": "coverage", "why": "fixed news phrase"}
+      ]
+    },
+    {
+      "id": "4d",
+      "code": "4D",
+      "title": "Fake friends",
+      "pages": "52–53",
+      "goals": ["Discuss an old friendship", "Use follow-up questions and reactions"],
+      "grammar": {
+        "title": "Review: questions and reactions in conversation",
+        "shortAr": "مراجعة أسئلة المتابعة وتعابير الدهشة في الحديث مع صديق.",
+        "points": [
+          "Follow-up questions keep a conversation going",
+          "Negative questions and 'I thought...' show surprise",
+          "Short exclamations react to news"
+        ],
+        "table": [
+          ["FORM / USE", "Example from the book"],
+          ["Asking about time", "How long is it since we've seen each other?"],
+          ["Surprise", "I thought you were living in New Zealand."],
+          ["Follow-up", "Do you still see Rob at all?"],
+          ["Reacting", "Really?! I can't believe it!"]
+        ],
+        "exceptions": []
+      },
+      "vocab": [
+        {"word": "fake", "ar": "مزيّف", "example": "Is he a fake friend?"},
+        {"word": "bump into", "ar": "يقابل بالصدفة", "example": "Amazing bumping into you!"},
+        {"word": "catch up", "ar": "يتحدث لتبادل الأخبار", "example": "Let's catch up sometime."},
+        {"word": "stay in touch", "ar": "يبقى على تواصل", "example": "Stay in touch!"},
+        {"word": "separated", "ar": "منفصل عن الشريك", "example": "We're separated."},
+        {"word": "freelance", "ar": "يعمل لحسابه", "example": "I'm freelance now."}
+      ],
+      "reading": {},
+      "listening": [
+        {"track": "4.06", "audioFile": "SO3_B1+_SB_4D_Audio_4_06.mp3", "summary": "Nikolas and Jade catch up after years apart."}
+      ],
+      "video": {"file": "SO3 B1+ U4 BBC Programmes.mp4", "summary": "Programme 'Ordinary Lies': an encounter between old acquaintances."},
+      "speaking": ["Have a conversation with an old friend."],
+      "writing": ["Write a personal email to an old friend."],
+      "practice": [
+        {"type": "choice", "q": "How long is it ___ we've seen each other?", "options": ["since", "for", "from"], "answer": "since", "why": "How long is it since...?"},
+        {"type": "choice", "q": "We should catch ___ properly sometime.", "options": ["up", "on", "over"], "answer": "up", "why": "catch up = exchange news"},
+        {"type": "choice", "q": "I'm ___ now — I work for myself.", "options": ["freelance", "freelancer", "freelancing"], "answer": "freelance", "why": "adjective after I'm"}
+      ]
+    }
+  ],
+  "review": {
+    "summary": "The review recycles past plans, questions and news language through 'Facts and fiction: when Hollywood gets it wrong'.",
+    "tasks": ["Read about Hollywood's factual mistakes.", "Retell a hoax or news story."],
+    "quiz": [
+      {"q": "I was ___ to call you, but I was busy.", "options": ["going", "go", "gone"], "answer": "going", "skill": "grammar"},
+      {"q": "They didn't ___ to cause trouble.", "options": ["mean", "meaning", "meant"], "answer": "mean", "skill": "grammar"},
+      {"q": "Do you know who ___ the film?", "options": ["directed", "did direct", "did directed"], "answer": "directed", "skill": "grammar"},
+      {"q": "Could you tell me when ___?", "options": ["the film starts", "does the film start", "starts the film"], "answer": "the film starts", "skill": "grammar"},
+      {"q": "___ you seen that documentary yet?", "options": ["Didn't", "Haven't", "Aren't"], "answer": "Haven't", "skill": "grammar"},
+      {"q": "So, ___, what happened was the driver got lost.", "options": ["basically", "basic", "base"], "answer": "basically", "skill": "grammar"},
+      {"q": "A false story that tricks people is a ___.", "options": ["hoax", "script", "coverage"], "answer": "hoax", "skill": "vocab"},
+      {"q": "To ___ people is to make them believe something false.", "options": ["deceive", "upload", "subscribe"], "answer": "deceive", "skill": "vocab"},
+      {"q": "Recorded material for a film is called the ___.", "options": ["footage", "location", "announcement"], "answer": "footage", "skill": "vocab"},
+      {"q": "News happening right now is ___.", "options": ["breaking news", "live a lie", "a rough edit"], "answer": "breaking news", "skill": "vocab"},
+      {"q": "A report supporting one side unfairly is ___.", "options": ["biased", "trending", "viral"], "answer": "biased", "skill": "vocab"},
+      {"q": "If you ___ someone, you meet them by chance.", "options": ["bump into", "come clean", "catch up"], "answer": "bump into", "skill": "vocab"}
+    ]
+  }
+}

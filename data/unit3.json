@@ -1,0 +1,206 @@
+{
+  "unit": 3,
+  "title": "working life",
+  "titleAr": "الحياة العملية",
+  "aim": "Working life: work conditions, the gig economy, interviews and preferences.",
+  "pages": "32–42",
+  "objectives": [
+    "Use conditionals to discuss work situations",
+    "Express obligation, necessity and permission",
+    "Interview and express preferences"
+  ],
+  "lessons": [
+    {
+      "id": "3a",
+      "code": "3A",
+      "title": "Working from home",
+      "pages": "32–34",
+      "goals": ["Describe work routines", "Use unless, even if and in case", "Learn work phrases"],
+      "grammar": {
+        "title": "Conditional structures: unless, even if, in case (of)",
+        "shortAr": "unless = إلا إذا؛ even if للتأكيد؛ in case للاحتياط من احتمال.",
+        "points": [
+          "unless = if not; comma when its clause comes first",
+          "even if emphasises that the result will not change",
+          "in case = because something might happen; in case of + noun is formal"
+        ],
+        "table": [
+          ["FORM / USE", "Example from the book"],
+          ["unless + present", "Unless you hurry up, we're going to leave without you."],
+          ["even if", "Even if the company pays me twice as much, I'm going to leave."],
+          ["in case", "Take your umbrella in case it rains."],
+          ["in case of + noun", "In case of fire, break the glass."]
+        ],
+        "exceptions": ["Use present tenses for future; past tenses for hypothetical situations."]
+      },
+      "vocab": [
+        {"word": "get a lot done", "ar": "أنجز الكثير", "example": "I got a lot done today."},
+        {"word": "fall behind schedule", "ar": "تأخر عن الجدول", "example": "We've fallen behind schedule."},
+        {"word": "deal with a challenge", "ar": "يتعامل مع تحدٍ", "example": "I enjoy dealing with a challenge."},
+        {"word": "keep to a routine", "ar": "يلتزم بروتين", "example": "I always keep to a routine."},
+        {"word": "avoid distractions", "ar": "يتجنب المشتتات", "example": "I'm trying to avoid distractions."},
+        {"word": "meet the deadline", "ar": "يلتزم بالموعد النهائي", "example": "Will we meet the deadline?"}
+      ],
+      "reading": {"summary": "An article says remote working saves commuting costs but needs routine and can feel isolating."},
+      "listening": [
+        {"track": "3.01", "audioFile": "SO3_B1+_SB_3A_Audio_3_01.mp3", "summary": "Work exchanges presenting phrases such as 'keep to a routine'."}
+      ],
+      "video": {"file": "SO3 B1+ U3 BBC Vlogs.mp4", "summary": "People say where they prefer to work or study."},
+      "speaking": ["Talk about your approach to working or studying from home."],
+      "writing": ["Write a forum comment on remote working."],
+      "practice": [
+        {"type": "choice", "q": "You'll be in trouble ___ you stop that noise.", "options": ["unless", "if", "in case"], "answer": "unless", "why": "unless = if not"},
+        {"type": "choice", "q": "___ fire, break the glass.", "options": ["In case", "In case of", "Unless"], "answer": "In case of", "why": "formal: in case of + noun"},
+        {"type": "choice", "q": "Take your umbrella ___ it rains.", "options": ["in case", "unless", "even if"], "answer": "in case", "why": "be prepared for a possibility"}
+      ]
+    },
+    {
+      "id": "3b",
+      "code": "3B",
+      "title": "Gig work",
+      "pages": "35–37",
+      "goals": ["Discuss gig work", "Use obligation and permission phrases"],
+      "grammar": {
+        "title": "Necessity, obligation and permission",
+        "shortAr": "need to، have got to، be supposed to، be allowed to للضرورة والإلزام والإذن.",
+        "points": [
+          "It's necessary/essential to + infinitive focuses on the action",
+          "have got to and be supposed to focus on the person",
+          "be allowed/permitted to talk about permission; permitted is formal"
+        ],
+        "table": [
+          ["FORM / USE", "Example from the book"],
+          ["It's necessary to", "It's necessary to have a driving licence."],
+          ["need to be done", "This job needs to be done by tomorrow morning."],
+          ["be supposed to", "I'm supposed to wear a hat when I deliver food."],
+          ["be allowed to", "I'm not allowed to go to bed after midnight."]
+        ],
+        "exceptions": ["Had to is the usual past of have got to."]
+      },
+      "vocab": [
+        {"word": "gig work", "ar": "عمل مؤقت عبر منصات", "example": "Many people end up doing gig work."},
+        {"word": "exploit", "ar": "يستغل", "example": "Some companies exploit workers."},
+        {"word": "permanent job", "ar": "وظيفة دائمة", "example": "Would you take a permanent job?"},
+        {"word": "ride-hailing company", "ar": "شركة طلب سيارات عبر تطبيق", "example": "I drive for a ride-hailing company."},
+        {"word": "savings", "ar": "مدخرات", "example": "It's essential to have savings."},
+        {"word": "rights", "ar": "حقوق", "example": "Something must be done about workers' rights."}
+      ],
+      "reading": {},
+      "listening": [
+        {"track": "3.03", "audioFile": "SO3_B1+_SB_3B_Audio_3_03.mp3", "summary": "Webinar: Paul and Cybil discuss gig work, low pay and worker rights."}
+      ],
+      "video": {"file": "", "summary": ""},
+      "speaking": ["Talk about what's important in a job."],
+      "writing": ["Write a cover email for a job application."],
+      "practice": [
+        {"type": "choice", "q": "___ necessary to wear a uniform?", "options": ["Is", "It", "Does"], "answer": "Is", "why": "question form of it is necessary"},
+        {"type": "choice", "q": "You ___ supposed to be here at 8.", "options": ["are", "is", "have"], "answer": "are", "why": "be supposed to"},
+        {"type": "choice", "q": "This report needs ___ by Friday.", "options": ["to be finished", "to finish", "finish"], "answer": "to be finished", "why": "need to be + past participle"}
+      ]
+    },
+    {
+      "id": "3c",
+      "code": "3C",
+      "title": "Good question",
+      "pages": "38–39",
+      "goals": ["Take part in an interview", "Check understanding", "Describe strengths"],
+      "grammar": {
+        "title": "How to … take part in an interview",
+        "shortAr": "عبارات المقابلة: أسئلة متوقعة وتعابير للتحقق من الفهم والإجابة.",
+        "points": [
+          "Interviewers ask about experience, motivation and contribution",
+          "Use checking phrases before answering",
+          "Answer with strengths and examples"
+        ],
+        "table": [
+          ["FORM / USE", "Example from the book"],
+          ["Opening", "Tell me a bit about yourself."],
+          ["Motivation", "Why are you interested in this job?"],
+          ["Checking", "How do you mean? / Where should I start?"],
+          ["Answering", "One of my main strengths is that I'm flexible."]
+        ],
+        "exceptions": []
+      },
+      "vocab": [
+        {"word": "confident", "ar": "واثق", "example": "I feel confident."},
+        {"word": "flexible", "ar": "مرن", "example": "I'm flexible and willing to help."},
+        {"word": "independent", "ar": "مستقل", "example": "They call me independent."},
+        {"word": "professional", "ar": "مهني", "example": "Colleagues say I'm professional."},
+        {"word": "responsible", "ar": "مسؤول", "example": "I'm responsible for my work."},
+        {"word": "unenthusiastic", "ar": "غير متحمس", "example": "They seemed unenthusiastic."}
+      ],
+      "reading": {},
+      "listening": [
+        {"track": "3.07", "audioFile": "SO3_B1+_SB_3C_Audio_3_07.mp3", "summary": "A job interview about experience, teamwork and strengths."}
+      ],
+      "video": {"file": "", "summary": ""},
+      "speaking": ["Roleplay a job interview."],
+      "writing": ["Write answers to common interview questions."],
+      "practice": [
+        {"type": "choice", "q": "A: What can you bring to the company? B: ___ what skills do I have?", "options": ["How do you mean", "Where should I start", "What do you mean by"], "answer": "How do you mean", "why": "checking phrase"},
+        {"type": "choice", "q": "One of my main ___ is that I'm flexible.", "options": ["strengths", "strength", "strong"], "answer": "strengths", "why": "one of + plural noun"},
+        {"type": "choice", "q": "Can I use an example ___ university?", "options": ["from", "of", "in"], "answer": "from", "why": "book phrasing"}
+      ]
+    },
+    {
+      "id": "3d",
+      "code": "3D",
+      "title": "This or that?",
+      "pages": "40–41",
+      "goals": ["Express preferences", "Use would rather and prefer"],
+      "grammar": {
+        "title": "Expressing preferences",
+        "shortAr": "would rather + مصدر؛ prefer + اسم/ing + to؛ would prefer + to + مصدر.",
+        "points": [
+          "would rather + infinitive (+ than) for preferences",
+          "Negative: would rather not + infinitive",
+          "prefer + noun/-ing + to; would prefer + to + infinitive"
+        ],
+        "table": [
+          ["FORM / USE", "Example from the book"],
+          ["would rather ... than", "Zayan would rather cook with electricity than with gas."],
+          ["would rather not", "I'd rather not answer that question."],
+          ["prefer ... to", "I prefer cats to dogs."],
+          ["would prefer to", "I'd prefer to get a takeaway tonight."]
+        ],
+        "exceptions": ["Use to after prefer: hot weather to cold weather."]
+      },
+      "vocab": [
+        {"word": "author", "ar": "مؤلف", "example": "I'd rather be an author."},
+        {"word": "engineer", "ar": "مهندس", "example": "I'd choose author over engineer."},
+        {"word": "journalist", "ar": "صحفي", "example": "I'd rather be a journalist."},
+        {"word": "farmer", "ar": "مزارع", "example": "I prefer being a farmer."},
+        {"word": "politician", "ar": "سياسي", "example": "I'd rather be a politician."},
+        {"word": "chef", "ar": "طاهٍ", "example": "I'd prefer to be a chef."}
+      ],
+      "reading": {},
+      "listening": [],
+      "video": {"file": "SO3 B1+ U3 BBC StreetInt.mp4", "summary": "Street interviews about preferred jobs."},
+      "speaking": ["Talk about 'This or That?' job questions."],
+      "writing": ["Write a discussion board post about a job choice."],
+      "practice": [
+        {"type": "choice", "q": "I'd rather ___ at home than go out.", "options": ["work", "working", "to work"], "answer": "work", "why": "would rather + infinitive"},
+        {"type": "choice", "q": "She prefers ___ alone to working in a team.", "options": ["work", "working", "to work"], "answer": "working", "why": "prefer + -ing + to"},
+        {"type": "choice", "q": "I'd prefer ___ a train than drive.", "options": ["take", "to take", "taking"], "answer": "to take", "why": "would prefer + to infinitive"}
+      ]
+    }
+  ],
+  "review": {
+    "summary": "The review revisits remote working, conditionals, obligation and preferences.",
+    "tasks": ["Read 'Remote working on the rise'.", "Review conditionals and preference language."],
+    "quiz": [
+      {"q": "___ you hurry up, we'll leave without you.", "options": ["Unless", "In case", "Even if"], "answer": "Unless", "skill": "grammar"},
+      {"q": "Take a charger ___ your phone runs out.", "options": ["in case", "unless", "even if"], "answer": "in case", "skill": "grammar"},
+      {"q": "It's essential ___ a passport.", "options": ["to have", "have", "having"], "answer": "to have", "skill": "grammar"},
+      {"q": "I'm not allowed ___ after midnight.", "options": ["to go out", "go out", "going out"], "answer": "to go out", "skill": "grammar"},
+      {"q": "I'd rather ___ by train than fly.", "options": ["travel", "to travel", "travelling"], "answer": "travel", "skill": "grammar"},
+      {"q": "They weren't going to visit, ___?", "options": ["were they", "weren't they", "did they"], "answer": "were they", "skill": "grammar"},
+      {"q": "Which means 'finish on time'?", "options": ["meet the deadline", "lose concentration", "fall behind"], "answer": "meet the deadline", "skill": "vocab"},
+      {"q": "If you ___ a routine, you do things at fixed times.", "options": ["keep to", "fall behind", "get out of the way"], "answer": "keep to", "skill": "vocab"},
+      {"q": "A ___ person is happy with new ideas.", "options": ["flexible", "unfair", "unemployed"], "answer": "flexible", "skill": "vocab"},
+      {"q": "Short jobs via apps are called ___.", "options": ["gig work", "paid holidays", "permanent jobs"], "answer": "gig work", "skill": "vocab"},
+      {"q": "What can you bring ___ the company?", "options": ["to", "for", "at"], "answer": "to", "skill": "vocab"},
+      {"q": "'Unenthusiastic' means ___.", "options": ["not enthusiastic", "very enthusiastic", "too enthusiastic"], "answer": "not enthusiastic", "skill": "vocab"}
+    ]
+  }
+}

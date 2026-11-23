@@ -1,0 +1,1106 @@
+AUDIOSCRIPTS
+
+ LEAD-IN                                                                 Audio 1.04
+                                                                         1
+Audio L.01                                                               A: You’ve reached Café Roma. I’m afraid we’re busy at the
+1 should, wood
+2 weight, late                                                               moment. Please leave a message and we’ll get back to you.
+3 build, filled                                                          B: Hello. This is Marcelo Fagundes. I’m calling about my jacket. I
+4 white, height
+5 though, show                                                               was having dinner in your restaurant an hour ago and I left my
+6 were, fur                                                                  jacket. Do you think you could have a look for it for me? It’s the
+                                                                             leather jacket hanging on the hook by the stairs. Can you call
+ UNIT 1                                                                      me back? You can reach me on this number – 0779542867.
+                                                                         2
+Audio 1.01                                                               A: You’ve reached Sam’s mobile. Please leave a message.
+M = Marta T = Tim                                                        B: Hi Sam. It’s Mum. Could you check that the garage door
+M: I’ve worn silver rings all my life. I got this ring in a street           is locked? I think I might have left it open. The key’s in the
+                                                                             kitchen. You’ll find it on the table next to the window. Also,
+    market when I was living in Italy for a few months. I bought it          before you leave, will you take out the rubbish please, and
+    to replace a similar one that I’d lost. This one belonged to my          make sure you turn the heating off? Thanks. See you later.
+    mother and I inherited it when she died. It’s not worth a lot,       3
+    but it’s very special to me.                                         A: I’m sorry I can’t take your call at the moment. Please leave a
+    I borrowed this leather jacket from a friend when I was                  message
+    studying at university and I never gave it back. It’s a genuine      B: Hi Riccardo. It’s Gemma. I’ve got a guest coming to stay in the
+    1980s leather jacket. When I was wearing it, I always thought it         apartment later. Would you explain the alarm system to her?
+    looked really cool. It’s a bit damaged now, but I still love it.         You’ll need to unlock the box and show her how it works. That
+    I have a beautiful lemon tree that a friend gave me as a                 would be really helpful. Thanks.
+    birthday present. I’d told her that I’d always wanted to live in a   4
+    house with a lemon tree, so to make my dream come true, she          A: Hi, you’re through to Jacob. I can’t take your call right now,
+    bought me one. I was having a party to celebrate my thirtieth            but if you leave a message with your name and number, I’ll get
+    birthday, and in the middle of the party my friend arrived               back to you as soon as I can.
+    and gave me the lemon tree in a pot. So, now I grow my own           B: Hi Jacob, it’s Patricia here. I wonder if you could bring my
+    lemons!                                                                  folder to the meeting? You’ll find it on my desk in the office.
+T: I bought my Spanish guitar in a famous guitar shop in Madrid.             The meeting starts at 4 p.m., so we’ll need to be there at least
+    Even when I open the case today, I can still smell the wood              fifteen minutes earlier. Could you please let me know that
+    of the shop. I remember trying it out in a corner. I was quietly         you’ve got this message? Thanks.
+    playing my favourite piece of music as I didn’t want to draw         5
+    too much attention to myself. However, to my horror, the             A: Noelie, it’s Pete. Listen, I was going to cook, but there’s no food
+    shopkeeper had listened to me playing and he asked me, ‘Are              in the house. Do you think you’ll be able to pick up some pizzas
+    you a professional?’ Naturally, I bought the guitar quite soon           on the way home? There’s a great place just on the corner by
+    after he’d asked that question! Six months later I returned to           the station. You choose the toppings. That would be great. Bye.
+    the shop to buy some new strings and there was someone else          6
+    trying out a guitar. He was playing a piece of music I knew,         A: Thank you for calling Smiths and Co. Our office hours are 8 a.m.
+    but he wasn’t playing very well. The same shopkeeper was                 to 6 p.m. If it’s urgent, please leave a message with your name
+    there and said to the man, ‘Wow, you must be a professional!’            and number and we’ll contact you as soon as possible.
+    Suddenly, I understood.                                              B: Hello. This is Natalie Ivanov. I’m calling because we have a broken
+    I enjoy doing long-distance walks, preferably with friends.              pipe in our house and the water is going everywhere! I need
+    I bought these boots while I was travelling around New                   someone to come and fix it, please. Will you please call me back
+    Zealand. I was about to head off for the Milford Track, quite            as soon as possible? It’s urgent. You can reach me on this number.
+    a challenging four-day walk, and my old boots fell to pieces.        7
+    I had one day to find a new pair. Years later, I still have those    A: Hi, you’re through to Teresa. Please leave me a message and
+    boots. They’re not in very good condition and they’re heavy,             I’ll call you right back.
+    old, leather boots, but they’re still comfortable and they’re like   B: Hi Teresa, it’s Yumi. I’m calling to ask a favour. I’m going away
+    old friends. I’ve had such great times with friends and family           in a couple of weeks. I wonder if you’d mind watering the
+    walking, talking and exploring.                                          plants for me, like you did last time. I can leave the key with my
+    And this? It’s an Italian moka coffee pot. A friend gave it to           neighbour. That would be so kind. Let me know. Bye.
+    me at university because he had watched me making instant
+    coffee without much care or thought. He said, ‘The small ritual      Audio 1.05
+    of a good coffee is too important to give up.’ We used to laugh       1 You’ve reached Café Roma.
+    at him for being so serious about things we thought were              2 Please leave a message and we’ll get back to you.
+    unimportant, but now every time I use the pot I realise that he       3 Thank you for calling Smiths and Co. Our office hours are
+    was right. If you can’t enjoy little things, then you will never be
+    happy.                                                                    8 a.m. to 6 p.m.
+                                                                          4 I can’t take your call right now, but if you leave a message with
+Audio 1.02
+1 I was travelling around Australia.                                          your name and number, I’ll get back to you as soon as I can.
+2 We were living in China.                                                5 This is Marcelo Fagundes calling about ...
+3 He was studying at university.                                          6 It’s Patricia here ...
+4 I bought a new leather jacket to replace the one I had lost.            7 You’ll need to unlock the ...
+5 My mother had given the ring to me                                      8 You’ll find it on the table next to the ...
+6 He had seen me making coffee.                                           9 Can you call me back?
+                                                                         10 You can reach me on this number.
+Audio 1.03
+1 I believe in living a simple life.                                     Audio 1.06
+2 He succeeded in finding his dream job.                                 1 Would you explain the alarm system to her?
+3 You should think about tidying your stuff.                             2 I wonder if you could bring my folder to the meeting?
+4 Concentrate on appreciating the simple things.                         3 Could you please let me know that you’ve got this message?
+                                                                         4 Do you think you’ll be able to pick up some pizzas on the way
+
+                                                                             home?
+                                                                         5 I wonder if you’d mind watering the plants for me.
+
+                                                                                                                                                  157
+AUDIOSCRIPTS
+
+Audio 1.07                                                             UNIT 2
+1 I wonder if you could bring my folder, please?
+2 Would you walk the dog, please?                                     Audio 2.01 and 2.02
+3 Do you think you’ll be able to come today?                          1 How long have you been studying English?
+4 Will you pick up some food on the way home?                         2 I’ve been studying since I was ten.
+                                                                      3 Have you been living in the same place for a long time?
+ UNIT 1 VOCABULARY BANK                                               4 I’ve been living there for five years.
+
+Audio VB1.01                                                          Audio 2.03
+A They’re made of glass.                                              1 A: Help you with your work? Well, I’m a bit busy but … sure, I
+B It’s made of wood.
+C It’s made of a diamond.                                                     can help.
+D It’s made of plastic.                                                   B: He’s …
+E They’re made of cotton.                                             2 A: Can I say something? Erm, well, your hair looks great, but
+F It’s made of silver.
+G It’s made of denim.                                                         the jacket is horrible.
+H It’s made of rubber.                                                    B: She’s …
+I It’s made of steel.                                                 3 A: My phone … Where is it … ? I can’t find it! Oh no, what am I
+J They’re made of iron.
+K It’s made of gold.                                                          going to do without my phone?
+L It’s made of stone.                                                     B: He’s …
+                                                                      4 A: I’m having a bad day. Go away! Leave me alone!
+ UNIT 1 REVIEW                                                            B: She’s …
+                                                                      5 A: Oh, I really want to go dancing. Come on, let’s go dancing!
+Audio R1.01                                                               B: He …
+The House that Jock Built                                             6 A: I’m so sorry. It’s my mistake. I feel so bad that I’ve hurt you.
+When Elizabeth finally saw the house, it had been part of her             B: She’s …
+family legend for 200 years. It had been built by Jock Phillip, her   7 A: No, no, no, I agree with you, really! Really, no need to
+distant ancestor who had left Scotland for America aged sixteen,
+with nothing but the clothes on his back. Five years after arriving,          discuss it, you’re right!
+he discovered a hidden treasure in California: a seam of gold,            B: He’s…
+which he later mined. He had succeeded in changing his fortunes,      8 A: It’s so easy to talk to you. I’m totally relaxed whenever we
+and with his earnings he built his dream home.
+It was the ideal house, large and beautiful, a house to pass down             have a conversation.
+from generation to generation. It belonged to his children, then          B: She …
+his grandchildren, and so on. When Elizabeth was young, she
+remembered hearing stories about it. For this reason she had          Audio 2.04
+always dreamed about visiting the house. Finally, her chance          G = Greta C = Colin A = Anna
+came.                                                                 G: Am I a people pleaser? Well, when someone asks me to do
+While she was driving there, she suddenly felt a sense of sadness.
+She arrived and saw immediately that the house was badly                  them a favour, I almost always say yes. For instance, last week
+damaged. The walls, made of stone, were falling down, and the             when my manager asked me to stay and work late, I just said
+windows were long gone. Birds had made their homes in the roof.           yes without thinking. And I do that all the time. I’m always the
+                                                                          person who stays late or does extra work.
+ UNIT 1 MEDIATION BANK                                                    I think the problem is that I care too much about what other
+                                                                          people think of me. Like when I buy a new dress and wear
+Audio MB1.01                                                              it for the first time. I know it’s crazy, but I don’t really feel
+You’ve got through to Well Gym. Press 1 to book a personal                comfortable until someone says something nice about it. And
+trainer. Press 2 to book the pool. Press 3 to speak to someone.           it’s even better if I don’t know the person saying it. And if
+We’re really busy right now. Continue to wait or maybe call back          someone makes a negative comment, I get really upset and I
+later. While you’re waiting, why don’t you leave us a five-star           might never wear that dress again.
+review online?                                                        C: I’ll do anything to avoid an argument. I just listen to other
+We’re really busy right now. Continue to wait or maybe call back          people’s opinions or what they want and agree with them. It’s
+later. While you’re waiting, why don’t you leave us a five-star           just easier that way. Like when my friend says, ‘Let’s go and get
+review online?                                                            a pizza’ and I feel like having sushi. I just do what he wants. We
+                                                                          always have pizza.
+Audio MB1.02                                                              One of my friends recently said I don’t seem to have my
+J = Janel R = Rich L = Lesley                                             own opinions. He isn’t the first person to tell me that. It’s
+J: So, everyone hates our automated message. Can we share one             true, when I’m in a group of classmates at college and we’re
+                                                                          discussing something, I don’t say very much. I listen, and then
+    idea each about how we can change this?                               I basically agree with the majority. For example, last weekend
+R: I think it’s the music. It’s so stupid. It’s just the same thing       I was out with some friends. We were talking about a film we’d
+                                                                          just seen and my friends really liked it. I thought it was boring,
+    again and again and again ...                                         but I didn’t say so. I don’t know why. It makes life easier, I
+J: OK, Lesley, what are your thoughts on it? Does the music need          suppose.
+                                                                      A: It’s important to me that people like me. But I think people
+    changing?                                                             who care too much about other people’s opinions are wasting
+L: Yes, Rich is right, it’s so annoying and it doesn’t help people        their time. For example, on social media I don’t pay attention
+                                                                          to comments that are negative. I don’t get upset. It’s not my
+    relax while they’re waiting.                                          problem. Maybe the person is just in a bad mood.
+J: Agreed. Also, I think the guy’s voice is a bit boring. What does       Yeah, basically, I’m a very positive person, but I don’t go with
+                                                                          the crowd. Like at work in a meeting. If someone has an idea
+    everyone else think?                                                  and I think it’s terrible, I’m the first person to say, ‘I really don’t
+R: I like his voice.                                                      think that will work’, even if everyone else thinks it’s a good
+L: I agree with Janel, and he speaks reeeally slooowly, too.              idea.
+J: OK, so that’s the music and the guy’s voice, now let’s talk
+                                                                      Audio 2.05
+    about the actual messages. How does everyone feel about …         1 & 2 I try to avoid people who lie.
+
+158
+AUDIOSCRIPTS
+
+Audio 2.06                                                           Audio 2.10
+1 I’m someone who feels comfortable talking to big groups.           A: These are really interesting questions.
+2 The person I always ask to help me with problems is my brother.    B: Yes, I thought so, too.
+3 One situation I really hate is when I forget someone’s name.       A: But in some of these situations you could just run away.
+4 I’m usually the first person to give my opinion.                   B: So, in which situations would you run away?
+5 The thing I love most about my country is the weather.             A: If I saw a snake in my bedroom. I would … I’d freeze actually.
+6 I think people living in foreign countries should learn the        B: And then what?
+                                                                     A: Then I’d move very slowly to get to the door and then run
+    language.
+                                                                         away, as fast as I could. You?
+Audio 2.07                                                           B: It depends how big the snake is.
+A: Sorry I’m late. I had a really bad journey.                       A: Here’s another question. You’re alone at a friend’s house and it’s
+B: Why? Were there a lot of people on the train?
+A: No, not many, but it’s just the way some people behave. I can’t       winter. Someone knocks on the door. It’s ten o’clock at night.
+                                                                     B: Well, do I have a choice of answering or not?
+    stand it.                                                        A: How do you mean?
+B: Why, what happened?                                               B: I could just ignore it.
+A: Everything. First I had to queue to buy a ticket because the      A: Is that what you’d do?
+                                                                     B: Yes, I suppose so. How about this one? You’re on a train and the
+    ticket machines were broken.
+B: I hate it when that happens.                                          person opposite you drops their empty drink can on the floor.
+A: And of course people were jumping the queue, saying they          A: That’s a tricky one. I’m the kind of person who … well, I’d like
+
+    were in a hurry and could they please go in front of me.             to say that I’d immediately say something, but … You know ...
+B: Maybe they were in a hurry.                                       B: I don’t quite get what you mean.
+A: Right. Like I wasn’t?                                             A: I mean that I could say that I’d ask them to pick up their
+B: All right.
+A: Then I got on the train, sat down – there were lots of empty          rubbish, but I think that in real life I’d hesitate.
+                                                                     B: Why’s that?
+    seats – and this guy sat down next to me, took out a burger      A: Maybe the person would get angry. And it depends on whether
+    and started to eat it.
+B: Yuk! People are always doing that on trains! I expect it smelled      they’re with their friends or if they’re bigger than me.
+    bad.                                                             B: Do you mean that it might be better not to say anything?
+A: Yeah, the smell was terrible! It really got on my nerves. I kept  A: That’s what I mean I guess. I’d probably get up and walk away. I
+    looking at him, you know like this, but he didn’t react. So
+    annoying.                                                            might give them a hard look! Like this. What would you do?
+B: Sometimes it’s better if you don’t react.                         B: Oh, no question in my mind. I would definitely …
+A: You mean do nothing? Maybe. Anyway, after two stops he got
+    off … but then three teenagers got on and they were watching      UNIT 2 REVIEW
+    a football match. Really loud.
+B: You really did have a bad time.                                   Audio R2.01
+A: And then one of them opened some windows and it was like a        Taking the pain out of the wait
+    tornado. It blew my hair all over the place.                     Waiting in a queue drives most people crazy, and that’s bad for
+B: I know what you mean, without asking anyone?                      business. So businesses make a lot of effort to solve this. When
+A: Yeah, it really annoys me when they do that.                      high-rise buildings became common, waiting for the lift was
+B: You’re always getting so upset about things. And you’re here      frustrating for anyone who was in a hurry and there were lots of
+    now.                                                             complaints. So mirrors were put next to the lifts, and complaints
+A: But that sort of behaviour really bugs me. And I’m not finished.  dropped because it gave people something to look at while waiting.
+B: There’s more?                                                     An airport was constantly getting complaints about the long wait
+A: I was so annoyed that I didn’t pay attention to where we were,    for baggage. When they moved the arrival gates further away,
+    and I missed my stop.                                            complaints stopped, and no one got upset about the longer walk.
+B: It really doesn’t matter. Look, let’s get something to eat.       When a new electronic product comes out, there can be long
+A: OK, sorry …                                                       queues, and people camping outside a shop can be a real problem.
+                                                                     Danish researchers found a solution: serve the last people to
+Audio 2.08                                                           arrive first. That way there’s no reason to show up early. As far as
+1 B: Were there a lot of people on the train?                        we know, no other countries are planning to try out the Danish
+                                                                     solution – we can guess how people might react to it. Most people
+    A: No, not many, but it’s just the way some people behave. I     would probably stick to their belief that first-come, first-served is
+        can’t stand it.                                              fair, and anyone jumping the queue is just behaving rudely.
+
+2 A: First I had to queue to buy a ticket because the ticket          UNIT 3
+        machines were broken.
+                                                                     Audio 3.01
+    B: I hate it when that happens.                                  1 A: How was your day?
+3 B: People are always doing that on trains. I expect it smelled
+                                                                         B: Great, I got a lot done. I finished my essay, had lunch with a
+        bad.                                                                 friend, went to an online seminar and then played tennis.
+    A: Yeah, the smell was terrible! It really got on my nerves.
+4 B: I know what you mean, without asking anyone?                    2 A: This homework is really difficult. I’ll do it later.
+    A: Yeah, it really annoys me when they do that.                      B: No, do it now. You should get it out of the way.
+5 B: You’re always getting so upset about things. And you’re
+                                                                     3 A: What time will lunch be? I need to tell the people in the café.
+        here now.                                                        B: Sorry, we’re a bit late. We’ve fallen behind schedule by
+    A: But that sort of behaviour really bugs me.                            about fifteen minutes. So I think it’ll be at quarter past one.
+
+Audio 2.09                                                           4 A: Is your new job hard?
+1 I can’t stand it when people take a long time to pay.                  B: Yes, but I enjoy dealing with a challenge.
+2 It annoys me when they try to sell me something I don’t want.
+3 It drives me crazy when people eat food while shopping.            5 A: You look good. Where have you been?
+4 I hate it when I can’t reach something on the top shelf.               B: For a swim. I always keep to a routine: 6 o’clock get up, 6.30
+5 I can’t bear it when food is packaged in too much plastic.                 go for a swim.
+6 People are always jumping the queue.
+                                                                     6 A: Is it OK if I turn the TV on?
+                                                                         B: Well, not really. I’m trying to avoid distractions. The sound
+                                                                             of the TV would bother me.
+
+                                                                                                                                              159
+AUDIOSCRIPTS
+
+     7 A: What’s wrong?                                                         A: Where do you see yourself in, say, five years?
+         B: It’s that music from next door. It’s making me lose                 C: You know, some of my friends ask me that question and my
+             concentration. I can’t think!
+                                                                                    parents ask it a lot. People act like you’re supposed to have a
+     8 A We’ve only got two days to finish the report!                              big goal in life, a work-related goal, to earn so much money
+         B: Yes, do you think we’ll meet the deadline?                              and climb to the top of the ladder. That’s not for me, I’m OK
+                                                                                    with what I do. I just need enough to live on and to give me
+     Audio 3.02                                                                     time for my painting.
+     1 got a lot done.                                                          A: I completely agree with you Cybil, thank you for making that
+     2 get it out of the way.                                                       point. So now we’ll open the webinar to questions. Please type
+     3 fallen behind schedule.                                                      your questions – for me, Paul or Cybil, in the comments box,
+     4 dealing with a challenge.                                                    and we’ll answer them as best we can.
+     5 keep to a routine.
+     6 to avoid distractions.                                                   Audio 3.04
+     7 lose concentration.                                                      1 Something needs to be done about the rights of gig workers.
+     8 meet the deadline.                                                       2 I like it because you’re allowed to choose when you work.
+                                                                                3 I feel as if I’ve got to say yes to every offer that comes along.
+     Audio 3.03                                                                 4 It’s necessary to find a balance, to do enough work that you
+     A = Andrea P = Paul C = Cybil
+     A: … and that’s one of the dangers. It’s not true of all gig work,             actually like doing.
+                                                                                5 It’s essential to have savings for times like this for going on
+         but with some jobs, where you’re working for a big company,
+         you still have a boss, and there’s a possibility that they will            holiday or if I get ill.
+         exploit you – get you to work extra hours and for low pay. Gig         6 People act like you’re supposed to have a big goal in life.
+         workers aren’t very well protected, and many of us involved in
+         the industry feel that something needs to be done about the            Audio 3.05
+         rights of gig workers.                                                 2 I like it because you’re allowed to choose when you work.
+         And now we’re going to hear from two of our special guests,            3 I feel as if I’ve got to say yes to every offer that comes along.
+         Paul and Cybil, both of whom have been doing gig work for              6 People act like you’re supposed to have a big goal in life.
+         some years now, but with very different stories. Paul, give us a
+         quick summary of how you ended up doing gig work, and what             Audio 3.06
+         it is that you actually do.                                            1 confident
+     P: So, two years ago I lost my job at a marketing company, couldn’t        2 enthusiastic
+         find another one, so I started delivering online orders for a          3 flexible
+         supermarket. I was surprised, it was actually fun at first. I enjoyed  4 independent
+         driving, and I learnt to deal with a lot of different people and       5 professional
+         handle different problems! The money wasn’t great – I couldn’t         6 responsible
+         rent a flat so I had to move back in with my parents for a while.      7 sensitive
+     A: So the money side isn’t so good?                                        8 willing
+     P: Not for me, no. I’ve picked up a few more gigs – I drive for a
+         ride-hailing company, and I deliver furniture for a big store. I       Audio 3.07
+         like it because you’re allowed to choose when you work, but            A: Hi, how are you today?
+         you have to work long hours to earn enough money. And you              B: Very well, thank you.
+         feel pressure to do all the work they offer you. I feel as if I’ve     A: Have a seat.
+         got to say yes to every offer that comes along … so I do.              B: Thank you.
+     A: So if you were offered a permanent job, would you take it now?          A: So, tell me a bit about yourself.
+     P: I really don’t know. It would depend, probably on the money!            B: Oh, erm, where should I start?
+     A: Thanks Paul. A lot of people end up doing gig work because it’s         A: Let’s keep it work-related.
+         the only option they have. Other people choose gig work as a sort      B: All right. I’ve always loved working with computers, and doing
+         of lifestyle choice. You’re one of those people, aren’t you Cybil?
+     C: Yes, I’ve always had three or four jobs, so gig work is normal              coding. I get an idea for a new app, and I sit and create it. I’d
+         for me. I don’t even call it gig work, it’s just work. When people         love to show you some of my work.
+         ask me what I do, I’m not sure where to start, so I say ‘This and      A: So you like to work alone.
+         that’. Then they always want to know more, so I give the list –        B: Not really, and this is what I wanted to say, that I think I’m not
+         I’m a dog walker, a babysitter … I love working with kids so I do          a typical IT person in that I like being with people, working as
+         children’s parties, you know face painting, organising games …             part of a team. It’s important to me to have personal contact,
+         Sometimes I teach art in schools, but as a one-off, not a steady           even if the work itself is sort of … solo work.
+         thing. A friend of mine has a catering business, and she hires         A: So why are you here today?
+         me for day jobs now and then. I don’t love all of the work, but I      B: How do you mean?
+         do enjoy some of it.                                                   A: Why do you want this job?
+     A: So it’s necessary to find a balance, to do enough work that you         B: I’ve done some research about the company and I think it’s
+         actually like doing.                                                       doing the best work in app development. I want to be part of
+     C: Yes, you’ve got to make sure that at least some of the jobs                 that, and I think I have a lot to offer.
+         really suit you. And still leave yourself time for what you really     A: OK, so what will you bring to the company?
+         love doing outside of work.                                            B: I think one of my main strengths is that I have a problem-
+     A: Let me guess. Is that art?                                                  solving mind, and I bring in a lot of creativity in solving
+     C: Yes! My real passion is painting, so I do that when I get time.             problems. And I’m a fast learner. I’ve learnt most of what I
+     A: And what’s a typical day or week like for you?                              know just by doing. And as I said, I like working in a team.
+     C: My days are completely unpredictable. I have weeks when I               A: Tell me about a time you had a problem with a co-worker. How
+         work seven days, and very long days, then weeks with nothing.              did you handle that?
+         That’s when I paint! The regular work, the dog walking and             B: Hmmm … Can I use an example from university?
+         babysitting, doesn’t bring enough money to pay for all the             A: Sure.
+         basic things, and that can be a problem. After a few weeks I get       B: At the end of my last year, we were doing a team project that
+         stressed if other work isn’t coming through. I can’t get sick –            was basically my thesis. There were four of us. Developing a
+         no work, no pay – and I don’t get paid holidays. It’s essential to         prototype scheduling app. And the other three people kind of
+         have savings for times like this, for going on holiday or if I get         let me do all the work. That made me angry.
+         ill. I try and organise things so that I always have some savings.     A: And how did you deal with that?
+
+160
+AUDIOSCRIPTS
+
+B: I don’t think I dealt with it very well. I didn’t confront them. I  too, of course. Remote workers can feel isolated, unless they
+    just did the work, and they took part of the credit.               have regular contact with someone. And they have to find ways
+                                                                       to avoid distractions. A person who isn’t independent might
+A: How do you think those three classmates would describe you?         prefer working in an office, but if a person is flexible and willing
+B: Oh, good question.                                                  to deal with the challenge of turning their home into their
+A: So … ?                                                              workplace, it’s ideal.
+B: You know, in the end I think they respected me. I think they
+                                                                        UNIT 3 MEDIATION BANK
+    would say I’m professional and responsible, that I get the job
+    done and do it well. They would definitely call me independent.    Audio MB3.01
+    That can be a good thing, I think.                                 1 A: OK, so you chose Laura, right?
+A: Is that all they would say?
+B: Are you asking what criticisms they might have?                         B: That’s right.
+A: You could put it that way.                                              A: And what were your reasons for choosing Laura?
+B: I suppose they would say I’m not very flexible. In that situation,      B: She just seems like a nice person.
+    I had a clear idea of how the work should go. I wanted everyone        A: Bella has more experience. Why not Bella?
+    to follow that.                                                        B: Because she wants to get paid and none of the other
+A: And is it true?
+B: Is it true that I’m not very flexible?                                      volunteers do.
+A: Yes, that’s what I’m asking.                                        2 A: So, who did you prefer?
+B: Well, I think I’ve grown up a lot since then. I think people would
+    say that I’ve become more open to others’ ideas.                       C: OK, so I think Bella is the best person for the role.
+A: OK. I have more questions, but let’s turn things around for a           A: Ah, I see. Why exactly do you think that?
+    bit. What questions do you have for me?                                C: It’s obvious, she has the most experience.
+B: About the job?                                                          A: But she wants to be paid. Laura and Trent don’t want that.
+A: About the position, the company, anything.                              C: Yes, I know, but I think she’s worth it.
+B: Well, first of all I’d like to ask …                                3 A: Any thoughts?
+                                                                           D: Well, I would choose Trent.
+Audio 3.08                                                                 A: OK, he’s an interesting choice. Can you explain why you
+1 A: So, tell me a bit about yourself.
+                                                                               picked him?
+    B: Oh, erm, where should I start?                                      D: I thought he was a very positive person, that’s important.
+    A: Let’s keep it work-related.                                         A: What about Laura?
+    B: All right.                                                          D: Hmm, not for me.
+2 A: So why are you here today?                                            A: Can you explain your thinking?
+    B: How do you mean?                                                    D: She seemed a little nervous. Maybe it would be hard for her
+    A: Why do you want this job?
+    B: I’ve done some research about the company and I think it’s …            to talk to strangers.
+3 B: I want to be part of that, and I think I have a lot to offer.
+    A: OK, so what will you bring to the company?                      UNIT 4
+    B: I think one of my main strengths is that I have a problem-
+                                                                       Audio 4.01  4 answer
+        solving mind …                                                 1 scheme    5 would
+4 A: I have more questions, but let’s turn things around for a bit.    2 doubt     6 listen
+                                                                       3 sign
+        What questions do you have for me?
+    B: About the job?                                                  Audio 4.02
+    A: About the position, the company, anything.                      1 Can I ask what you think of this documentary?
+                                                                       2 Could you tell me when the film starts?
+UNIT 3 VOCABULARY BANK                                                 3 Do you know where I can see it?
+                                                                       4 Isn’t that the documentary you were telling me about?
+Audio VB3.01       11 informal                                         5 Didn’t you watch it?
+ 1 inappropriate   12 unhealthy
+ 2 uncertain       13 unlucky                                          Audio 4.03
+ 3 unclear         14 unnecessary                                      P = Presenter A = Amy D = Dave
+ 4 unconfident     15 unpopular
+ 5 independent     16 unprofessional                                   P: Hello and welcome to the Documentary Podcast, where today
+ 6 unemployed      17 irregular                                            we’re looking at the power of a documentary to change the
+ 7 unenthusiastic  18 irresponsible                                        way we think about the world. We have two guests with us
+ 8 inexpensive     19 insensitive                                          in the studio and they’re going to tell us about some of their
+ 9 unfair          20 unwilling                                            favourite documentaries. Let’s start with you, Amy.
+10 inflexible
+                                                                       A: Hello.
+ UNIT 3 REVIEW
+                                                                       P: First of all, Amy could you tell us what your documentary is
+Audio R3.01                                                                called?
+Remote working on the rise
+Working from home is no longer only for the self-employed.             A: Yes, I’m going to talk about My Octopus Teacher.
+Based on the experience of recent years, companies have
+discovered that some employees are happier when working                P: OK, so what’s it about?
+remotely. The employee works from home, a favourite café,
+wherever they want, but it’s essential that they’re connected          A: It’s the extraordinary story of a diver who makes friends with a
+all the time, in case a colleague wants to reach them. They take           wild octopus over the period of a year.
+responsibility for keeping to a routine so that they meet their
+deadlines and don’t fall behind schedule in their work. The            P: That sounds unusual. And can you explain what you found so
+company saves on the costs of renting office space, and the                interesting about it? What did you learn?
+employee saves the cost of commuting. There are downsides
+                                                                       A: Well, the film-maker, Craig Foster, was basically suffering from
+                                                                           stress at work, so he decided to spend some time freediving
+                                                                           to get close to nature. And he spotted this wild octopus and
+                                                                           then decided to go back to the same spot and film every day
+                                                                           for a year. The underwater filming is very dramatic. I’d never
+                                                                           seen anything so beautiful on screen. But it also gives us these
+                                                                           amazing insights into the life of an octopus. I learnt a lot about
+                                                                           how these creatures live.
+
+                                                                                                                                161
+AUDIOSCRIPTS
+
+     P: Aren’t octopuses supposed to be really intelligent?                  A: In town. Didn’t you see the smoke?
+     A: Yes, they are. And that’s the point. As we watch, we see how         B: No, what happened?
+                                                                             A: The supermarket caught fire. It’s all over the news.
+         Foster gets to know this one octopus really well. And the           B: Really?! I had no idea. How did that happen?
+         octopus starts to recognise him, to get to know him. When he        A: I don’t know. It seems there might have been an electrical fault
+         arrives, the octopus comes out to play. As the year progresses,
+         Foster starts to learn about himself from his relationship with         or something.
+         the octopus. He starts to think about his relationships with        B: Was anyone hurt?
+         people and how he could improve them.                               B: No, everyone’s fine. Luckily, the supermarket was closed, so it
+     P: Hence the name My Octopus Teacher.
+     A: Exactly. He starts to look at the world differently because of           was empty at the time.
+         the time he spends underwater. It’s a very intelligent film in      A: Oh, that’s a relief!
+         that it makes you realise just how important our oceans are         B: But the whole building pretty much burned down.
+         and how we need to protect them. And the whole film is really
+         enjoyable. My family loved it.                                      Conversation 3
+     P: That sounds great. Definitely one to watch.                          A: Did you hear the news about Sean Davies?
+     D: I don’t know if I should say this, but I saw My Octopus Teacher,     B: No. What happened?
+         and I found it a bit disappointing.                                 A: He’s quit his job as manager.
+     A: Oh no!                                                               B: Really? I had no idea!
+     P: Really? Didn’t you like it? Why not?                                 A: Yes. I saw it on the news. He was less than two months into his
+     D: It was really slow. A lot of the film just shows footage of the
+         octopus. I found it a bit boring.                                       contract. I can’t remember the details, but basically, it seems
+     A: Didn’t you think that was amazing to watch? I thought it was             like he’s going to manage a different team.
+         beautiful …                                                         B: Wow, that’s quite a scandal, after all that money he was paid!
+     D: No, I just didn’t find it very exciting. Maybe it’s not my kind of
+         thing.                                                              Conversation 4
+     P: Right, isn’t it interesting how we can have different reactions      A: Have you seen what’s happening at the airports?
+         to the same documentary, Dave? So, can you tell us about one        B: No, what do you mean?
+         you did enjoy? Isn’t your documentary also about nature?            A: Loads of flights have been cancelled because of the weather.
+     D: Yes, I’m going to talk about The Salt of the Earth.
+     A: Oh, wasn’t that the one about the photographer? Um …                     Apparently, thousands of people are stuck at the airport. It’s
+         Salgado?                                                                on all the news channels.
+     D: That’s right, yes.                                                   B: That reminds me of that time we got stuck in Athens. Do you
+     P: Excellent. Could you tell us about it?                                   remember?
+     D: Well, it’s a really powerful documentary about the life and          A: Yes, we had to wait all night in the airport. It was awful …
+         work of photographer Sebastião Salgado. Salgado travelled
+         the world taking photographs and documenting the different          Conversation 5
+         natural environments and also the people who live in them.          A: Are you following the news about the protests?
+     P: So wouldn’t you say it’s more about people than about nature?        B: Yes, it’s received a lot of coverage. It’s terrible. Apparently, the
+     D: Well, I think it’s both. With his beautiful photography he
+         encourages us to think about some of the biggest problems               protesters have taken over the university buildings and they’re
+         facing humanity. He tells the story of the shocking conditions          refusing to leave.
+         that many people around the world often have to live in. So, it     A: I know. It all happened so quickly. I can hardly believe it.
+         forces us to examine human nature and try and learn from our        B: Yes, there was an announcement that if they didn’t leave, they
+         mistakes instead of repeating them again and again.                     would all be arrested.
+     P: That sounds fascinating. And it’s obviously such an important        A: That’s unbelievable!
+         topic.
+     D: Yes, absolutely. I thought it was a wonderful documentary that       Audio 4.05
+         really makes you think about the world.                             1 So, basically, what happened was …
+     A: That’s exactly what I thought about My Octopus Teacher.              2 Apparently, thousands of people are stuck at the airport.
+         I loved The Salt of the Earth too, though. I thought it was         3 Basically, it seems like he’s going to manage a different team.
+         stunning, very powerful. You can’t watch something like that        4 Apparently, now the protesters have taken over the university
+         and not come away with a different viewpoint. The way it …
+                                                                                 buildings.
+     Audio 4.04
+     Conversation 1                                                          Audio 4.06
+     A: Have you seen that story about the kid in the zoo?                   N = Nikolas J = Jade
+     B: No, what happened?                                                   N: Hi, Jade – is that you?
+     A: Haven’t you seen it? It went viral. Look, I’ll show you. Oh, my      J: Wow, Nikolas! How amazing to see you!
+                                                                             N: This is crazy … How long is it since we’ve seen each other?
+         battery’s dead. So there was this little kid in the zoo with his    J: Oh, I don’t know … about … um …
+         parents, right?                                                     N: Maybe five years or so.
+     B: Yeah.                                                                J: Yeah, probably. I thought you were living in New Zealand.
+     A: So, basically, what happened was that he was feeding the             N: That’s right, but I moved back a while ago.
+         giraffe and the mother was filming him. So he holds up a big        J: OK. Are you still working for that film company?
+         leaf to feed the giraffe. And the giraffe takes the leaf and pulls  N: Ah … no, actually, I’m freelance now. I’m still a director, but I
+         his head upwards, really high, and the kid is still holding onto
+         the branch with the leaf, so the giraffe lifts the boy up into the      work for myself.
+         air, really high. It’s hilarious!                                   J: Wow, that’s amazing.
+     B: Oh no! That sounds scary.                                            N: Yeah, I can’t complain. How about you?
+     A: No, the kid was fine – the dad pulls him down. It’s just really      J: I’m still in the bakery.
+         funny …                                                             N: Really?!
+                                                                             J: Yes, I love it there. It’s such a nice team of people to work with.
+     Conversation 2                                                          N: So do you still see Rob at all?
+     A Have you heard about the fire?                                        J: Yes, he lives around here. I see him all the time. You know he’s
+     B: What fire?
+                                                                                 married now.
+162                                                                          N: No! Is he really? Wow.
+                                                                             J: Yeah, he’s got two small kids.
+AUDIOSCRIPTS
+
+N: Really?! I can’t believe it!                                          B: I don’t know the exact date. But that’s not the point. The
+J: I know! How about you? Are you married, in a relationship?                design’s obviously faulty. It’s not normal for a chair to break.
+N: Uh, no. No, I’m … you know … it’s just me.
+J: And do you still ski?                                                 A: We will need the receipt so as to check the date when you bought
+N: Yes, whenever I can. You know I passed my exams to be a ski               the chair. If it’s over three years ago, we won’t be able to help.
+
+    instructor?                                                          B: But that’s outrageous! My son could have been seriously hurt.
+J: Really?! That’s great. You always said you wanted to do that.             This shouldn’t happen even if the chair’s not brand new.
+N: Well remembered. Yes, I did. I took the course last year, so now
+                                                                         A: I’m sorry, but there’s nothing I can do about it. The warranty is
+    I can teach during the ski season.                                       for three years.
+J: That’s brilliant. I’m so pleased to hear that. It’s amazing
+                                                                         B: This isn’t good enough. I want to speak to your manager.
+    bumping into you. We should maybe get together sometime,             A: My line manager isn’t here at the moment. He should be back
+    and catch up properly.
+N: Yes, I’d really like that. Perhaps we can get Rob to come, too.           in an hour. If you give me your number, he can give you a ca–
+J: Great idea. I’ll send him a message telling him I saw you. Have       B: What do I have to do in order to get someone to help me?
+    you still got the same number?
+N: Yeah, I have … you should have it.                                        Listen, get me your supervisor right here, right now or I’m
+J: Ah yes, here it is. I’ll send you mine. It’s really great to see you      going public with this. On social media.
+    again.                                                               A: Just a moment. I’ll give him a call.
+N: Yes, you too.
+J: Stay in touch.                                                        Conversation 2
+N: I will. See you soon.                                                 C: Good morning. Customer Service. Francisca speaking.
+                                                                         D: Hi Francisca. My name’s Filip. Look, I’m really not happy with
+ UNIT 4 REVIEW
+                                                                             the situation with my luggage. I was wondering if you could
+Audio R4.01                                                                  help.
+Facts and fiction: when Hollywood gets it wrong                          C: Can you give me your full name ?
+The film industry exists to tell us stories and sell us dreams. But      D: Of course. My name’s Matas, that’s M-A-T-A-S, Filip Matas.
+are films supposed to tell the truth? Aren’t they a mixture of           C: And the nature of your complaint?
+fact and fiction? Read these examples of Hollywood getting the           D: Well, my luggage got lost two days ago. I flew in from Lima and
+details wrong and judge for yourself.                                        had a stopover in Madrid, but my suitcase never arrived here. I
+A scene from Apollo 13 is set in April, 1970. Astronaut Jim Lovell’s         spoke to one of your colleagues yesterday and he assured me
+daughter holds The Beatles’ album Let It Be. It’s a good scene, but          it would be here today, but it hasn’t arrived.
+can anyone explain how she had this album, which didn’t come             C: I’ll need to take the flight number so that I can check what has
+out until May, a month later?                                                happened.
+In Raiders of the Lost Ark, set in 1936, a map appears on screen,        D: Of course. It was ESE1472.
+showing Indiana Jones’s journey. We read the name Thailand. You          C: Let me check the record on this … Oh yes. It says the suitcase
+might ask, ‘Is this a problem? Wasn’t this possible?’ The journey            was delivered to your address this morning.
+certainly was, but Thailand wasn’t named ‘Thailand’ until 1939. It       D: Well, then we have a huge problem here, because it wasn’t
+was Siam before that.                                                        delivered. I’ve been here all day. Look, I know it’s not your fault,
+Occasionally, the director makes deliberate mistakes. Sofia                  but this really isn’t good enough. Do you think you could find
+Coppola’s Marie Antoinette is all about the queen of the same                out exactly what’s happening?
+name, who was born in 1755. In one scene, there’s a pair of              C: Yes, it does sound wrong. I’ll phone the delivery company this
+Converse trainers. (The shoe company was founded in 1908.)                   morning.
+Coppola thought this would be a way to show how young Marie              D: Is it possible to do it now? I can hold on so as not to waste
+Antoinette was.                                                              time. I really need to know what’s happening.
+                                                                         C: Just a minute, I’ll put you on hold.
+ UNIT 5                                                                  D: Thank you so much. I really appreciate your help.
+
+Audio 5.01                                                               Audio 5.03
+1 calm, shy                                                              1 snapped – He leant back and it broke. The metal piece holding
+2 patient, pleasant
+3 direct                                                                     the seat just snapped, and the whole seat fell off.
+4 confident, sensible                                                    2 faulty – The design’s obviously faulty. It’s not normal for a chair
+5 aggressive
+                                                                             to break.
+Audio 5.02                                                               3 outrageous – But that’s outrageous! My son could have been
+Conversation 1
+A: Good morning. How can I help you?                                         seriously hurt.
+B: Good morning. I’m here to make a complaint about a chair I            4 brand new – This shouldn’t happen even if the chair’s not
+
+    bought from you.                                                         brand new.
+A: OK. I’ll need some details. Can I have your name?                     5 warranty – I’m sorry, but there’s nothing I can do about it. The
+B: Yes, it’s Elinor McDonnell. That’s M-c-D-o-n-n-e-l-l. Capital D.
+A: Ms or Mrs?                                                                warranty is for three years.
+B: Mrs.                                                                  6 assured – I spoke to one of your colleagues yesterday and he
+A: So Mrs McDonnell, can you explain exactly what happened?
+B: Yes, I bought one of your office chairs for my son’s work desk,           assured me the suitcase would be here today.
+
+    and yesterday he was sitting in the chair … He leant back and        Audio 5.04
+    it broke. The metal piece holding the seat just snapped, and         1 The best ever advert I’ve seen was one for jeans.
+    the whole seat fell off. He almost broke his arm!                    2 TV ads are becoming more and more like mini films.
+A: I’m sorry to hear that. When exactly did you buy it?                  3 Phones are getting cheaper and cheaper.
+B: It was about three years ago.                                         4 The more I buy the better I feel.
+A: Three years. Could you give me the exact date?
+                                                                         Audio 5.05
+                                                                         A: So have you made up your mind?
+                                                                         B: Well, yes and no. I messaged Sam and he had some good
+
+                                                                             advice. And I’ve read a lot about e-bikes, you know, reviews and
+                                                                             websites, everything.
+                                                                         A: So, what did Sam say?
+                                                                         B: Well he was really helpful. From what he says, it depends on
+                                                                             what you want to use it for. I just want a bike to get to work
+                                                                             and do the shopping, so I thought a commuter bike would be
+                                                                             perfect.
+
+                                                                                                                                                  163
+AUDIOSCRIPTS
+
+A: But?                                                                UNIT 5 REVIEW
+B: But Sam made a good point, that if I ever want to use the bike
+                                                                      Audio R5.01
+    outside the city, go into the forest or something, I’d be better  Shoppers beware!
+    off with a commuter bike that’s also good off-road.               Every consumer knows about pricing tricks like putting 99 at the
+A: What about a mountain bike then?                                   end of the price, but what about other things a shop does to get
+B: The only thing is that a mountain bike is no good for carrying     you to make a purchase? One example is the location of products.
+    things like shopping, and according to Sam, it’s quite heavy. So  Even if you don’t have a particular brand loyalty, you’re more
+    anyway, he recommended two models that would be good for          likely to buy things because shops put them at eye-level so that
+    both things and I’m trying to decide which one.                   you see them first. In supermarkets, the essential things (milk,
+A: Let me see. They both look nice. Wow, they’re not cheap.           bread, etc.) are at the back of the shop so as to make you pass
+    Which one’s better, do you think?                                 everything else on the way.
+B: Not sure. There are a few things I need to think about. Like how   And shops also pay attention to your senses to influence you.
+    much power the bike has, how much range …                         Take music, for example. The slower the music, the calmer you
+A: How much range?                                                    feel and the more time you spend shopping.
+B: Yeah, how far it goes before it runs out of electricity. I hadn’t  And in the end, shops know that price is king and everyone’s a
+    thought of that before I started looking. Anyway, the Dorith      bargain hunter at heart, so you’ll find products on offer in almost
+    has a better range, and it also has more power going uphill.      every part of a shop. After all, who can say no to a good deal?
+    Long story short, it’s a better bike.
+A: So it’s a matter of whether you want to pay more for more           UNIT 5 MEDIATION BANK
+    range and a better uphill ride?
+B: Yes, in the end, it’s a question of how much I want to pay.        Audio MB5.01
+A: Have you read any reviews?                                         So, it’s frustrating when you don’t know what you can recycle,
+B: Yes, tons. All in all, reviewers of both models were happy with    isn’t it? It feels like a lottery – maybe this can go in the recycling
+    their bikes, though one said the Wells Rider didn’t have the      bin, maybe not … You put things in, then you take them out
+    range he expected.                                                again, you do this for hours. Well, you can stop this situation from
+A: So they didn’t help.                                               happening with our new product which tells you if the things
+B: They did, I guess. They made me think about things like range      you put in the bin can be recycled or not. The bin is a bit like
+    and power, but I don’t really need those to be amazing. It all    those checkout machines in the supermarket that can recognise
+    comes down to the price, really, if I’m deciding between these    products – it has a camera which can ‘see’ the products and
+    two models. I don’t mind spending more, but is it worth it?       decide if they’re OK. It’s also similar to the supermarket machine
+A: Well, just because something’s less expensive, it doesn’t mean     because it speaks. It will say something like ‘I’m sorry, you can’t
+    it’s not good.                                                    recycle this’. Your life will never be the same again when you have
+B: Yes, taking everything into account, I think the Wells Rider is    this product in your home – you’ll help the planet and feel good
+    good enough for me.                                               about yourself.
+A: Well, let’s go get it then!
+                                                                       UNIT 6
+Audio 5.06
+1 From what he says, it depends on what you want to use it for.       Audio 6.01
+2 The only thing is that a mountain bike is no good for carrying      L = Logan C = Cecilia A = Amy
+                                                                      L: There are so many diverse neighbourhoods in Toronto.
+    things like shopping.
+3 According to Sam, it’s quite heavy.                                     However, I’ll go with the one that’s just nearby my house
+4 Long story short, it’s a better bike.                                   because I go there so often. It’s Rosedale. It’s a very wealthy
+5 So it’s a matter of whether you want to pay more for more               neighbourhood just to the northeast of the city centre
+                                                                          (it’s about a ten-minute walk). It has these huge tree-lined
+    range and a better uphill ride?                                       avenues, with these historic century-old houses, each one
+6 Yes, in the end it’s a question of how much I want to pay.              different to the next, so the architecture is really interesting
+7 All in all, reviewers of both models were happy with their bikes.       and unique. The streets wind around, with different street
+8 It all comes down to the price.                                         lamps and sidewalk styles. And the tall trees offer shade, so
+9 Well, just because something’s less expensive, it doesn’t mean          it’s a lovely spot for walking. One thing I love about this area is
+                                                                          that there are no restaurants or stores or high-rise buildings;
+    it’s not good.                                                        there are plenty of them back in the centre. The east side
+10 Yes, taking everything into account I think the Wells Rider is         is entirely surrounded by a deep valley, where Torontonians
+                                                                          jog, walk their dogs, or just stroll by the river. There’s a really
+    good enough for me.                                                   relaxed atmosphere. It’s so peaceful that you hardly realise
+                                                                          you’re still in the city.
+Audio 5.07                                                            C: The Barranco district is one neighbourhood I always try to visit
+1 From what he says, it depends on what you want to use it for.           when I travel to Lima. It was an area where wealthy residents
+2 According to Sam, it’s quite heavy.                                     used to enjoy the beach. So it has these historic old summer
+3 Long story short, it’s a better bike.                                   houses, but the area became very run-down, and then lots
+4 In the end, it’s a question of how much I want to pay.                  of artists moved in, so now the whole district is covered with
+5 All in all, reviewers of both models were happy with their bikes.       these amazing colourful murals and street art. It’s so beautiful
+6 Taking everything into account, I think the Wells Rider is good         to walk around. The houses are painted in different colours and
+                                                                          there are lots of little bars and coffee shops to enjoy. There’s
+    enough for me.                                                        a busy market where local artists sell their work, and you can
+                                                                          buy jewellery or hand-made Peruvian arts and crafts. The area
+ UNIT 5 VOCABULARY BANK                                                   has become so popular that it’s quite a tourist spot now, but
+                                                                          it is still a great place to wander around. It has such a friendly,
+Audio VB5.01                                                              welcoming atmosphere and there are lots of things you can do,
+1 charge, fare, fee, loss                                                 like maybe visit an art gallery, or enjoy a delicious meal with
+2 bargain, discount, refund, profit                                       a fantastic view of the ocean. Or you can visit in the evening
+3 receipt                                                                 because it has such lively nightlife, too.
+4 donation
+
+164
+AUDIOSCRIPTS
+
+A: One of my favourite neighbourhoods has to be Yarraville, in             T: The boat itself is quite big, and you can sit inside. You can sit
+    Melbourne, Australia. In fact, it was named as one of the coolest          outside, too, but it gets a bit crowded and it can be windy. So if
+    neighbourhoods in the world. It’s a wonderful place to live                you go inside, there’s a café and toilets. It’s very comfortable.
+    because it has such a great sense of community. There’s so much            And there’s no tour guide explaining everything, you can
+    to do in Yarraville. There’s an amazing Art Deco cinema and there          just get hold of a tourist map with information about all the
+    are lots of lively music venues and fun places to shop. There’s            landmarks and learn about them as you go along.
+    an amazing bookshop called the Sun Bookshop, and there are
+    organic food shops, bakeries, things for your house, plant shops.      B: So, have I got this right? There isn’t a guided tour.
+    It has a busy farmer’s market where you can find lots of local         T: That’s right, but you can find out all the information and have
+    produce or get a great coffee in one of the coffee shops. Yarraville
+    is also a fantastic place to eat and drink. You can get Mexican            it on your phone.
+    burritos or Japanese noodles. You can enjoy restaurants with           B: Yes, I think we prefer that.
+    delicious food from all over the world. Or you can listen to live      T: It’s a really fantastic day out. I’d thoroughly recommend it if
+    music or enjoy a bit of culture. Basically, Yarraville has everything
+    you need – you don’t need to go anywhere else. I love it.                  the weather is good.
+
+Audio 6.02                                                                 Audio 6.05
+1 It was so interesting to learn about the history of the place.           1 So what you’re saying is the Thames Clipper is cheaper.
+2 It was such a lovely place to visit.                                     2 I didn’t catch what you said about …
+3 The food was so delicious that we decided to go back the next            3 Sorry, can you just say that last bit again?
+                                                                           4 So let me just check I’ve got this right.
+    day.                                                                   5 In other words, we see nearly everything.
+4 The neighbourhood had such a welcoming atmosphere that we                6 Have I got this right? There isn’t a guided tour.
+
+    didn’t want to leave.                                                  Audio 6.06
+                                                                           1 Could you just go over those options again, please?
+Audio 6.03                                                                 2 So let me just check, …
+1 I’m used to travelling alone.                                            3 Can you just say that last bit again, please?
+2 We’re used to the ocean.
+3 I got used to the cold.                                                  Audio 6.07
+4 We’re getting used to living on a boat.                                  I’m going to talk about my adopted city of Oviedo in the north of
+                                                                           Spain. It has wonderful cultural traditions – its music, language
+Audio 6.04                                                                 and food – and these traditions have stayed the same for many
+B = Boris T = Tonya                                                        generations.
+B: OK, so Tonya, could you tell us the best way to see the London          An example of the culture is Oviedo’s architecture and public art.
+                                                                           The old town is famous for its medieval buildings and structures
+    sights using public transport? What do you think is our best           such as the archaeology museum and La Foncalada Fountain.
+    option?                                                                There are also many sculptures in public places – in the parks and
+T: Yes, absolutely. As I was telling you earlier, I’d recommend you        streets. One of the best-known is a sculpture of a mother and
+    take the Thames Clipper river boats. I mean, there are lots            child by the Colombian artist Fernando Botero. But really, as I said,
+    of different river boats, but the cruises designed for tourists        anywhere you go in the centre you’ll find sculptures and statues.
+    are much more expensive. The Thames Clipper is really good             Oviedo is also famous for its traditional food. So, for example,
+    because basically it’s public transport.                               let’s take fabada. Fabada is a dish made of beans and meat, like
+B: So what you’re saying is the Thames Clipper is cheaper, right?          a type of stew. It’s absolutely delicious. Another speciality of the
+T: Cheaper than a cruise, yes, that’s right. And the great thing           region is rice. There are some amazing rice dishes, such as rice
+    about it is that you don’t need to buy a special ticket as it’s        with octopus or with shrimps. So I’d say fabada and the rice dishes
+    part of London’s public transport system. You don’t need to            are the best specialities to try in Oviedo.
+    book in advance, you can just use your travel card to tap in           The city also has its own culture and language. Many people
+    and tap out. And it’s easy to get on a boat. You just go to the        in Oviedo still speak Asturian, which is similar to Spanish. And
+    nearest tube station.                                                  when it comes to music, the region even has its own musical
+B: Sorry I didn’t catch what you said about ‘tap in and tap out’.          instruments. There’s one that is similar to a Scottish bagpipe.
+T: Oh, yes of course. You can use your travel card or your bank            You can hear it at the many festivals that celebrate the regional
+    card and just tap the ticket machine and it automatically takes        culture and history.
+    the fare for your journey. You also have to tap out at the end of
+    the journey.                                                            UNIT 6 REVIEW
+B: I see. So we don’t have to book in advance or buy a special
+    ticket that is valid just for the boat?                                Audio R6.01
+T: That’s right.                                                           Astronaut
+B: OK, that’s great. And where would you suggest we get the boat?          They drive the crew to the launchpad. You stand and look up
+T: Well, there are two different routes – one which goes up the river      at this spaceship seventeen storeys high, with its huge rocket
+    and one which goes down. You can hop on and hop off at any             boosters on each side. You feel fear and excitement. Before, you
+    point, just like you do with the bus or a train. But a very popular    were so busy training that you didn’t have time to feel scared. You
+    option with visitors is to get the boat from Westminster Pier. You     didn’t think you were risking your life. Now it becomes real.
+    take the tube to Westminster and it’s signposted from there.           You take a lift to the launch platform thirty metres in the sky.
+B: Sorry, can you just say that last bit again? Where do we take           You go into a white room and put on your equipment. Next, you
+    the tube?                                                              look into a camera and say goodbye to your family. The other
+T: To Westminster. You can walk to Westminster Pier from there.            astronauts become your new family. You’re used to them and
+B: OK.                                                                     their habits; you’ve been training together for months.
+T: And you take the boat right along the river all the way to              You enter the shuttle. Inside it’s tiny. It’s one of many things
+    Greenwich.                                                             you have to get used to. You are strapped in and you check your
+B: So let me just check I’ve got this right. So, we can take the boat      equipment one last time.
+    from Westminster Pier to Greenwich.                                    Space is silent, but the rocket isn’t. The engines make such a
+T: Yes. And on the way, the boat passes many of London’s famous            loud noise you can’t hear yourself think. Soon you’re travelling at
+    landmarks – you see the Houses of Parliament, London Bridge,           17,500 miles per hour. After eight and a half minutes, you’ve left
+    Tower Bridge, you go past the Globe Theatre and the South              the Earth’s atmosphere. Suddenly, the noise stops. You remove
+    Bank.                                                                  your helmet, let it go, and watch it float. You trained for these
+B: Oh, in other words, we see nearly everything. That sounds               conditions. Everything is familiar. Yet nothing will ever be the
+    great. And what’s the boat like?                                       same after you’ve been in space.
+
+                                                                                                                                                    165
+AUDIOSCRIPTS
+
+ UNIT 6 MEDIATION BANK                                                       He said he was giving a surprise party for his wife, Moni, and
+                                                                             asked me if I could come. I said yes. Endre told me that I’d be in
+Audio MB6.01                                                                 trouble if I told her! I promised that I’d keep it a secret. Anyway,
+A = Art M = Melinda G = Georgina                                             it was at their house, and the plan was for me to go there at
+A: Well, obviously it needs to be the smart roads idea, really.              7 p.m. on Saturday and set things up, then the other guests
+                                                                             would arrive at 8 p.m., and Endre and Moni would come back
+    There are so many traffic accidents at the moment, and                   from a restaurant at nine. So three days later, on Saturday at
+    anything we can do to reduce that number is good.                        7 p.m., I drove over to their house and knocked on the door.
+M: Yes, good point, and smart roads would definitely help with the           Moni answered the door, and said ‘Josh, what are you doing
+    problem, especially with the heavy snow in winter, but another           here?’ I just said, ‘What happened to the party?’ Endre walked
+    way to fix the problem is to have fewer people in cars in our            up behind her and looked at me with an angry expression and
+    city. Does everyone agree with that?                                     said, ‘I told you, it’s next Saturday.’ I basically ruined the whole
+A: It’s a nice idea Melinda, but I feel it’s going to be very difficult      thing.
+    to make people leave their cars at home.                             H: Very awkward. I would have been pretty angry with you,
+M: OK, let’s bring in a new voice to this discussion. Georgina.              too. Meanwhile, we have time for one more, and this one’s a
+G: Hey there, Melinda                                                        reminder to all of you learning a foreign language to pay close
+M: Georgina, what do you think? Do you see it the same way as                attention to your grammar. Here’s Ela.
+    I do? Fewer cars? Maybe we should charge people for driving          E: So, I was having a coffee with a Scottish woman who I met at
+    into the city centre?                                                    the college, and at the time my English wasn’t as good as it
+G: Well, yes, Melinda, we need fewer cars on the road, but I’m not           is now. We were sitting chatting, getting to know each other,
+    sure about charging people. Another possibility is to make it            and at one point the conversation went a bit quiet. So I said,
+    cheaper to travel on public transport. The self-driving buses            ‘I’m sorry, I’ve been talking too much. Are you boring? Shall we
+    would help us with that.                                                 leave?’ A very simple mistake, I know, but as I said at the time
+A: But maybe people just prefer their cars. They feel more                   my English wasn’t great, and I didn’t even realise my mistake.
+    comfortable in their own space, not sitting on a crowded bus …           She said OK, asked the waiter for the bill, and when we said
+M: But it’s not a question of if they are comfortable, Art. People           goodbye I noticed she looked a bit uncomfortable. After that
+    need to be taught to use a new system, and we shouldn’t worry            we didn’t meet again. I didn’t realise what I had said until much
+    if they get a little upset about changing how they behave.               later, during an English lesson about adjective endings. I still
+    That’s normal. Don’t you think that people need to grow up               feel really bad when I remember that.
+    and stop doing things which hurt our city, hurt the planet?          H: Well, maybe she was boring. We’ll never find out! We’d love
+A: I understand how you feel, but I think you don’t understand               to hear more of your experiences though, so write in the
+    how people’s minds work. They’re not going to change their               comments or send me an audio message with your story of
+    behaviour just because you get angry with them, they need to             how a misunderstanding affected one of your relationships.
+    choose to do the right thing.                                            Thanks for listening and we’ll be back with more next time!
+M: OK, let’s bring in Roger, now. Roger, what …
+                                                                         Audio 7.02
+ UNIT 7                                                                  1 I messaged her back and replied that I’d be there.
+                                                                         2 She wanted to know if I liked the job.
+Audio 7.01                                                               3 She asked whether I’d had any problems with colleagues.
+H = Host L = Luisa R = Rich J = Josh E = Ela                             4 My friend Endre asked me if I was doing anything the following
+H: What’s in a word? Well, it depends on who says it, and
+                                                                             Saturday.
+    what they mean. Many of us believe that most conflicts in            5 He said he was giving a surprise party for his wife Moni.
+    relationships are the result of miscommunication, and so often       6 He asked me if I could come.
+    this comes down to language. Sometimes just one word. Take           7 He said I’d be in trouble if I told her
+    the word ‘invite’ for instance.                                      8 I promised that I’d keep it a secret.
+L: A few days before my friend’s birthday, she sent me a message
+    saying that she wanted to invite me to her birthday party. It        Audio 7.03
+    was in a private room at an expensive restaurant. I knew the         1 Are you going out tonight?
+    place, but only from the outside. But I messaged her back and        2 I can’t do it.
+    replied that I’d be there. I bought her a present, and when the      3 You’ll all get wet.
+    day came, I went. At the end of the meal, when the bill came, it     4 I’m leaving tomorrow.
+    was clear all of the guests were expected to pay our part of the     5 Did you stay at home yesterday?
+    bill. I was really upset. She should have been clearer. It cost me   6 Do we have to speak English?
+    a whole week’s salary. It was such an expensive place.
+H: Well that can’t have been good for your friendship. And what          Audio 7.04
+    about other types of relationship? Maybe workplace ones?             1 answer, argue, mention, promise, wonder
+    Rich has a story from his workplace.                                 2 agree, complain, confirm, convince, enquire, explain, reply
+R: I was in my first month on the job and my manager said she
+    wanted to talk to me and could I come to her office. I felt really   Audio 7.05
+    nervous. She had a very serious style, kind of scary. I walked       1 I’ve just been tagged in a photo.
+    into her office, and sat down. She was actually really nice. She     2 I haven’t been messaged yet.
+    wanted to know if I liked the job. Then she asked whether I’d        3 I was given my phone case by a friend.
+    had any problems with colleagues or anything. I answered her         4 My phone got damaged recently.
+    and we had a good conversation. Then she started checking            5 I’m being sent a lot of spam at the moment.
+    her computer and she said, ‘OK, could you close the door?’ I
+    got up, closed the door – on the inside – and stood there. My        Audio 7.06
+    manager kept looking at something on her computer, and               P = Paul D = Denise
+    there was dead silence. Finally, she looked up and said, ‘Oh, are    P: Hi. Nice party.
+    you still here?’ I was so embarrassed.                               D: Yes, yes, very nice.
+H: That is embarrassing! At least next time you’ll know what to          P: I’m Paul.
+    do. If there is a next time. And speaking of next time, when is      D: I’m Denise.
+    next weekend? Sometimes it’s not so clear, like in Josh’s story.     P: So, do you know Celia?
+J: Not long ago my friend Endre called me on a Wednesday night           D: Yes, I do. We went to college together.
+    and asked me if I was doing anything the following Saturday –        P: Sorry, I just saw someone I know. So, from college?
+    he said, ‘Are you doing anything next Saturday?’ and I said no.
+
+166
+AUDIOSCRIPTS
+
+D: Yes, that’s right.                                                 P: That sounds interesting! What do you mean by ‘researching
+P: Oh … erm, this is a nice party.                                        new flavours?’
+D: Yes, I think so, too. It’s my first time…
+P: Hey Sharon! Hi Jez! Sorry. So, nice weather, isn’t it?             D: Well, I once developed a banana-flavoured crisp.
+D: Yes, very.                                                         P: Sounds terrible! What was it like?
+P: Very. Erm …
+D: Oh, I’ve just seen someone I know. Nice to meet you.               P: I was a waiter there, but I left.
+                                                                      D: Really? Why’s that?
+Audio 7.07                                                            P: I liked the people I was working with, but I didn’t like some of
+P: Hi. Nice party.
+D: Yes, yes, very nice.                                                   the customers.
+P: I’m Paul.                                                          D: How come?
+D: I’m Denise. Nice to meet you.
+P: And you. How do you know Celia?                                    P: They were always complaining.
+D: We went to college together.                                       D: How did that make you feel?
+P: Oh yes, were you on the same course as her?
+D: Yes, we both did food technology.                                  Audio 7.09
+P: How did you get into that?                                         P = Paul D = Denise
+D: My mother was a chef, so I suppose I just thought it was a good    1
+                                                                      P: It covers all sorts of other things.
+    idea.                                                             D: Such as?
+P: You know, I’ve always wondered, what exactly is ‘food
+                                                                      2
+    technology’?                                                      P: I used to work with her, at the café. I was a waiter there, but I
+D: Well, obviously you learn a lot about cooking, but it covers all
+                                                                          left .
+    sorts of other things.                                            D: Really? Why’s that?
+P: Such as?
+D: Well, how food is produced, erm, researching new flavours.         Audio 7.10
+P: That sounds interesting. What do you mean by ‘researching          1 Because?
+                                                                      2 What’s it like?
+    new flavours’?                                                    3 How come?
+D: Well, different ice cream flavours or crisp flavours.              4 For instance?
+P: Crisp flavours! That’s unusual. So, for instance?
+D: Well, I once developed a banana-flavoured crisp.                    UNIT 7 VOCABULARY BANK
+P: Sounds terrible. What was it like?
+D: My tutor said it was the most disgusting thing she’d ever tasted.  Audio VB7.01
+P: I’m not surprised! It sounds awful.                                A scroll down, scroll up
+D: It was! What about you? How do you know Celia?                     B tap
+P: I used to work with her, at the café. I was a waiter there, but I  C swipe
+                                                                      D download
+    left .                                                            E folder
+D: Really? Why’s that?                                                F refresh
+P: I liked the people I was working with, but I didn’t like some of   G network
+                                                                      H icon
+    the customers.                                                    I upload
+D: How come?                                                          J inbox
+P: Well some of them were quite rude to the waiters. They got
+                                                                       UNIT 7 REVIEW
+    very impatient if we didn’t serve them immediately. They were
+    always complaining.                                               Audio R7.01
+D: How did that make you feel?                                        Imperfect inventions
+P: Pretty angry, actually. But you can’t lose your temper with        They say that necessity is the mother of invention – if there’s a
+    customers.                                                        need, then the solution will be found. But there seem to be some
+D: Yeah, I can imagine. But you like food?                            needs for which the perfect solution hasn’t been developed yet.
+P: Yeah. I love food. This food’s extremely good.                     Here are some of your ideas.
+D: Yes, isn’t it? This salad’s particularly nice. How about you? Are
+    you at all interested in cooking?                                 Earplugs that work
+P: I love cooking, but I’m a terrible cook! I’m more of a restaurant  More and more people live in noisy environments, and many said
+    person.                                                           they had been waiting for years for the perfect ear plug. ‘I’m often
+D: Oh, so am I, but I’m fairly new to this area. Can you recommend    woken up by the neighbours, and nothing I’ve tried has worked.’
+    any good restaurants near here?
+P: What sort of food do you like?                                     No-jam printer
+D: Indian, Mexican, and I quite like …                                Many of you asked if it was possible to invent a printer that never
+                                                                      jammed. ‘It’s particularly annoying when I’m in a hurry and I get a
+Audio 7.08                                                            pop-up with a jammed icon.’
+D = Denise P = Paul
+D: I’m Denise. Nice to meet you.                                      Scratch-proof sunglasses
+P: And you. How do you know Celia?                                    What can make you angrier than when you drop your expensive
+D: We went to college together.                                       sunglasses and they get damaged? ‘When I spend a lot of money
+                                                                      on sunglasses, I expect no scratches – zero.’
+D: Yes, we both did food technology.
+P: Oh. How did you get into that?                                     Self-labelling computer filing system
+                                                                      ‘It shouldn’t be too hard – the program could scan the documents
+D: Well, obviously you learn a lot about cooking, but it covers all   in a folder and choose a label that fits.’
+    sorts of other things,
+
+P: Such as?
+
+                                                                      167
+AUDIOSCRIPTS
+
+ UNIT 8                                                                       information is too complicated, people will start trying
+                                                                              to read and they’ll stop listening to the speaker. So it’s
+Audio 8.01                                                                    important not to put too much text on your slides. Only use
+1 I should’ve been nicer.                                                     a visual where it clearly illustrates your idea and helps the
+2 You shouldn’t’ve paid any attention to him.                                 listener to understand.
+3 If I’d known, I’d’ve done things differently.
+4 If we’d known, we wouldn’t’ve been so worried.                              Moving on to the next point, it’s important to remember that
+                                                                              what you say is only part of your message. The audience will
+Audio 8.02                                                                    be looking at your delivery. How are you standing? Do you
+When my father came home from work in the evening, he always                  look confident? Do you look like you know what you’re talking
+smelled of coffee. He worked in a roasting shed at Lindvalls Kaffe            about? We get a lot of information from just looking and
+in Uppsala. That’s how I came to love the scent of coffee long                listening to how the speaker talks, before we listen to the
+before I began to drink it. I watched out for him cycling along               actual words they say.
+the street and I’d ask the same question every time: ‘Did you find            Turning now to what you want people to do when they listen
+anything today?’                                                              to your presentation. Do you want them to buy a product, or
+When the sacks of green coffee beans arrived for roasting, they               sign up to your website? If you want people to do something,
+were tipped onto a conveyor belt and screened by a powerful                   it’s important that you tell people exactly what to do at the
+magnet. The idea was to remove any metal objects that might                   end of the presentation. This is called a ‘call to action’.
+have ended up in the sack during the drying and packing. Pappa                As a final point, think about your emotions. People will copy
+would bring these things home and tell me a story about every                 your emotions and your feelings, so be enthusiastic about
+one of them.                                                                  your subject, be passionate about what you’re saying and
+Sometimes he brought a coin. ‘Look, this is from Brazil,’ he’d say.           then your audience will feel the same.
+‘Brazil produces more coffee than anywhere else.’
+He’d let me sit on his lap, open up the world atlas in front of us            So, just to recap. 1 Keep your presentation short – less than
+and tell the story: ‘It’s a large country and very hot. This coin             twenty minutes. 2 Keep the visuals very clear. 3 Think about
+turned up inside a sack from Santos,’ he’d explain, pointing at the           your delivery. 4 Include a call to action. And finally, number 5,
+Brazilian port city.                                                          be enthusiastic. I think that’s it.
+He’d describe the working men and women, links in the chain
+that ended with people in Sweden sipping their coffee. Early on, I            Does anyone have any comments or questions? Yes, thank you.
+realised the coffee pickers got the poorest pay.
+My powerful longing to understand the world began with Pappa            AM: What do you do if the technology doesn’t work and you can’t
+telling me about the coins in the coffee sacks and showing me                 show your presentation? Do you have any advice?
+all those countries in the atlas. This longing grew into a lifelong
+passion.                                                                P: That’s a very good question. I’m not sure I can answer that
+                                                                              now. Obviously, it depends on the presentation, but one thing
+Audio 8.03                                                                    I suggest is that …
+1 I watched out for him cycling along the street and I’d ask the
+                                                                        Audio 8.06
+    same question every time: ‘Did you find anything today?’            1 To begin with, …
+2 Pappa would bring these things home and tell me a story
+                                                                        2 The first point …
+    about every one of them.
+3 He’d let me sit on his lap, open up the world atlas in front of us    3 Moving on to …
+
+    and tell the story: ‘It’s a large country and very hot.’            4 As a final point, …
+4 ‘This coin turned up inside a sack from Santos,’ he’d explain,
+                                                                        5 To sum up…
+    pointing at the Brazilian port city.
+5 He’d describe the working men and women …                             6 Just to recap ..
+
+Audio 8.04                                                              Audio 8.07
+1 I’d wait for him every evening.                                       D = Dan M = Melissa J = Jack
+2 He’d always answer my questions.
+3 He’d explain where Santos was on the map.                             D: Hello. My name is Dan Barnet.
+4 He’d point to the Brazilian city.
+                                                                        M: And I’m Melissa Barnet.
+Audio 8.05
+P = Presenter AM = Audience Member                                      D: We are entrepreneurs and together we run a business called
+P: Today I’m going to talk about five things that you need to               Live Your Life Adventure Holidays.
+
+      know about people if you want to give a good presentation.        M: Years ago we realised we didn’t like spending our holidays just
+      When a speaker gives a presentation, they need to                     lying on a beach doing nothing. We’re both very active and
+      understand their audience. The more the presenter knows               like to be out of our comfort zone, so we started organising
+      about how people think and listen, the easier it is for them to       adventure holidays for ourselves.
+      give a presentation which informs, inspires and motivates the
+      audience.                                                         D: And then our friends asked us to do the same for them. Pretty
+      So, to begin with, can I just get a show of hands for all the         soon we were arranging ten to fifteen holidays a year, so we
+      people here who have had to listen to a long presentation             realised it was a business opportunity.
+      with lots of facts and figures and they’ve found it difficult to
+      stay focused? Right. Lots of you. This brings me to my first      M: We organise holidays in various locations around the world.
+      point. People learn best in twenty-minute chunks. After that          Our holidays are a mixture of physical activity, stunning
+      time, it becomes difficult to keep your concentration. So, if         natural environment and cultural experiences. For example,
+      you’re giving a presentation, it’s best to keep it short. Think       you can stay on a farm in Romania, climb mountains in Turkey,
+      about TED Talks. Most of them are twenty minutes long.                or walk along the Italian coastline and then learn to make
+      If your talk is longer, maybe an hour, then divide the talk           fresh pasta with an Italian chef. We also offer riskier activities
+      into three sections, each of twenty minutes. In between the           where you need some training. Examples include caving, rock
+      sections try to have a short break or activity.                       climbing and trekking.
+      Next, my second point. People can listen and watch at the
+      same time, but only if the visual information is easy to read     D: What’s special about Live Your Life is that we work very closely
+      and helps us to understand what is being said. If the visual          with our clients to arrange the perfect holiday for them, and
+                                                                            also we’ve personally tried out every trip that we offer.
+
+                                                                        M: Adventure tourism is a very large tourism sector. The market
+                                                                            for global adventure tourism is worth nearly $500 million and
+                                                                            it’s forecast to grow steadily over the coming years, so this is a
+                                                                            huge market. Our turnover figures for the last three years have
+                                                                            been €70,000, €100,000 and €150,000.
+
+                                                                        D: We’d like to expand our business to cover more countries in
+                                                                            Asia and South America and to reach new clients in these
+                                                                            parts of the world. We’re hoping that an investor will have
+                                                                            business experience in these areas and useful contacts that
+                                                                            can open doors for us.
+
+168
+AUDIOSCRIPTS
+
+M: And we’re asking for €100,000 for a ten percent share of the
+    business.
+
+J: The idea’s great, but I have a couple of questions. Who is
+    the target market for these adventure holidays? Is it mostly
+    families, couples, individuals?
+
+M: All of the above. We tailor the holiday to the client’s needs.
+J: OK. So can you tell me about your social media strategy?
+M: Yes, of course. We have several social media channels so we
+
+    try to make sure that there’s a constant stream of photos and
+    videos of people enjoying their adventures on social media and
+    then …
+
+ UNIT 8 VOCABULARY BANK
+
+Audio VB8.01
+1 When you understand something or solve a problem, you
+
+    figure out how to do it.
+2 When you test a new idea, you try it out.
+3 When you use your imagination to invent a new idea, you
+
+    dream it up.
+4 If you meet together with other people as a group, you get
+
+    together.
+5 When you note something on a piece of paper you write it
+
+    down.
+6 If you take a big idea and split it into smaller sections, you
+
+    break it down.
+7 When you consider the facts about something in a carefully
+
+    organised way, you think it through.
+8 When you investigate something further to find out more
+
+    information, you follow it up.
+
+ UNIT 8 REVIEW
+
+Audio R8.01
+Inventing a Better World
+Ann Makosinski grew up in Canada, but she didn’t have a lot of
+toys as a child. Her first toy was a box of electronic parts. Later
+her parents bought her a hot glue gun. Should her parents have
+bought her more toys? She doesn’t think so. Having these ‘toys’
+encouraged her to collect things around the house and piece
+them together to make new ‘inventions’. These inventions rarely
+worked, but she was never afraid to do something new. She had
+discovered her love for dreaming up new ideas and inventing
+things, and this became her lifelong passion. Motivated by the
+story of a friend in the Philippines who had failed her school
+exams because she had no electricity, Ann took time to work on
+inventing a light source that didn’t need batteries. At fifteen, she
+won the Google Science Fair with a torch powered using only the
+heat in your hand. Two years later, she invented her eDrink coffee
+mug, which uses the heat from a drink to charge your phone. Ann
+pays attention to the world around her, so is always inspired and
+never runs out of ideas. It’s possible that if she’d had more toys as
+a child, she wouldn’t have been so creative in her free time, and
+she might never have become an inventor. She also didn’t own a
+mobile phone when she was a teenager, but she doesn’t think her
+parents should have let her have one. She enjoyed being different
+to the other kids and it gave her a chance to deepen her interest
+in her inventions.
+
+ UNIT 8 MEDIATION BANK
+
+Audio MB8.01
+I was studying medicine, in my second year at university, and
+everyone was so happy, so proud of me, our son is going to be
+a doctor type of thing. Except, I had a different feeling. I didn’t
+share the excitement about being a doctor, in fact I couldn’t
+imagine myself as a doctor. Not a good one anyway. I tried to
+ignore the feeling, but it just didn’t work. In the end, I left the
+course, and obviously everyone was disappointed, and I was the
+most disappointed person of all – I was going to be the one in the
+family that everyone was proud of, and I’d let everyone down. For
+a few months I thought about what I really wanted to do with my
+life and decided on a new direction, and here I am ten years later
+and I’m a very successful accountant. And a happy one, too. Some
+people are born doctors, and I’m a born accountant.
+
+                                                                       169
+

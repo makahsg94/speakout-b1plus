@@ -1,0 +1,193 @@
+{
+  "unit": 7,
+  "title": "connect",
+  "titleAr": "التواصل",
+  "aim": "Talk about communication, report speech and keep conversations going.",
+  "pages": "80–90",
+  "objectives": ["Report statements and questions", "Use passives", "Keep conversations going", "Avoid repetition"],
+  "lessons": [
+    {
+      "id": "7a", "code": "7A", "title": "Mix-up", "pages": "80–82",
+      "goals": ["See how one word causes misunderstanding", "Report statements and questions", "Learn ways of speaking"],
+      "grammar": {
+        "title": "Reported speech",
+        "shortAr": "نقل الكلام في الماضي يرجّع الزمن والضمائر؛ والسؤال بـ if/whether يأتي بترتيب خبرى.",
+        "points": [
+          "Use a past reporting verb (said, told, asked) and move the verb one tense back.",
+          "Change pronouns and references: now → then, yesterday → the day before, here → there.",
+          "Yes/no questions use if/whether and statement word order; no question mark."
+        ],
+        "table": [
+          ["Direct → reported", "‘I’m in a hurry.’ → Feisal said that he was in a hurry."],
+          ["Tense backshift", "‘I speak Spanish.’ → Heidi told me that she spoke Spanish."],
+          ["Present perfect", "‘My phone has just broken.’ → Hakim complained that his phone had just broken."],
+          ["Question", "‘Do you speak English?’ → She asked me if I spoke English."]
+        ],
+        "exceptions": ["No backshift when the information is still true."]
+      },
+      "vocab": [
+        {"word": "read aloud", "ar": "قرأ بصوت عالٍ", "example": "Did you read aloud at school?"},
+        {"word": "scream", "ar": "صرخ", "example": "Someone screamed ‘Help!’ in the street."},
+        {"word": "shout at", "ar": "صاح في", "example": "Do you shout at people when angry?"},
+        {"word": "speak up", "ar": "تكلّم بصوت مسموع", "example": "Would you speak up in a group?"},
+        {"word": "whisper", "ar": "همس", "example": "If he whispers, do you whisper back?"},
+        {"word": "talk something over", "ar": "ناقش أمراً", "example": "Talk big decisions over with someone."}
+      ],
+      "reading": {"summary": "Article about oversharing online."},
+      "listening": [
+        {"track": "7.01", "audioFile": "SO3_B1+_SB_7A_Audio_7_01.mp3", "summary": "Podcast: three word misunderstandings."},
+        {"track": "7.02", "audioFile": "SO3_B1+_SB_7A_Audio_7_02.mp3", "summary": "Reported statements from the podcast."},
+        {"track": "7.03", "audioFile": "SO3_B1+_SB_7A_Audio_7_03.mp3", "summary": "Reported questions."},
+        {"track": "7.04", "audioFile": "SO3_B1+_SB_7A_Audio_7_04.mp3", "summary": "Reporting verbs: answer, agree, complain."}
+      ],
+      "video": {"file": "SO3 B1+ U7 BBC Vlogs.mp4", "summary": "People explain their favourite word."},
+      "speaking": ["Talk about recent conversations."],
+      "writing": ["Write a story about an event."],
+      "practice": [
+        {"type": "choice", "q": "‘I’m in a hurry.’ → He said that he ___ in a hurry.", "options": ["is", "was", "will be"], "answer": "was", "why": "Past reporting verb → past simple."},
+        {"type": "choice", "q": "She asked me ___ I spoke English.", "options": ["that", "if", "what"], "answer": "if", "why": "Yes/no questions take if."},
+        {"type": "choice", "q": "‘I’m working from home.’ → She explained that she ___ from home.", "options": ["worked", "was working", "had worked"], "answer": "was working", "why": "Present continuous → past continuous."}
+      ]
+    },
+    {
+      "id": "7b", "code": "7B", "title": "Oversharing", "pages": "83–85",
+      "goals": ["Understand passives in online contexts", "Learn internet vocabulary", "Discuss online privacy"],
+      "grammar": {
+        "title": "Passives",
+        "shortAr": "المبني للمجهول: be + التصريف الثالث؛ يركّز على المفعول. get بديل غير رسمي للأحداث المفاجئة.",
+        "points": [
+          "be + past participle focuses on the affected person or thing, not the doer.",
+          "Passive when the doer is obvious, unknown or unimportant; add by only if it matters.",
+          "Informal get + past participle is common for unexpected negative events."
+        ],
+        "table": [
+          ["Present simple", "English is spoken in most cities."],
+          ["Past simple", "It was made over a thousand years ago."],
+          ["Present perfect", "The app has been downloaded over a million times."],
+          ["Informal get", "My phone got damaged recently."]
+        ],
+        "exceptions": ["get is informal and usually negative."]
+      },
+      "vocab": [
+        {"word": "icon", "ar": "أيقونة", "example": "Which icons can you name?"},
+        {"word": "download", "ar": "نزّل", "example": "How often do you download files?"},
+        {"word": "folder", "ar": "مجلد", "example": "Do you name your folders clearly?"},
+        {"word": "inbox", "ar": "صندوق الوارد", "example": "How many emails are in your inbox?"},
+        {"word": "refresh", "ar": "حدّث الصفحة", "example": "Press refresh for new information."},
+        {"word": "swipe", "ar": "مرّر بإصبعك", "example": "Swipe left or right on your phone."}
+      ],
+      "reading": {},
+      "listening": [
+        {"track": "7.05", "audioFile": "SO3_B1+_SB_7B_Audio_7_05.mp3", "summary": "Passive examples about being tagged and spammed."},
+        {"track": "VB7.01", "audioFile": "SO3_B1+_SB_7B_Audio_VB7_01.mp3", "summary": "Internet words: scroll, tap, icon, folder, inbox."}
+      ],
+      "video": {"file": "", "summary": ""},
+      "speaking": ["Discuss issues connected to online privacy."],
+      "writing": ["MEDIATION: Explain a chatbot flowchart."],
+      "practice": [
+        {"type": "choice", "q": "The app ___ over a million times.", "options": ["has downloaded", "has been downloaded", "is downloading"], "answer": "has been downloaded", "why": "Focus on the app → passive."},
+        {"type": "choice", "q": "My computer ___ by a friend last week.", "options": ["got tricked", "tricked", "is tricking"], "answer": "got tricked", "why": "Informal get passive."},
+        {"type": "choice", "q": "The winner ___ tomorrow.", "options": ["will announce", "will be announced", "announces"], "answer": "will be announced", "why": "Future passive: will + be + participle."}
+      ]
+    },
+    {
+      "id": "7c", "code": "7C", "title": "Conversation savers", "pages": "86–87",
+      "goals": ["Start and sustain a conversation", "Use follow-up and short questions", "Show interest"],
+      "grammar": {
+        "title": "How to keep a conversation going",
+        "shortAr": "عبارات البداية والمتابعة والأسئلة القصيرة والتعليقات تبقي الحوار مستمراً.",
+        "points": [
+          "Start: How do you know…? / Can you recommend…?",
+          "Continue: How did you get into that? What do you mean by…?",
+          "Short questions: Such as? Why’s that? And then? Comments: Sounds interesting!"
+        ],
+        "table": [
+          ["Starting", "How do you know Celia?"],
+          ["Follow-up", "How did you get into that?"],
+          ["Example / reason", "Such as? / How come?"],
+          ["Comment", "That sounds interesting!"]
+        ],
+        "exceptions": []
+      },
+      "vocab": [
+        {"word": "actually", "ar": "في الحقيقة", "example": "I do UI animation, actually."},
+        {"word": "obviously", "ar": "من الواضح", "example": "Obviously, you learn a lot about cooking."},
+        {"word": "particularly", "ar": "خصوصاً", "example": "This salad’s particularly nice."},
+        {"word": "extremely", "ar": "بشكل بالغ", "example": "This food’s extremely good."},
+        {"word": "definitely", "ar": "بالتأكيد", "example": "I’d definitely go to help."},
+        {"word": "probably", "ar": "على الأرجح", "example": "I’m probably a good communicator."}
+      ],
+      "reading": {},
+      "listening": [
+        {"track": "7.06", "audioFile": "SO3_B1+_SB_7C_Audio_7_06.mp3", "summary": "An awkward party conversation."},
+        {"track": "7.07", "audioFile": "SO3_B1+_SB_7C_Audio_7_07.mp3", "summary": "The improved conversation."},
+        {"track": "7.09", "audioFile": "SO3_B1+_SB_7C_Audio_7_09.mp3", "summary": "Short questions for examples and reasons."},
+        {"track": "7.10", "audioFile": "SO3_B1+_SB_7C_Audio_7_10.mp3", "summary": "Short-question prompts."}
+      ],
+      "video": {"file": "", "summary": ""},
+      "speaking": ["Have a two-minute conversation."],
+      "writing": ["Write an email giving advice about a problem."],
+      "practice": [
+        {"type": "choice", "q": "You want an example. What do you ask?", "options": ["Such as?", "Why not?", "And then?"], "answer": "Such as?", "why": "Such as? asks for an example."},
+        {"type": "choice", "q": "Which keeps a conversation going after ‘I worked at a café’?", "options": ["How did that make you feel?", "Yes.", "It was a café."], "answer": "How did that make you feel?", "why": "A follow-up question invites more."},
+        {"type": "choice", "q": "To ask about a reason, use:", "options": ["What was it like?", "How come?", "Where did you get it?"], "answer": "How come?", "why": "How come? asks for a reason."}
+      ]
+    },
+    {
+      "id": "7d", "code": "7D", "title": "A good communicator", "pages": "88–89",
+      "goals": ["Evaluate your communication skills", "Avoid repetition", "Discuss communication problems"],
+      "grammar": {
+        "title": "Avoiding repetition: so, to, not, be",
+        "shortAr": "نتجنّب التكرار بـ do/so/not/to/be بدل إعادة الجملة.",
+        "points": [
+          "do/does/did replace a verb: I didn’t see John, but Mary did.",
+          "so/not: I think so, I hope not, I don’t think so.",
+          "After want, would like and try, keep to or to be: Yes, I’d love to."
+        ],
+        "table": [
+          ["Auxiliary", "Yes, I do."],
+          ["Positive", "I think so."],
+          ["Negative", "I hope not."],
+          ["Verb phrase", "Yes, I’d love to."]
+        ],
+        "exceptions": ["Prefer don’t think so to think not."]
+      },
+      "vocab": [
+        {"word": "I think so", "ar": "أظن ذلك", "example": "Are you going? — I think so."},
+        {"word": "I hope not", "ar": "آمل ألا", "example": "We’ll miss the plane. — I hope not."},
+        {"word": "I suppose so", "ar": "أظن ذلك بتردّد", "example": "Can I borrow it? — I suppose so."},
+        {"word": "I’d love to", "ar": "يسرّني ذلك", "example": "Come with us. — I’d love to."},
+        {"word": "try not to", "ar": "أحاول ألا", "example": "Don’t work too hard. — I’ll try not to."},
+        {"word": "I don’t think so", "ar": "لا أظن ذلك", "example": "Did she finish? — I don’t think so."}
+      ],
+      "reading": {},
+      "listening": [],
+      "video": {"file": "SO3 B1+ U7 BBC StreetInt.mp4", "summary": "Street interviews about being a good communicator."},
+      "speaking": ["Join a discussion about communication."],
+      "writing": [],
+      "practice": [
+        {"type": "choice", "q": "A: I didn’t back up my work. B: You should have. → I ___.", "options": ["didn’t", "did", "do"], "answer": "did", "why": "did replaces the verb."},
+        {"type": "choice", "q": "A: Are you going? B: ___", "options": ["I hope not so", "I think so", "I think not"], "answer": "I think so", "why": "Positive answer: think so."},
+        {"type": "choice", "q": "A: Shall we invite Terry? B: I don’t really want ___", "options": ["to", "so", "be"], "answer": "to", "why": "to replaces the verb phrase."}
+      ]
+    }
+  ],
+  "review": {
+    "summary": "Review reported speech, passives, conversation skills and avoiding repetition.",
+    "tasks": ["Listen to ‘Imperfect inventions’.", "Discuss which invention you would choose.", "Report what people said about communication."],
+    "quiz": [
+      {"q": "‘I’ll call you later.’ → You said you ___ call me.", "options": ["will", "would", "can", "could"], "answer": "would", "skill": "grammar"},
+      {"q": "The report has already ___.", "options": ["signed", "been signed", "signing", "being signed"], "answer": "been signed", "skill": "grammar"},
+      {"q": "She asked me ___ I had had problems.", "options": ["that", "whether", "what", "which"], "answer": "whether", "skill": "grammar"},
+      {"q": "‘Do you speak English?’ → She asked if I ___ English.", "options": ["spoke", "speak", "will speak", "had spoken"], "answer": "spoke", "skill": "grammar"},
+      {"q": "A: I didn’t see John. B: Mary ___.", "options": ["did", "does", "was", "do"], "answer": "did", "skill": "grammar"},
+      {"q": "I’d love ___ to your party.", "options": ["come", "to come", "coming", "to coming"], "answer": "to come", "skill": "grammar"},
+      {"q": "Which word means ‘say something very quietly’?", "options": ["scream", "whisper", "shout", "speak up"], "answer": "whisper", "skill": "vocab"},
+      {"q": "A small picture that opens a program is a(n) ___.", "options": ["icon", "inbox", "folder", "network"], "answer": "icon", "skill": "vocab"},
+      {"q": "To move files to cloud storage is to ___.", "options": ["upload", "download", "refresh", "swipe"], "answer": "upload", "skill": "vocab"},
+      {"q": "Which phrase asks for a reason?", "options": ["Such as?", "How come?", "What’s it like?", "And then?"], "answer": "How come?", "skill": "vocab"},
+      {"q": "To discuss a problem before deciding, talk it ___.", "options": ["over", "up", "to", "on"], "answer": "over", "skill": "vocab"},
+      {"q": "‘Speak louder’ = ___.", "options": ["whisper", "speak up", "yell at", "scream"], "answer": "speak up", "skill": "vocab"}
+    ]
+  }
+}

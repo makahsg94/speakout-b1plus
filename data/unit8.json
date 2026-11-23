@@ -1,0 +1,193 @@
+{
+  "unit": 8,
+  "title": "wisdom",
+  "titleAr": "الحكمة",
+  "aim": "Reflect on advice, talk about regrets and give a clear presentation.",
+  "pages": "92–102",
+  "objectives": ["Talk about past regrets", "Describe past habits", "Give a presentation", "Pitch a business idea"],
+  "lessons": [
+    {
+      "id": "8a", "code": "8A", "title": "Wise words", "pages": "92–94",
+      "goals": ["Understand third conditionals", "Use should have for regrets", "Give and respond to advice"],
+      "grammar": {
+        "title": "Third conditional and should have",
+        "shortAr": "للمستحيل في الماضي: If + past perfect, would have + participle. وللندم: should/shouldn’t have.",
+        "points": [
+          "If + past perfect, would have + past participle: unreal past situations.",
+          "could have / might have describe less certain past results.",
+          "should/shouldn’t have + past participle talks about regrets."
+        ],
+        "table": [
+          ["Unreal past", "If I had woken up on time, I wouldn’t have missed the bus."],
+          ["Certainty", "We would have left early if we’d known about the traffic."],
+          ["Less certain", "If I’d known she was at the party, I might have come."],
+          ["Regret", "I should have bought my ticket yesterday."]
+        ],
+        "exceptions": ["Use could/might have for less certain results."]
+      },
+      "vocab": [
+        {"word": "piece of advice", "ar": "نصيحة", "example": "Best piece of advice you’ve been given?"},
+        {"word": "regret", "ar": "ندم", "example": "Third conditionals often express regrets."},
+        {"word": "should have", "ar": "كان ينبغي أن", "example": "I should’ve been nicer."},
+        {"word": "shouldn’t have", "ar": "كان ينبغي ألا", "example": "You shouldn’t’ve paid attention to him."},
+        {"word": "health is wealth", "ar": "الصحة ثروة", "example": "Look after your health — health is wealth."},
+        {"word": "follow your heart", "ar": "اتبع قلبك", "example": "He told me to follow my heart."}
+      ],
+      "reading": {"summary": "Article with advice from people of different ages."},
+      "listening": [
+        {"track": "8.01", "audioFile": "SO3_B1+_SB_8A_Audio_8_01.mp3", "summary": "Contracted forms: should’ve, If I’d known, I’d’ve."}
+      ],
+      "video": {"file": "SO3 B1+ U8 BBC Vlogs.mp4", "summary": "People share their best piece of advice."},
+      "speaking": ["Describe a situation, then give advice."],
+      "writing": [],
+      "practice": [
+        {"type": "choice", "q": "If I ___ on time, I wouldn’t have missed the bus.", "options": ["woke up", "had woken up", "would wake up"], "answer": "had woken up", "why": "If-clause → past perfect."},
+        {"type": "choice", "q": "I ___ my ticket yesterday; now none are left.", "options": ["should buy", "should have bought", "shouldn’t have bought"], "answer": "should have bought", "why": "Regret: should have + participle."},
+        {"type": "choice", "q": "Maybe we ___ if we’d played better.", "options": ["could have won", "can win", "will win"], "answer": "could have won", "why": "Less certain past result."}
+      ]
+    },
+    {
+      "id": "8b", "code": "8B", "title": "Life lessons", "pages": "95–97",
+      "goals": ["Talk about past habits and states", "Use would and used to", "Learn phrasal verbs for goals"],
+      "grammar": {
+        "title": "would (past habits)",
+        "shortAr": "would للعادات الماضية المتكررة، وused to للعادات والحالات التي تغيّرت. لا نستخدم would للحالة.",
+        "points": [
+          "would + verb describes repeated past habits; past simple also works.",
+          "used to describes past habits or states which have changed.",
+          "Do not use would for past states: As a child, I was curious."
+        ],
+        "table": [
+          ["Habit", "My father would read to me every night."],
+          ["Habit", "As a child, I used to love reading."],
+          ["State", "I used to feel isolated in New Zealand."],
+          ["Frequency", "We would always see them in the afternoon."]
+        ],
+        "exceptions": ["Would cannot describe a past state."]
+      },
+      "vocab": [
+        {"word": "figure out", "ar": "فهم/حلّ", "example": "You figure it out when you understand."},
+        {"word": "dream up", "ar": "ابتكر", "example": "Dream up some ideas."},
+        {"word": "write down", "ar": "دوّن", "example": "Write it down so you don’t forget."},
+        {"word": "break down", "ar": "قسّم", "example": "Break the idea down into stages."},
+        {"word": "think through", "ar": "فكّر بعناية", "example": "Think the idea through."},
+        {"word": "follow up", "ar": "تابع", "example": "Follow up on the plan."}
+      ],
+      "reading": {},
+      "listening": [
+        {"track": "8.02", "audioFile": "SO3_B1+_SB_8B_Audio_8_02.mp3", "summary": "Coins in coffee sacks spark curiosity."},
+        {"track": "8.03", "audioFile": "SO3_B1+_SB_8B_Audio_8_03.mp3", "summary": "would examples from the story."},
+        {"track": "8.04", "audioFile": "SO3_B1+_SB_8B_Audio_8_04.mp3", "summary": "More past-habit sentences."},
+        {"track": "VB8.01", "audioFile": "SO3_B1+_SB_8B_Audio_VB8_01.mp3", "summary": "Phrasal verbs: figure out, try out, dream up, break down."}
+      ],
+      "video": {"file": "", "summary": ""},
+      "speaking": ["Discuss the most important qualities of a mentor."],
+      "writing": ["Write a short biography."],
+      "practice": [
+        {"type": "choice", "q": "As a child, I ___ very curious.", "options": ["would be", "used to be", "was used to be"], "answer": "used to be", "why": "Past state → used to."},
+        {"type": "choice", "q": "We ___ always see them in the afternoon.", "options": ["would", "used to", "are used to"], "answer": "would", "why": "would goes before always."},
+        {"type": "choice", "q": "When you test a new idea, you ___.", "options": ["try it out", "dream it up", "write it down"], "answer": "try it out", "why": "try it out means test it."}
+      ]
+    },
+    {
+      "id": "8c", "code": "8C", "title": "One thing I know …", "pages": "98–99",
+      "goals": ["Organise a clear presentation", "Use signposting phrases", "Handle questions"],
+      "grammar": {
+        "title": "How to give a presentation",
+        "shortAr": "عبارات البداية، عرض النقاط، الخاتمة، والتعامل مع الأسئلة الصعبة.",
+        "points": [
+          "Start: Thanks for coming… / Today I’m going to talk about…",
+          "Signpost: The first point…, Moving on to…, As a final point…",
+          "Finish: To sum up… / Just to recap…; for hard questions: I’ll get back to you on that."
+        ],
+        "table": [
+          ["Starting", "Thanks for coming / Today I’m going to talk about…"],
+          ["First point", "To begin with, I’ll describe…"],
+          ["Moving on", "Moving on to my next point…"],
+          ["Finishing", "To sum up… / Just to recap…"]
+        ],
+        "exceptions": []
+      },
+      "vocab": [
+        {"word": "show of hands", "ar": "رفع الأيدي", "example": "Can I get a show of hands?"},
+        {"word": "delivery", "ar": "طريقة الإلقاء", "example": "The audience watches your delivery."},
+        {"word": "slide", "ar": "شريحة عرض", "example": "Don’t put too much text on slides."},
+        {"word": "visual", "ar": "عنصر بصري", "example": "Use a clear visual."},
+        {"word": "call to action", "ar": "دعوة للقيام بإجراء", "example": "Tell people what to do: a call to action."},
+        {"word": "recap", "ar": "تلخيص", "example": "Just to recap, keep it short."}
+      ],
+      "reading": {},
+      "listening": [
+        {"track": "8.05", "audioFile": "SO3_B1+_SB_8C_Audio_8_05.mp3", "summary": "Five presentation tips."},
+        {"track": "8.06", "audioFile": "SO3_B1+_SB_8C_Audio_8_06.mp3", "summary": "Phrases for organising a talk."},
+        {"track": "MB8.01", "audioFile": "SO3_B1+_SB_8C_Audio_MB8_01.mp3", "summary": "Changing career story."}
+      ],
+      "video": {"file": "", "summary": ""},
+      "speaking": ["Give a five-minute presentation."],
+      "writing": ["Write an email giving work-related news."],
+      "practice": [
+        {"type": "choice", "q": "Which phrase starts a presentation?", "options": ["Moving on to…", "Thanks for coming…", "To sum up…"], "answer": "Thanks for coming…", "why": "Standard opening."},
+        {"type": "choice", "q": "Which introduces the last point?", "options": ["As a final point…", "The first point…", "Can I get a show of hands…"], "answer": "As a final point…", "why": "Signposts the final point."},
+        {"type": "choice", "q": "You don’t know the answer. Say:", "options": ["I’ll get back to you on that.", "To begin with…", "That sounds interesting!"], "answer": "I’ll get back to you on that.", "why": "Useful for hard questions."}
+      ]
+    },
+    {
+      "id": "8d", "code": "8D", "title": "Dragons’ Den", "pages": "100–101",
+      "goals": ["Understand a business pitch", "Ask follow-up questions", "Pitch an idea"],
+      "grammar": {
+        "title": "Pitch language (review)",
+        "shortAr": "لغة العرض التجاري: وصف المشروع والسوق، أرقام المبيعات، طلب الاستثمار، وأسئلة المستثمرين.",
+        "points": [
+          "Present the business and market: The market is worth £750 million.",
+          "Give figures: Our turnover figures have been €70,000, €100,000 and €150,000.",
+          "State the offer and answer questions: We’re asking for €100,000 for a ten percent share."
+        ],
+        "table": [
+          ["The business", "We run a business called Live Your Life Adventure Holidays."],
+          ["The market", "The market for coconut oil is worth around £750 million."],
+          ["The offer", "We’re asking for €100,000 for a ten percent share."],
+          ["Follow-up", "Who is the target market?"]
+        ],
+        "exceptions": []
+      },
+      "vocab": [
+        {"word": "entrepreneur", "ar": "رائد أعمال", "example": "We are entrepreneurs and run a business."},
+        {"word": "turnover", "ar": "حجم المبيعات", "example": "Our turnover figures have grown."},
+        {"word": "market", "ar": "السوق", "example": "Adventure tourism is a large market."},
+        {"word": "share", "ar": "حصة من الشركة", "example": "Ten percent share of the business."},
+        {"word": "investor", "ar": "مستثمر", "example": "We hope an investor invests."},
+        {"word": "target market", "ar": "السوق المستهدف", "example": "Who is your target market?"}
+      ],
+      "reading": {},
+      "listening": [
+        {"track": "8.07", "audioFile": "SO3_B1+_SB_8C_Audio_8_07.mp3", "summary": "Dragons’ Den pitch and questions."}
+      ],
+      "video": {"file": "SO3 B1+ U8 BBC Programmes.mp4", "summary": "A Dragons’ Den pitch and questions."},
+      "speaking": ["Ask follow-up questions and pitch a business idea."],
+      "writing": [],
+      "practice": [
+        {"type": "choice", "q": "What does an entrepreneur do?", "options": ["starts and runs a business", "writes a presentation", "only invests money"], "answer": "starts and runs a business", "why": "They run the business."},
+        {"type": "choice", "q": "‘€100,000 for a ten percent ___.’", "options": ["share", "turnover", "market"], "answer": "share", "why": "A share is part of the company."},
+        {"type": "choice", "q": "Which is a follow-up question from the Dragons?", "options": ["Who is the target market?", "As a final point…", "I should have bought it."], "answer": "Who is the target market?", "why": "It asks about the business."}
+      ]
+    }
+  ],
+  "review": {
+    "summary": "Review third conditionals, should have, would/used to and presentation language.",
+    "tasks": ["Listen to ‘Inventing a Better World’.", "Discuss Ann Makosinski’s inventions.", "Give a short advice talk."],
+    "quiz": [
+      {"q": "If I ___ known where you were, I wouldn’t have worried.", "options": ["had", "have", "would", "will"], "answer": "had", "skill": "grammar"},
+      {"q": "You ___ passed if you’d studied more.", "options": ["would have", "will have", "had", "would"], "answer": "would have", "skill": "grammar"},
+      {"q": "I ___ my ticket yesterday; now none are left.", "options": ["should buy", "should have bought", "shouldn’t have bought", "shouldn’t buy"], "answer": "should have bought", "skill": "grammar"},
+      {"q": "As a child, I ___ very curious.", "options": ["would be", "used to be", "would have been", "was used to be"], "answer": "used to be", "skill": "grammar"},
+      {"q": "He ___ always answer my questions.", "options": ["would", "used to", "was used to", "will"], "answer": "would", "skill": "grammar"},
+      {"q": "Which phrase introduces a final point?", "options": ["As a final point…", "To begin with…", "Thanks for coming…", "Moving on to…"], "answer": "As a final point…", "skill": "grammar"},
+      {"q": "To test a new idea, ___.", "options": ["try it out", "dream it up", "break it down", "write it down"], "answer": "try it out", "skill": "vocab"},
+      {"q": "To split an idea into smaller parts, ___.", "options": ["figure it out", "break it down", "follow it up", "think it through"], "answer": "break it down", "skill": "vocab"},
+      {"q": "To investigate further, ___ it.", "options": ["think it through", "write it down", "follow it up", "dream it up"], "answer": "follow it up", "skill": "vocab"},
+      {"q": "A short summary at the end is a ___.", "options": ["recap", "delivery", "slide", "visual"], "answer": "recap", "skill": "vocab"},
+      {"q": "Money a business brings in is its ___.", "options": ["turnover", "share", "market", "investor"], "answer": "turnover", "skill": "vocab"},
+      {"q": "The best piece of ___ you’ve been given?", "options": ["advice", "regret", "pitch", "share"], "answer": "advice", "skill": "vocab"}
+    ]
+  }
+}
