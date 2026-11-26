@@ -159,6 +159,7 @@ function route() {
   if (p[0] === 'bank') return { name: 'bank', bank: p[1] || 'grammar' };
   if (p[0] === 'review') return { name: 'review' };
   if (p[0] === 'shadowing') return { name: 'shadowing' };
+  if (p[0] === 'trainer') return { name: 'trainer' };
   if (p[0] === 'account') return { name: 'account' };
   if (p[0] === 'search') return { name: 'search', q: new URLSearchParams(query).get('q') || '' };
   if (p[0] === 'page') return { name: 'page', pdf: decodeURIComponent(p.slice(1).join('/')) };
@@ -378,6 +379,7 @@ function drawer() {
         <a class="meb-drawer-link" href="#/book" data-action="drawer-close">Open the full contents of this course, unit by unit.</a>
         <a class="meb-drawer-link meb-drawer-warm" href="#/review" data-action="drawer-close"><strong dir="rtl" lang="ar">المراجعة الشاملة</strong><small>Vocab tables · grammar · 25-question quiz</small></a>
         <a class="meb-drawer-link meb-drawer-accent" href="#/shadowing" data-action="drawer-close"><span>${icon('mic', 13)} <strong dir="rtl" lang="ar">استوديو الشادونج</strong></span><small>Listen · loop · repeat</small></a>
+        <a class="meb-drawer-link meb-drawer-trainer" href="#/trainer" data-action="drawer-close"><span>${icon('mic', 13)} <strong>Online English trainer</strong></span><small dir="rtl" lang="ar">أبو بكر مختار · اشتراك شهري</small></a>
         ${units.map(u => `<div class="meb-drawer-unit">
           <a class="meb-drawer-unit-title" href="#/unit/unit-${u.unit}" data-action="drawer-close"><strong>${u.unit}</strong><span>Unit ${u.unit} — ${esc(u.title || '')}</span><span class="toc-dots"></span><span class="toc-page">${firstPage(u.pages)}</span></a>
           <div class="meb-drawer-unit-body">
@@ -459,7 +461,7 @@ function footer() {
 }
 
 function layout(content, r) {
-  return `${header()}<main class="meb-shell page-enter" id="main"><div class="meb-page">${content}</div></main>${footer()}${miniPlayer()}${backToTop()}${drawer()}`;
+  return `${header()}<main class="meb-shell page-enter" id="main"><div class="meb-page">${content}</div></main>${footer()}${miniPlayer()}${backToTop()}${MEB_TRAINER.shellExtras()}${drawer()}`;
 }
 
 /* ---------------- pages ---------------- */
@@ -506,6 +508,8 @@ function homePage() {
       <span class="meb-ref-ic meb-ic-brand">${icon('layers', 22)}</span>
       <span class="meb-ref-copy"><strong dir="rtl" lang="ar">المراجعة الشاملة</strong><small dir="rtl" lang="ar">كلمات في جداول بالعربي وأمثلة · ملخص الجرامر · كويز 25 سؤال بتصحيح فوري</small></span>
       <span class="meb-ref-action meb-action-brand">افتح الصفحة</span></a></section>
+
+    ${MEB_TRAINER.homeBanner()}
 
     <section class="mx-auto max-w-2xl"><a class="meb-ref-banner meb-cta-shadow" href="#/shadowing">
       <span class="meb-ref-ic meb-ic-accent">${icon('mic', 22)}</span>
@@ -945,6 +949,8 @@ function searchPage(q) {
 }
 
 /* ---------------- rendering ---------------- */
+function trainerPage() { return MEB_TRAINER.page ? MEB_TRAINER.page() : ''; }
+
 function render() {
   const r = route();
   let content = '';
@@ -959,6 +965,7 @@ function render() {
     case 'review': content = r.unit ? reviewPage(r.unit) : comprehensivePage(); break;
     case 'bank': content = bankPage(r.bank); break;
     case 'shadowing': content = shadowingPage(); break;
+    case 'trainer': content = trainerPage(); break;
     case 'account': content = accountPage(); break;
     case 'leadin': content = leadinPage(); break;
     default: content = homePage();
@@ -974,7 +981,7 @@ function render() {
     lsSet('progress', state.progress);
   }
   document.getElementById('root').innerHTML = layout(content, r);
-  const titles = { book: 'Contents', search: 'Search', account: 'Account', shadowing: 'Shadowing', review: 'Review', leadin: 'Lead-in', page: 'Local book', bank: 'Reference bank' };
+  const titles = { book: 'Contents', search: 'Search', account: 'Account', shadowing: 'Shadowing', trainer: 'Online English trainer', review: 'Review', leadin: 'Lead-in', page: 'Local book', bank: 'Reference bank' };
   const pageTitle = r.name === 'bank' && r.bank ? `${r.bank.charAt(0).toUpperCase()}${r.bank.slice(1)} Bank` : titles[r.name];
   document.title = (pageTitle || (r.unit ? `Unit ${r.unit}` : 'Home')) + ' · ' + SITE_TITLE;
   document.documentElement.classList.toggle('dark', state.theme === 'dark');
@@ -987,6 +994,7 @@ function render() {
   }
   bindVideo();
   syncMiniPlayer();
+  MEB_TRAINER.afterRender(r.name);
   window.scrollTo({ top: 0, behavior: 'instant' in window ? 'instant' : 'auto' });
 }
 
@@ -1223,6 +1231,7 @@ async function boot() {
   state.progress.quizzes = state.progress.quizzes || {};
   state.progress.lessons = state.progress.lessons || {};
   bindGlobal();
+  if (window.MEB_TRAINER && typeof MEB_TRAINER.init === 'function') MEB_TRAINER.init();
   try { await loadData(); } catch (e) { console.error('Data load failed', e); }
   render();
 }
