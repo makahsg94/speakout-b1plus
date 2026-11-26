@@ -426,6 +426,27 @@ function partsBanner(current) {
   </section>`;
 }
 
+const PARTS_IDENTITY = {
+  1: { label: 'الجزء الأول', code: 'A2', title: 'بداية الخط', tagline: 'أول حرف… أول محادثة واثقة.', mark: '◈', color: '#0284c7', soft: '#e0f2fe' },
+  2: { label: 'الجزء الثاني', code: 'B1', title: 'خطوة التقدّم', tagline: 'من الجملة القصيرة إلى التعبير الواضح.', mark: '✦', color: '#7c3aed', soft: '#ede9fe' },
+  3: { label: 'الجزء الثالث', code: 'B1+', title: 'حافة الإتقان', tagline: 'ما بين B1 وB2 — أفكار أدقّ وقراءة أعمق.', mark: '◆', color: '#d97706', soft: '#fef3c7' },
+  4: { label: 'الجزء الرابع', code: 'B2', title: 'قِمّة الخط', tagline: 'رأي، حجّة، وسرد يوقف عنده المستمع.', mark: '✧', color: '#059669', soft: '#d1fae5' },
+};
+
+function partIdentity(current) {
+  const p = PARTS_IDENTITY[current];
+  return `<section class="meb-part-identity" data-part="${current}" style="--pi-color:${p.color};--pi-soft:${p.soft}" aria-label="${p.label} · ${p.code}">
+    <span class="meb-part-identity__num" aria-hidden="true">${current}</span>
+    <span class="meb-part-identity__mark" aria-hidden="true">${p.mark}</span>
+    <div class="meb-part-identity__body">
+      <p class="meb-part-identity__eyebrow"><span dir="rtl" lang="ar">${p.label}</span> · <span dir="ltr">${p.code}</span></p>
+      <p class="meb-part-identity__title" dir="rtl" lang="ar">${p.title}</p>
+      <p class="meb-part-identity__tagline" dir="rtl" lang="ar">${p.tagline}</p>
+    </div>
+    <span class="meb-part-identity__dots" aria-hidden="true">${[1, 2, 3, 4].map(n => `<i class="${n === current ? 'on' : ''}"></i>`).join('')}</span>
+  </section>`;
+}
+
 function footer() {
   return `<footer class="meb-footer mx-auto max-w-4xl px-4 pb-8 pt-4 text-center text-xs text-[var(--ink-faint)]">
     <p>Speakout 3rd Edition B1+ · course companion – condensed from the local book for studying with your class</p>
@@ -453,6 +474,7 @@ function homePage() {
   const earnedCount = achievements.filter(a => a.earned).length;
   const bookHref = pdfList()[0]?.href || '#/book';
   return `<div class="fade-up space-y-16">
+    ${partIdentity(3)}
     <section class="title-page mx-auto max-w-2xl pt-6">
       <p class="meb-kicker">THIRD EDITION · LEVEL B1+</p>
       <h1 class="display mt-4 text-7xl leading-none tracking-tight sm:text-8xl">Speakout</h1>
