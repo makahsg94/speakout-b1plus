@@ -341,9 +341,9 @@
 :root .meb-shell { padding-bottom: calc(7rem + var(--meb-sponsor-h, 0px)); }
 
 /* Drawer entry point mirrors the accent trainer link. */
-.meb-drawer-trainer { color: var(--color-brand-700); font-weight: 700; }
-:root.dark .meb-drawer-trainer { color: var(--color-brand-300); }
-.meb-drawer-trainer small { font-size: .65rem; color: var(--ink-faint); font-weight: 400; }
+.meb-drawer-link.meb-drawer-trainer { color: var(--color-brand-700); font-weight: 700; }
+:root.dark .meb-drawer-link.meb-drawer-trainer { color: var(--color-brand-300); }
+.meb-drawer-link.meb-drawer-trainer small { font-size: .65rem; color: var(--ink-faint); font-weight: 400; }
 
 /* ---------- timed offer modal ---------- */
 .meb-tr-modal {
