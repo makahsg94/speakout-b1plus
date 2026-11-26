@@ -57,6 +57,55 @@ const enc = (f) => './media/' + String(f || '').replace(/^\/+/, '').split('/').m
 function lsGet(k, d) { try { const v = localStorage.getItem('meb_' + k); return v ? JSON.parse(v) : d; } catch (e) { return d; } }
 function lsSet(k, v) { try { localStorage.setItem('meb_' + k, JSON.stringify(v)); } catch (e) { /* storage full/blocked */ } }
 
+/* ---------------- vocabulary speech (US / GB) ---------------- */
+const SPEECH_KEY = 'meb-speech-accent-v1';
+const ACCENTS = [
+  { id: 'en-GB', label: 'بريطاني' },
+  { id: 'en-US', label: 'أمريكي' },
+];
+
+function speechAccent() {
+  try { const v = localStorage.getItem(SPEECH_KEY); return v === 'en-US' ? 'en-US' : 'en-GB'; }
+  catch (e) { return 'en-GB'; }
+}
+
+function setSpeechAccent(lang) {
+  try { localStorage.setItem(SPEECH_KEY, lang === 'en-US' ? 'en-US' : 'en-GB'); } catch (e) { /* storage blocked */ }
+}
+
+function sayWord(word, lang) {
+  if (!('speechSynthesis' in window) || !word || !String(word).trim()) return;
+  try {
+    const synth = window.speechSynthesis;
+    synth.cancel();
+    const parts = String(word).split('/').map(s => s.trim()).filter(Boolean);
+    const texts = parts.length ? parts : [String(word).trim()];
+    const speakAt = (i) => {
+      if (i >= texts.length) return;
+      const u = new SpeechSynthesisUtterance(texts[i]);
+      u.lang = lang === 'en-US' ? 'en-US' : 'en-GB';
+      u.rate = 0.9;
+      const voices = synth.getVoices ? synth.getVoices() : [];
+      const voice = voices.find(v => v.lang.toLowerCase().startsWith(u.lang.toLowerCase())) || voices.find(v => v.lang.toLowerCase().startsWith('en'));
+      if (voice) u.voice = voice;
+      const next = () => { if (i + 1 < texts.length) setTimeout(() => speakAt(i + 1), 200); };
+      u.onend = next; u.onerror = next;
+      synth.speak(u);
+    };
+    speakAt(0);
+  } catch (e) { /* speech unavailable */ }
+}
+
+function accentChips() {
+  const cur = speechAccent();
+  return `<span class="meb-speech-controls" role="group" aria-label="نطق الكلمات">${ACCENTS.map(a => `<button type="button" class="meb-accent-chip ${cur === a.id ? 'on' : ''}" data-action="set-accent" data-lang="${a.id}" aria-pressed="${cur === a.id}">${a.label}</button>`).join('')}</span>`;
+}
+
+function sayButton(word) {
+  const safe = esc(word);
+  return `<button type="button" class="meb-say-btn" data-action="say-word" data-word="${safe}" data-lang="${speechAccent()}" aria-label="اسمع ${safe}" title="اسمع ${safe}">${icon('volume', 14)}</button>`;
+}
+
 function beep() {
   if (!state.sound) return;
   try {
@@ -570,9 +619,9 @@ function vocabSection(l) {
   const words = l.vocab || [];
   if (!words.length) return '';
   return `<div class="meb-section" id="vocabulary"><h2>${esc(words.length)} key words</h2>
-    <button class="meb-btn ghost" data-action="meanings">${state.hideMeanings ? 'إظهار المعاني' : 'إخفاء المعاني'}</button>
+    <span class="meb-vocab-tools"><button class="meb-btn ghost" data-action="meanings">${state.hideMeanings ? 'إظهار المعاني' : 'إخفاء المعاني'}</button>${accentChips()}</span>
     <table class="meb-table"><thead><tr><th>WORD</th><th class="meb-meaning">MEANING</th><th>EXAMPLE / NOTE</th></tr></thead><tbody>
-      ${words.map(w => `<tr><td><strong>${esc(w.word)}</strong></td><td class="meb-meaning">${esc(w.ar || '')}</td><td>${esc(w.example || '')}</td></tr>`).join('')}
+      ${words.map(w => `<tr><td><strong>${esc(w.word)}</strong> ${sayButton(w.word)}</td><td class="meb-meaning">${esc(w.ar || '')}</td><td>${esc(w.example || '')}</td></tr>`).join('')}
     </tbody></table>
   </div>`;
 }
@@ -706,9 +755,10 @@ function bankPage(kind) {
     return `<div class="fade-up"><a class="meb-link" href="#/">Home</a> › Vocabulary Bank
       <h1 class="meb-title" style="font-size:2.4rem;margin:.4rem 0">Vocabulary Bank</h1>
       <p class="meb-muted" style="font-size:.85rem">Words from the local B1+ book, grouped by unit, with concise Arabic meanings.</p>
+      ${accentChips()}
       ${groups.map(g => `<div class="meb-card" style="margin:.9rem 0"><div class="meb-kicker">UNIT ${g.u.unit} · ${esc(g.u.title || '')}</div>
         <table class="meb-table"><thead><tr><th>WORD</th><th>MEANING</th><th>EXAMPLE</th><th>LESSON</th></tr></thead><tbody>
-        ${g.words.map(w => `<tr><td><strong>${esc(w.word)}</strong></td><td>${esc(w.ar || '')}</td><td>${esc(w.example || '')}</td><td>${esc(w.lesson || '')}</td></tr>`).join('')}
+        ${g.words.map(w => `<tr><td><strong>${esc(w.word)}</strong> ${sayButton(w.word)}</td><td>${esc(w.ar || '')}</td><td>${esc(w.example || '')}</td><td>${esc(w.lesson || '')}</td></tr>`).join('')}
         </tbody></table></div>`).join('')}</div>`;
   }
   if (kind === 'writing') {
@@ -1026,6 +1076,8 @@ function bindGlobal() {
       if (out) out.textContent = `Last check: grade ${grade} · ${score}% · ${words} words`;
       toast(`✎ ${grade} · ${score}% · ${words} words`); beep(); return;
     }
+    if (a === 'set-accent') { setSpeechAccent(el.dataset.lang); render(); return; }
+    if (a === 'say-word') { sayWord(el.dataset.word, el.dataset.lang); return; }
     if (a === 'theme') {
       const cycle = { light: 'dark', dark: 'reading', reading: 'light' };
       state.theme = cycle[state.theme] || 'light'; lsSet('theme', state.theme); render();
