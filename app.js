@@ -351,12 +351,39 @@ function drawer() {
   </div>`;
 }
 
+const PARTS = [
+  { n: 1, label: 'الجزء الأول', name: 'Speakout A2', url: 'https://makahsg94.github.io/speakout-A2/' },
+  { n: 2, label: 'الجزء الثاني', name: 'Speakout B1', url: 'https://makahsg94.github.io/speakout-B1/' },
+  { n: 3, label: 'الجزء الثالث', name: 'Speakout B1+', url: 'https://makahsg94.github.io/speakout-b1plus/' },
+  { n: 4, label: 'الجزء الرابع', name: 'Speakout B2', url: 'https://makahsg94.github.io/speakout-B2/' },
+];
+
+function partsBanner(current) {
+  return `<section class="meb-parts-banner" aria-label="Course parts">
+    <div class="meb-parts-head">
+      <span class="meb-parts-eyebrow">Four parts · from A2 to B2</span>
+      <span class="meb-parts-hint" dir="rtl" lang="ar">اختار الجزء اللي تدرسه · كل جزء كورس مستقل</span>
+    </div>
+    <div class="meb-parts-grid">
+      ${PARTS.map(p => {
+        const active = p.n === current;
+        return `<a class="meb-part-card ${active ? 'is-current' : ''}" href="${p.url}" ${active ? 'aria-current="page"' : ''}>
+          <span class="meb-part-num">${p.n}</span>
+          <span class="meb-part-copy"><strong dir="rtl" lang="ar">${p.label}</strong><small>${p.name}</small></span>
+          <span class="meb-part-mark">${active ? icon('check', 16) : icon('chevronRight', 16)}</span>
+        </a>`;
+      }).join('')}
+    </div>
+  </section>`;
+}
+
 function footer() {
   return `<footer class="meb-footer mx-auto max-w-4xl px-4 pb-8 pt-4 text-center text-xs text-[var(--ink-faint)]">
     <p>Speakout 3rd Edition B1+ · course companion – condensed from the local book for studying with your class</p>
     <div class="meb-footer-links" dir="rtl" lang="ar">
-      <p>المصدر: كتاب Speakout B1+ المحلي · التصميم: <a href="https://github.com/makahsg94/my-english-book" target="_blank" rel="noopener noreferrer">my-english-book</a></p>
-      <p>للدعم: استخدم <a href="#/book">فهرس الكورس</a> و<a href="#/review">المراجعة الشاملة</a></p>
+      <p>المطور: <a href="https://www.facebook.com/mahmoud.atef.239821" target="_blank" rel="noopener noreferrer">Mahmoud Atef</a></p>
+      <p>واتساب: <a href="https://wa.me/201224552685" target="_blank" rel="noopener noreferrer" dir="ltr">01224552685</a></p>
+      <p>لدعم المطور: <span dir="ltr">01042682754</span> (فودافون كاش)</p>
     </div>
   </footer>`;
 }
@@ -378,7 +405,6 @@ function homePage() {
   const bookHref = pdfList()[0]?.href || '#/book';
   return `<div class="fade-up space-y-16">
     <section class="title-page mx-auto max-w-2xl pt-6">
-      <p class="meb-title-badge" dir="rtl" lang="ar">الجزء الأول</p>
       <p class="meb-kicker">THIRD EDITION · LEVEL B1+</p>
       <h1 class="display mt-4 text-7xl leading-none tracking-tight sm:text-8xl">Speakout</h1>
       <p class="mt-4 text-sm font-semibold uppercase tracking-[0.18em] text-[var(--ink-soft)]">THE LINE · B1+ · COURSE COMPANION</p>
@@ -398,6 +424,8 @@ function homePage() {
       </div>
     </section>
 
+    ${partsBanner(3)}
+
     ${state.user ? '' : `<section class="mx-auto max-w-2xl"><a class="meb-ref-banner meb-cta-account" href="#/account">
       <span class="meb-ref-ic bg-white/15 text-white">${icon('layers', 22)}</span>
       <span class="meb-ref-copy"><strong dir="rtl" lang="ar">أنشئ حسابك وخلّي تقدّمك معاك على أي جهاز</strong><small dir="rtl" lang="ar">تسجيل دخول مجاني — الكويزات والدروس والإنجازات تتسجّل لك، وترجعها أول ما تدخل</small></span>
@@ -415,7 +443,7 @@ function homePage() {
 
     <section class="mx-auto max-w-2xl"><a class="meb-ref-banner meb-cta-book" href="${bookHref}">
       <span class="meb-ref-ic meb-ic-brand">${icon('book', 22)}</span>
-      <span class="meb-ref-copy"><strong dir="rtl" lang="ar">الجزء الأول · كتاب Speakout B1+</strong><small dir="rtl" lang="ar">النسخة الأصلية من الكتاب المحلي + نصوص الاستماع والفيديو</small></span>
+      <span class="meb-ref-copy"><strong dir="rtl" lang="ar">كتاب Speakout B1+ الأصلي</strong><small dir="rtl" lang="ar">النسخة الأصلية من الكتاب المحلي + نصوص الاستماع والفيديو</small></span>
       <span class="meb-ref-action meb-action-brand">افتح الكتاب</span></a></section>
 
     <section>${lineMap()}</section>
@@ -490,6 +518,7 @@ function unitPage(n) {
   return `<div class="fade-up book-page meb-unit-page">
     <div class="running-head"><span>Station Unit ${n} · ${esc(u.title || '')}</span><span class="rh-right">pages ${esc(u.pages || '')}</span></div>
     <nav class="meb-breadcrumb"><a href="#/">${icon('home', 14)} Home</a>${icon('chevronRight', 13)}<span>Unit ${n}</span></nav>
+    ${partsBanner(3)}
     <header class="meb-unit-header">
       <div>
         <div class="meb-unit-heading"><span class="chapter-num text-6xl" aria-hidden="true">${n}</span><div><p class="meb-kicker">Unit ${n}</p><p class="page-number mt-1">${esc(u.title || '')}</p></div></div>
